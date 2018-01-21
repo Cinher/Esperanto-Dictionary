@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">世界语词典</string>
+    <string name="hello">Saluton!</string>
+	<string name="search">输入要搜索的单词</string>
+	<string name="no_result_found">没有本地释义</string>
+    <string name="action_settings">设置</string>
+    <string name="examples">例：</string>
+    <string name="navigation_drawer_open">打开 Navigation Drawer</string>
+    <string name="navigation_drawer_close">关闭 Navigation Drawer</string>
+    <string name="local_interpretation">本地释义</string>
+    <string name="input_is_empty">输入为空</string>
+
+</resources>
