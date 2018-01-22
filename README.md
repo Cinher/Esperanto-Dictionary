@@ -1,3 +1,2 @@
-# Esperanto-Dictionary
- ÊÀ½çÓï´Êµä
+# Esperanto-Dictionary ä¸–ç•Œè¯­è¯å…¸
 (Project Building)
