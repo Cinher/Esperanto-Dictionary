@@ -82,7 +82,11 @@ public class ResultActivity extends AppCompatActivity {
                 + getResources().getString(R.string.english)+"\n"
                 +(GetLocalResultModule.GetLocalTranslationResult(this,word)[1])+"\n"
         );
-        resultView.addView(localCard);
+        if(!((GetLocalResultModule.GetLocalTranslationResult(this,word)[0]).isEmpty()
+        && (GetLocalResultModule.GetLocalTranslationResult(this,word)[1]).isEmpty() ))
+        {
+            resultView.addView(localCard);
+        }
 
         //La Simpla Vortaro 结果
         new Thread(runnable).start();
