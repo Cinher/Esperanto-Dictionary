@@ -86,6 +86,8 @@ public class ResultActivity extends AppCompatActivity {
         && (GetLocalResultModule.GetLocalTranslationResult(this,word)[1]).isEmpty() ))
         {
             resultView.addView(localCard);
+        }else{
+
         }
 
         //La Simpla Vortaro 结果
@@ -245,6 +247,28 @@ public class ResultActivity extends AppCompatActivity {
         s = s.replace("\\u016c","Ŭ");
         s = s.replace("\\u016d","ŭ");
         return s;
+    }
+
+    public String ToUpperCase(String s){
+        s = s.toUpperCase();
+        s = s.replace("ĉ","Ĉ");
+        s = s.replace("ĝ","Ĝ");
+        s = s.replace("ĥ","Ĥ");
+        s = s.replace("ĵ","Ĵ");
+        s = s.replace("ŝ","Ŝ");
+        s = s.replace("ŭ","Ŭ");
+        return  s;
+    }
+
+    public String ToLowerCase(String s){
+        s = s.toLowerCase();
+        s = s.replace("Ĉ","ĉ");
+        s = s.replace("Ĝ","ĝ");
+        s = s.replace("Ĥ","ĥ");
+        s = s.replace("Ĵ","ĵ");
+        s = s.replace("Ŝ","ŝ");
+        s = s.replace("Ŭ","ŭ");
+        return  s;
     }
 
 }
