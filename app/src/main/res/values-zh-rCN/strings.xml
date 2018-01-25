@@ -11,5 +11,8 @@
     <string name="navigation_drawer_close">关闭 Navigation Drawer</string>
     <string name="local_interpretation">本地释义</string>
     <string name="input_is_empty">输入为空</string>
+    <string name="chinese">中文释义</string>
+    <string name="definition">释义（世界语）</string>
+    <string name="english">英文释义</string>
 
 </resources>
