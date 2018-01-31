@@ -141,17 +141,22 @@ public class MainActivity extends AppCompatActivity
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
         int id = item.getItemId();
+		
+		final int TYPE_IMPORT = 0;
+		final int TYPE_TRANSLATE = 1;
+		final int TYPE_DONATE = 2;
+		final int TYPE_OPENSOURCE = 3;
 
         if (id == R.id.nav_translate) {
-            // Handle the camera action
+            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type",TYPE_TRANSLATE));
         } else if (id == R.id.nav_import) {
-
+			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type",TYPE_IMPORT));
         } else if (id == R.id.nav_settings) {
-
+			startActivity(new Intent().setClass(MainActivity.this, SettingsActivity.class));
         } else if (id == R.id.nav_opensource) {
-
+			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", TYPE_OPENSOURCE));
         } else if (id == R.id.nav_donate) {
-
+			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type",TYPE_DONATE));
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
