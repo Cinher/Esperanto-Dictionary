@@ -59,6 +59,9 @@ public class DemonstrateActivity extends AppCompatActivity {
             getWindow().setNavigationBarColor(getResources().getColor(R.color.navigationBarColor));
         }
 		
+		android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.demonstratetoolbar);
+		toolbar.setTitle(title);
+		
 		
 	}
 	
