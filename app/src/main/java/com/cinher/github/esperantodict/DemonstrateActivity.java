@@ -9,6 +9,7 @@ import android.widget.*;
 import android.support.design.widget.*;
 import android.view.*;
 import android.widget.LinearLayout.*;
+import android.content.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
@@ -108,6 +109,12 @@ public class DemonstrateActivity extends AppCompatActivity {
 				Button btn1 = new Button(getApplicationContext());
 				btn1.setGravity(Gravity.CENTER);
 				btn1.setText(getResources().getString(R.string.translate_esperanto));
+				btn1.setOnClickListener(new View.OnClickListener(){
+					@Override
+					public void onClick(View p){
+						startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
+					}
+				});
 				Button btn2 = new Button(getApplicationContext());
 				btn2.setGravity(Gravity.CENTER);
 				btn2.setText(getResources().getString(R.string.translate_via_google));
