@@ -23,6 +23,9 @@ import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.database.sqlite.*;
+import android.content.*;
+import android.database.*;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -44,14 +47,22 @@ public class MainActivity extends AppCompatActivity
         }
         );
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+				
+				Db db = new Db(getApplicationContext());
+				SQLiteDatabase dbRead = db.getReadableDatabase();
+				Cursor c = dbRead.query("history", null, null, null, null, null, null);
+				while(c.moveToNext()){
+					String word = c.getString(c.getColumnIndex("word"));
+					System.out.println("Database history: " + word);
+				}
+            }
+        });
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -88,6 +99,23 @@ public class MainActivity extends AppCompatActivity
                 {
                     String word = ((EditText)findViewById(R.id.searchEditText)).getText().toString();
                     if(!word.trim().equals("")){
+						
+						//Save to database
+						Db db = new Db(getApplicationContext());
+						SQLiteDatabase dbWrite = db.getWritableDatabase();
+						ContentValues cv = new ContentValues();
+						cv.put("word", word);
+						SQLiteDatabase dbRead = db.getReadableDatabase();
+						Cursor c = dbRead.query("history", null, null, null, null, null, null);
+						while(c.moveToNext()){
+							if (word.equals(c.getString(c.getColumnIndex("word")))){
+								dbWrite.delete("history", "word = \'" + word + "\'", null);
+								break;
+							}
+						}
+						dbWrite.insert("history", null, cv);
+						dbWrite.close();
+						
                         //Go to the result activity
                         startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word",word));
                         MainActivity.this.finish();
