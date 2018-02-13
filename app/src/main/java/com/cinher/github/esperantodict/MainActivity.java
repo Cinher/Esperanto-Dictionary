@@ -26,6 +26,8 @@ import android.widget.TextView;
 import android.database.sqlite.*;
 import android.content.*;
 import android.database.*;
+import com.nex3z.flowlayout.*;
+import android.widget.FrameLayout.*;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -51,16 +53,46 @@ public class MainActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-				
+				//搜索历史
 				Db db = new Db(getApplicationContext());
 				SQLiteDatabase dbRead = db.getReadableDatabase();
 				Cursor c = dbRead.query("history", null, null, null, null, null, null);
-				while(c.moveToNext()){
+				
+				FlowLayout layout = new FlowLayout(getApplicationContext());
+				LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+				int sp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 7, getResources().getDisplayMetrics());
+				int margin = (int) getResources().getDimension(R.dimen.widget_margin);
+				
+				OnClickListener ocl = new OnClickListener(){
+					@Override
+					public void onClick(View v){
+						TextView tv = (TextView)v;
+						startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word",tv.getText().toString()));
+                        MainActivity.this.finish();
+					}
+				};
+				
+				while(c.moveToNext()){//添加TextView到Flow Layout
 					String word = c.getString(c.getColumnIndex("word"));
 					System.out.println("Database history: " + word);
+					TextView textView = new TextView(getApplicationContext());
+					textView.setTextSize(sp);
+					textView.setBackgroundDrawable(getDrawable(R.drawable.label_bg));
+					textView.setText(word);
+					textView.setOnClickListener(ocl);
+					textView.setPadding(2 * margin, margin, 2 * margin, margin);
+					layout.addView(textView, params);
 				}
+				
+				layout.setChildSpacing(FlowLayout.SPACING_AUTO);
+				layout.setChildSpacingForLastRow(FlowLayout.SPACING_ALIGN);
+				layout.setRowSpacing((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
+				layout.setPadding(3 * margin, margin, 3 * margin, margin);
+				new android.app.AlertDialog.Builder(MainActivity.this)  
+					.setTitle("SEARCH HISTORY")
+					.setView(layout)
+					.setNeutralButton("CANCEL", null)
+					.show();
             }
         });
 
