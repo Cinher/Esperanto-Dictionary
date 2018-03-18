@@ -25,6 +25,7 @@ import java.net.URL;
 import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
+import android.widget.*;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -74,7 +75,7 @@ public class ResultActivity extends AppCompatActivity {
         });
 
         //本地结果
-        AppCard localCard = new AppCard(this);
+        AppCard localCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
         localCard.setTitle(getResources().getString(R.string.local_interpretation));
         localCard.setText(
                 getResources().getString(R.string.chinese)+"\n"
@@ -199,12 +200,13 @@ public class ResultActivity extends AppCompatActivity {
                 //添加
                 String total = "—" + word + "\n\n" + getResources().getString(R.string.english) + "\n" + english + "\n" + getResources().getString(R.string.definition) + "\n" + definition + "\n" + getResources().getString(R.string.examples) + "\n" + example + "\n";
                 total = EsperantoUnicodeToCharacter(total);
-                AppCard card = new AppCard(ResultActivity.this);
+                AppCard card = new AppCard(getApplicationContext(), AppCard.TYPE_DICTIONARY);
                 card.setTitle("La Simpla Vortaro");
                 card.setText(total);
                 Message message = Message.obtain();
                 message.obj = card;
                 messageHandler.sendMessage(message);
+				
             }
         }
     };

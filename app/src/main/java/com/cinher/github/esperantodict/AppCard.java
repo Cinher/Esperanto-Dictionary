@@ -12,30 +12,32 @@ import android.widget.*;
 
 public class AppCard extends CardView
 {
+	public static final int TYPE_DICTIONARY = 0;
+	public static final int TYPE_DEMONSTRATE = 1;
+	
     private ImageView typeImageView;
     private TextView typeTextView;
     private TextView centralTextView;
 
-    public AppCard(Context context) {
+    public AppCard(Context context, int type) {
         super(context);
-        LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.app_card, this);
+		LayoutInflater inflater;
+		if(type ==  TYPE_DICTIONARY){
+			Log.d("Debug", "AppCard type: dict");
+            inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			inflater.inflate(R.layout.app_card, this);
+		}else{
+			Log.d("Debug", "AppCard type: demo");
+			inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+			inflater.inflate(R.layout.app_card_demonstrate, this);
+		}
 
-        typeImageView = (ImageView) findViewById(R.id.card_typeImageView);
+        typeImageView = (ImageView) findViewById(R.id.card_imageView);
         typeTextView = (TextView) findViewById(R.id.card_typeTextView);
         centralTextView = (TextView) findViewById(R.id.card_centralTextView);
     }
-    public AppCard(Context context, AttributeSet attrs) {
-        super(context, attrs);
-        LayoutInflater inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        inflater.inflate(R.layout.app_card, this);
 
-        typeImageView = (ImageView) findViewById(R.id.card_typeImageView);
-        typeTextView = (TextView) findViewById(R.id.card_typeTextView);
-        centralTextView = (TextView) findViewById(R.id.card_centralTextView);
-    }
-
-    public void setTypeImage(int id){
+    public void setImage(int id){
         typeImageView.setImageResource(id);
     }
 

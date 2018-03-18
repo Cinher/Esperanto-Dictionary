@@ -38,7 +38,7 @@
             <item
                 android:id="@+id/nav_translate"
                 android:icon="@drawable/ic_translate_black_48dp"
-                android:title="Translate" />
+                android:title="Tools" />
             <item
                 android:id="@+id/nav_import"
                 android:icon="@drawable/ic_input_black_48dp"

@@ -16,6 +16,7 @@
 	
 	<string name="drawer_import">Import</string>
 	<string name="drawer_translate">Translate</string>
+	<string name="drawer_tools">Tools</string>
 	<string name="drawer_donate">Donate</string>
 	<string name="drawer_open_source">Open Source</string>
 	<string name="translate_esperanto">TRANSLATE ESPERANTO</string>

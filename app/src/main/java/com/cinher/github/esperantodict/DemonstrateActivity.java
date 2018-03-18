@@ -41,7 +41,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 					title = getResources().getString(R.string.drawer_import);
 					break;
 				case 1:
-					title = getResources().getString(R.string.drawer_translate);
+					title = getResources().getString(R.string.drawer_tools);
 					break;
 				case 2:
 					title = getResources().getString(R.string.drawer_donate);
@@ -67,22 +67,6 @@ public class DemonstrateActivity extends AppCompatActivity {
 		android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.demonstrate_toolbar);
 		toolbar.setTitle(title);
 		
-		//Temporary
-		//ImageButton btn = new ImageButton(getApplicationContext());
-		//btn.setAdjustViewBounds(true);
-		//int h = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 120, getResources().getDisplayMetrics());
-		//int e = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 4, getResources().getDisplayMetrics());
-		//btn.setMaxHeight(h);
-		//btn.setMaxWidth(h);
-		//btn.setElevation(e);
-		//LayoutParams params = new LayoutParams(h, h);
-		//btn.setBackground(getDrawable(R.drawable.circle));
-		//Bitmap bm = BitmapFactory.decodeResource(getResources(),R.drawable.ic_google_translate);
-		//btn.setImageBitmap(bm);
-		//((LinearLayout) findViewById(R.id.content_demonstrate)).addView(btn, params);
-		
-		//((LinearLayout) findViewById(R.id.content_demonstrate)).addView(new Button(this));
-		
 		//添加内容
 		int h = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
 		int e = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int)getResources().getDimension(R.dimen.widget_margin), getResources().getDisplayMetrics());
@@ -95,7 +79,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 				break;
 			case 1:
 				//Translate
-				ImageView view1 = new ImageView(getApplicationContext());
+				/*ImageView view1 = new ImageView(getApplicationContext());
 				ImageView view2 = new ImageView(getApplicationContext());
 				view1.setMaxWidth(h);
 				view2.setMaxWidth(h);
@@ -144,6 +128,28 @@ public class DemonstrateActivity extends AppCompatActivity {
 				layoutMain.addView(layoutBtn, paramsLayout);
 				
 				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(layoutMain,paramsLayout);
+				*/
+				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+				card1.setTitle(getResources().getString(R.string.translate_esperanto));
+				card1.setOnClickListener(new View.OnClickListener(){
+						@Override
+						public void onClick(View p){
+							startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
+						}
+					});
+				card1.setImage(R.drawable.ic_launcher_small);
+				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
+				
+				AppCard card2 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+				card2.setTitle(getResources().getString(R.string.translate_via_google));
+				card2.setOnClickListener(new View.OnClickListener(){
+						@Override
+						public void onClick(View p){
+							;
+						}
+					});
+				card2.setImage(R.drawable.ic_google_translate);
+				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card2);
 				break;
 			case 2:
 				//Donate
