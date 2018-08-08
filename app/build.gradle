@@ -35,4 +35,5 @@ dependencies {
     compile 'com.android.support:support-vector-drawable:25.2.0'
 	compile 'com.nex3z:flow-layout:1.1.0'
     testCompile 'junit:junit:4.12'
+    compile 'com.google.android.gms:play-services-appindexing:8.4.0'
 }
