@@ -1,4 +1,5 @@
 package com.cinher.github.esperantodict;
+import android.net.Uri;
 import android.support.v7.app.*;
 import android.os.*;
 import android.util.*;
@@ -145,7 +146,9 @@ public class DemonstrateActivity extends AppCompatActivity {
 				card2.setOnClickListener(new View.OnClickListener(){
 						@Override
 						public void onClick(View p){
-							;
+							Uri url = Uri.parse("http://translate.google.cn/");
+							Intent intent = new Intent(Intent.ACTION_VIEW,url);
+							startActivity(intent);
 						}
 					});
 				card2.setImage(R.drawable.ic_google_translate);
