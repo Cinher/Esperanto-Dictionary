@@ -77,6 +77,16 @@ public class DemonstrateActivity extends AppCompatActivity {
 		switch(TYPE){
 			case 0:
 				//Import
+                int fab_margin = R.dimen.fab_margin;
+                FloatingActionButton fab = new FloatingActionButton(this);
+                AppBarLayout.LayoutParams fabParams = new AppBarLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+                fabParams.gravity = Gravity.BOTTOM;
+                //fabParams.setMargins(fab_margin, fab_margin, fab_margin, fab_margin);
+                fab.setLayoutParams(fabParams);
+                fab.setImageResource(R.drawable.ic_note_white);
+
+                ((LinearLayout) findViewById(R.id.content_demonstrate)).addView(fab);
+
 				break;
 			case 1:
 				//Translate
@@ -164,6 +174,18 @@ public class DemonstrateActivity extends AppCompatActivity {
 				break;
 			}
 		
+	}
+
+	protected void chooseFile(){
+        // TODO: Complete this
+		Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+		intent.setType("*/*");
+		intent.addCategory(Intent.CATEGORY_OPENABLE);
+		try{
+			startActivityForResult(Intent.createChooser(intent, "Select a File"), 0);
+		}catch (ActivityNotFoundException e){
+			e.printStackTrace();
+		}
 	}
 	
 }
