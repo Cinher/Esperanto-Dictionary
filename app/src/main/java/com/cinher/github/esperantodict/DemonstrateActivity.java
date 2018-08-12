@@ -1,4 +1,5 @@
 package com.cinher.github.esperantodict;
+import android.database.Cursor;
 import android.net.Uri;
 import android.support.v7.app.*;
 import android.os.*;
@@ -14,10 +15,11 @@ import android.content.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
-	public final int TYPE_IMPORT = 0;
-	public final int TYPE_TRANSLATE = 1;
+	/*public final int TYPE_IMPORT = 0;
+    public final int TYPE_TRANSLATE = 1;
 	public final int TYPE_DONATE = 2;
 	public final int TYPE_OPENSOURCE = 3;
+	*/
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -77,13 +79,19 @@ public class DemonstrateActivity extends AppCompatActivity {
 		switch(TYPE){
 			case 0:
 				//Import
-                int fab_margin = R.dimen.fab_margin;
+                //导入词典 Button
                 FloatingActionButton fab = new FloatingActionButton(this);
                 AppBarLayout.LayoutParams fabParams = new AppBarLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-                fabParams.gravity = Gravity.BOTTOM;
-                //fabParams.setMargins(fab_margin, fab_margin, fab_margin, fab_margin);
+                fabParams.gravity = Gravity.END;
+                fabParams.setMargins(32, 32, 32, 32);
                 fab.setLayoutParams(fabParams);
                 fab.setImageResource(R.drawable.ic_note_white);
+                fab.setOnClickListener(new View.OnClickListener(){
+                    @Override
+                    public void onClick(View v) {
+                        chooseFile();//系统展开文件选择页面
+                    }
+                });
 
                 ((LinearLayout) findViewById(R.id.content_demonstrate)).addView(fab);
 
@@ -177,15 +185,42 @@ public class DemonstrateActivity extends AppCompatActivity {
 	}
 
 	protected void chooseFile(){
-        // TODO: Complete this
+        //选择词典导入
 		Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
 		intent.setType("*/*");
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		try{
+            //请求系统选择文件
 			startActivityForResult(Intent.createChooser(intent, "Select a File"), 0);
 		}catch (ActivityNotFoundException e){
 			e.printStackTrace();
 		}
 	}
-	
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        //选择词典 chooseFile() 的回调接收， 并转换 uri 的格式
+        //格式： /storage/emulated/0/.../abc.xyz
+        super.onActivityResult(requestCode, resultCode, data);
+        if(0 == requestCode && resultCode == RESULT_OK){
+            Uri uri = data.getData();
+            //判断格式
+            if((uri.getScheme()).equalsIgnoreCase("content")){//(忽略大小写)判断开头为 content
+                String [] projection = { "_data" };
+                Cursor cursor = getApplicationContext().getContentResolver()
+                        .query(uri, projection, null, null, null);
+                try {
+                    int column = cursor.getColumnIndexOrThrow("_data");
+                    if (cursor.moveToFirst()) {
+                        Log.i("onActivityResult", cursor.getString(column));
+                        cursor.close();
+                    }
+                } catch (java.lang.NullPointerException e) {
+                    e.printStackTrace();
+                }
+            }else if((uri.getScheme()).equalsIgnoreCase("file")){//开头为 file
+                Log.i("onActivityResult", uri.getPath());
+            }
+        }
+    }
 }
