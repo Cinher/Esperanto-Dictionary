@@ -1,5 +1,6 @@
 package com.cinher.github.esperantodict;
 import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.support.v7.app.*;
 import android.os.*;
@@ -204,22 +205,34 @@ public class DemonstrateActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(0 == requestCode && resultCode == RESULT_OK){
             Uri uri = data.getData();
+			String path = null;
             //判断格式
-            if((uri.getScheme()).equalsIgnoreCase("content")){//(忽略大小写)判断开头为 content
-                String [] projection = { "_data" };
+            if ((uri.getScheme()).equalsIgnoreCase("content")) {//(忽略大小写)判断开头为 content
+                String[] projection = {"_data"};
                 Cursor cursor = getApplicationContext().getContentResolver()
                         .query(uri, projection, null, null, null);
-                try {
-                    int column = cursor.getColumnIndexOrThrow("_data");
+                int column = 0;
+                if (cursor != null) {
+                    column = cursor.getColumnIndexOrThrow("_data");
                     if (cursor.moveToFirst()) {
-                        Log.i("onActivityResult", cursor.getString(column));
+                        Log.d("onActivityResult", cursor.getString(column));
+                        path = cursor.getString(column);
                         cursor.close();
                     }
-                } catch (java.lang.NullPointerException e) {
-                    e.printStackTrace();
+                }else{
+                    Toast.makeText(this, "Error: cursor == null", Toast.LENGTH_SHORT).show();
                 }
-            }else if((uri.getScheme()).equalsIgnoreCase("file")){//开头为 file
-                Log.i("onActivityResult", uri.getPath());
+
+            } else if ((uri.getScheme()).equalsIgnoreCase("file")) {//开头为 file
+                Log.d("onActivityResult", uri.getPath());
+                path = uri.getPath();
+            }
+
+            if(path != null && !(path.equals(""))){
+                final Db db = new Db(getApplicationContext());
+                final SQLiteDatabase dbWrite = db.getWritableDatabase();
+                Log.d("onActivityResult", "path != null: " + path);
+                // TODO: insert path to database "dictionaries".
             }
         }
     }
