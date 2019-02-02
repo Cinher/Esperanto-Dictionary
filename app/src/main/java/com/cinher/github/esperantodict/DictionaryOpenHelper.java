@@ -72,8 +72,7 @@ public class DictionaryOpenHelper
 	{
 		if ((!fromFile.exists()) || (!fromFile.isFile()) || (!fromFile.canRead()))
 		{
-			Toast.makeText(context, "Error: File not found", Toast.LENGTH_LONG).show();
-			return;
+			Toast.makeText(context, "Error: File not found " + fromFile.toString(), Toast.LENGTH_LONG).show();
 		}
 		if (!toFile.getParentFile().exists())
 		{
@@ -99,6 +98,8 @@ public class DictionaryOpenHelper
 		catch (Exception e)
 		{
 			Toast.makeText(context, "Error: File not found. e.Message =  " + e.toString(), Toast.LENGTH_LONG).show();
+			Log.d("DictionaryOpenHelper", e.toString());
 		}
+		
 	}
 }

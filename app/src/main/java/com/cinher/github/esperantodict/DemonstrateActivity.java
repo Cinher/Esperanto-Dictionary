@@ -13,6 +13,9 @@ import android.support.design.widget.*;
 import android.view.*;
 import android.widget.LinearLayout.*;
 import android.content.*;
+import android.support.v4.app.*;
+import android.*;
+import android.content.pm.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
@@ -26,6 +29,12 @@ public class DemonstrateActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demonstrate);
+		
+		//添加运行时权限，用于词典导入
+		//无以下代码时在 AIDE 编译运行时 DictionaryOpenHelper.copyFile() 报 IOException: Permission denied
+		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+			ActivityCompat.requestPermissions((DemonstrateActivity) this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
+		}
 		
 		final int TYPE = getIntent().getIntExtra("type",5);
 		Log.d("debug", TYPE + " ");
@@ -232,7 +241,9 @@ public class DemonstrateActivity extends AppCompatActivity {
                 final Db db = new Db(getApplicationContext());
                 final SQLiteDatabase dbWrite = db.getWritableDatabase();
                 Log.d("onActivityResult", "path != null: " + path);
-                // TODO: insert path to database "dictionaries".
+                // TODO
+				DictionaryOpenHelper helper = new DictionaryOpenHelper();
+				helper.importDictionary(this, path, 0);//将词典复制到指定位置
             }
         }
     }
