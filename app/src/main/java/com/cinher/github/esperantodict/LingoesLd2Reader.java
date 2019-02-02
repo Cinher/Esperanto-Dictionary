@@ -197,8 +197,7 @@ public class LingoesLd2Reader
 			if(word.trim().equals((defData [0]).trim())){
 				return defData [1];
 			}
-			//
-			System.out.println(defData[0] + " = " + defData[1]);
+			//System.out.println(defData[0] + " = " + defData[1]);
 			counter++;
 		}
 

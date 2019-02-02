@@ -26,10 +26,12 @@ import java.net.URLConnection;
 import java.util.List;
 import java.util.Map;
 import android.widget.*;
+import android.util.*;
+import java.io.*;
 
 public class ResultActivity extends AppCompatActivity {
 
-    String word;
+    String word; //将要搜索的单词
     LinearLayout resultView;
     private Handler messageHandler;
 
@@ -95,6 +97,37 @@ public class ResultActivity extends AppCompatActivity {
         new Thread(runnable).start();
         Looper looper = Looper.myLooper();
         messageHandler = new MessageHandler(looper);
+		
+		//本地词典结果
+		DictionaryOpenHelper helper = new DictionaryOpenHelper();
+		String [] dictList = helper.listExistDictionaries(this);
+		for (int i = 0; i < dictList.length; i++){ //遍历词典
+			Log.d("ResultActivity", "" + dictList [i]);
+			//第 i 个词典的搜索结果
+			String result = helper.search(this, DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList [i], word);
+			if (result != null)
+			{
+				Log.d("ResultActivity", result);
+				//创建卡片用于显示结果
+				AppCard localDictCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
+				localDictCard.setTitle(dictList [i]);
+				localDictCard.setText(result);
+				resultView.addView(localDictCard);
+			}
+		}
+		for (int i = 0; i < dictList.length; i++) //删除临时文件
+		{
+			if((dictList [i]).endsWith(".output")
+			   || (dictList [i]).endsWith(".inflated")
+			   || (dictList [i]).endsWith(".idx")
+			   || (dictList [i]).endsWith(".words")
+			   || (dictList [i]).endsWith(".ld2.xml")
+				)
+			{
+				File file = new File(DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList [i]);
+				file.delete();
+			}
+		}
     }
 
     Runnable runnable = new Runnable(){//获取La Simpla Vortaro的数据

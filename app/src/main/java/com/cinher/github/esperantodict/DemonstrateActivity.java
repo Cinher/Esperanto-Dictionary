@@ -89,11 +89,14 @@ public class DemonstrateActivity extends AppCompatActivity {
 		switch(TYPE){
 			case 0:
 				//Import
+				
+				LinearLayout layout = (LinearLayout) findViewById(R.id.content_demonstrate);
+				
                 //导入词典 Button
                 FloatingActionButton fab = new FloatingActionButton(this);
                 AppBarLayout.LayoutParams fabParams = new AppBarLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
                 fabParams.gravity = Gravity.END;
-                fabParams.setMargins(32, 32, 32, 32);
+                fabParams.setMargins(768, 72, 72, 72);
                 fab.setLayoutParams(fabParams);
                 fab.setImageResource(R.drawable.ic_note_white);
                 fab.setOnClickListener(new View.OnClickListener(){
@@ -102,8 +105,22 @@ public class DemonstrateActivity extends AppCompatActivity {
                         chooseFile();//系统展开文件选择页面
                     }
                 });
-
-                ((LinearLayout) findViewById(R.id.content_demonstrate)).addView(fab);
+				((android.support.design.widget.CoordinatorLayout) findViewById(R.id.activity_demonstrate_main)).addView(fab);
+				
+				//列出所有词典
+				DictionaryOpenHelper helper = new DictionaryOpenHelper();
+				String [] list = helper.listExistDictionaries(this);
+				for (int i = 0; i < list.length; i++)
+				{
+					if((list [i]).endsWith(".ld2") || (list [i]).endsWith(".ldx"))
+					{
+						AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+						card.setTitle(list[i]);
+						card.setText(" ");
+						card.setImage(R.drawable.ic_favorite_black_48dp);
+						layout.addView(card);
+					}
+				}
 
 				break;
 			case 1:

@@ -40,7 +40,7 @@ public class DictionaryOpenHelper
 		return null;
 	}
 	
-	public String [] listExistDictionaries(Context context) throws IOException{
+	public String [] listExistDictionaries(Context context) {
 		File defaultDir = new File(DEFAULT_DIRECTORY);
 		if(!defaultDir.exists()){
 			Log.d("listExistDictionary","Dir not exists");
@@ -54,7 +54,7 @@ public class DictionaryOpenHelper
 		return dictionaryNameList;
 	}
 	
-	public boolean isDictionaryExistsInDefaultDirectory(Context context, String name){
+	/*public boolean isDictionaryExistsInDefaultDirectory(Context context, String name){
 		try
 		{
 			if((Arrays.binarySearch(listExistDictionaries(context), name)) >= 0){
@@ -66,7 +66,7 @@ public class DictionaryOpenHelper
 			
 		}
 		return false;
-	}
+	}*/
 	
 	private static void copyFile(Context context, File fromFile, File toFile) 
 	{
