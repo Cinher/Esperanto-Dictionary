@@ -13,6 +13,7 @@ public class Db extends SQLiteOpenHelper
 	{
 		p1.execSQL("CREATE TABLE history(word TEXT)");
 		p1.execSQL("CREATE TABLE dictionaries(path TEXT)");//用户导入的词典路径存储
+		p1.execSQL("CREATE TABLE favorites(word TEXT)");
 	}
 
 	@Override

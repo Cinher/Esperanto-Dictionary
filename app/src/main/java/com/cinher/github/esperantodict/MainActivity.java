@@ -228,22 +228,19 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        final int TYPE_IMPORT = 0;
-        final int TYPE_TRANSLATE = 1;
-        final int TYPE_DONATE = 2;
-        final int TYPE_OPENSOURCE = 3;
-
         if (id == R.id.nav_translate) {
-            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", TYPE_TRANSLATE));
+            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_TRANSLATE));
         } else if (id == R.id.nav_import) {
-            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", TYPE_IMPORT));
+            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_IMPORT));
         } else if (id == R.id.nav_settings) {
             startActivity(new Intent().setClass(MainActivity.this, SettingsActivity.class));
         } else if (id == R.id.nav_opensource) {
-            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", TYPE_OPENSOURCE));
+            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_OPENSOURCE));
         } else if (id == R.id.nav_donate) {
-            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", TYPE_DONATE));
-        }
+            startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_DONATE));
+        } else if (id == R.id.nav_favorits) { 
+			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_FAVORITES));
+		}
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

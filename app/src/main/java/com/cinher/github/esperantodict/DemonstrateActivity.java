@@ -16,14 +16,15 @@ import android.content.*;
 import android.support.v4.app.*;
 import android.*;
 import android.content.pm.*;
+import java.util.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
-	/*public final int TYPE_IMPORT = 0;
-    public final int TYPE_TRANSLATE = 1;
-	public final int TYPE_DONATE = 2;
-	public final int TYPE_OPENSOURCE = 3;
-	*/
+	public static final int TYPE_IMPORT = 0;
+    public static final int TYPE_TRANSLATE = 1;
+	public static final int TYPE_DONATE = 2;
+	public static final int TYPE_OPENSOURCE = 3;
+	public static final int TYPE_FAVORITES = 4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,9 @@ public class DemonstrateActivity extends AppCompatActivity {
 				case 3:
 					title = getResources().getString(R.string.drawer_open_source);
 					break;
+				case 4:
+					title = "Favorites";
+					break;
 				default:
 					break;
 			}
@@ -86,11 +90,11 @@ public class DemonstrateActivity extends AppCompatActivity {
 		LayoutParams paramsPic = new LayoutParams(h, h);
 		LayoutParams paramsLayout = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
 		LayoutParams paramsFull = new LayoutParams(LayoutParams.MATCH_PARENT, h);
+		
+		LinearLayout layout = (LinearLayout) findViewById(R.id.content_demonstrate);
 		switch(TYPE){
 			case 0:
 				//Import
-				
-				LinearLayout layout = (LinearLayout) findViewById(R.id.content_demonstrate);
 				
                 //导入词典 Button
                 FloatingActionButton fab = new FloatingActionButton(this);
@@ -110,15 +114,18 @@ public class DemonstrateActivity extends AppCompatActivity {
 				//列出所有词典
 				DictionaryOpenHelper helper = new DictionaryOpenHelper();
 				String [] list = helper.listExistDictionaries(this);
-				for (int i = 0; i < list.length; i++)
+				if (list != null)
 				{
-					if((list [i]).endsWith(".ld2") || (list [i]).endsWith(".ldx"))
+					for (int i = 0; i < list.length; i++)
 					{
-						AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-						card.setTitle(list[i]);
-						card.setText(" ");
-						card.setImage(R.drawable.ic_favorite_black_48dp);
-						layout.addView(card);
+						if ((list[i]).endsWith(".ld2") || (list[i]).endsWith(".ldx"))
+						{
+							AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+							card.setTitle(list[i]);
+							card.setText(" ");
+							card.setImage(R.drawable.ic_favorite_black_48dp);
+							layout.addView(card);
+						}
 					}
 				}
 
@@ -205,6 +212,34 @@ public class DemonstrateActivity extends AppCompatActivity {
 			case 3:
 				//Open Source
 				break;
+			case 4:
+				//Favorites
+				//用 ListView 显示收藏夹，点击元素时跳转
+				mListView listView = new mListView(this);
+				listView.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
+				List<String> data = new ArrayList<String>();
+				
+				Db db = new Db(getApplicationContext());
+				SQLiteDatabase dbRead = db.getReadableDatabase();
+				Cursor c = dbRead.query("favorites", null, null, null, null, null, null);
+				while (c.moveToNext()) {
+					data.add(c.getString(c.getColumnIndex("word")));
+				}
+				
+				listView.setAdapter(new ArrayAdapter<String>(this, android.R.layout.simple_expandable_list_item_1, data));
+				
+				final List<String> dataArray = data;
+				listView.setOnItemClickListener(new ListView.OnItemClickListener(){
+						@Override                                                
+						public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+							//点击元素时跳转到相应词汇的搜索结果
+							startActivity(new Intent().setClass(DemonstrateActivity.this, ResultActivity.class).putExtra("word", dataArray.get(position)));
+							DemonstrateActivity.this.finish();
+						}
+				});
+				
+				layout.addView(listView);
+				break;
 			default:
 				break;
 			}
@@ -264,4 +299,21 @@ public class DemonstrateActivity extends AppCompatActivity {
             }
         }
     }
+	
+	//修改 ListView，防止在 ScrollView 中只显示一行
+	public class mListView extends ListView {
+		public mListView(Context context) {
+			super(context);
+		}
+
+		public mListView(Context context, AttributeSet attrs) {
+			super(context, attrs);
+		}
+
+		@Override
+		protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
+			int heightSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
+			super.onMeasure(widthMeasureSpec, heightSpec);
+		}
+	}
 }

@@ -28,6 +28,9 @@ import java.util.Map;
 import android.widget.*;
 import android.util.*;
 import java.io.*;
+import android.database.sqlite.*;
+import android.content.*;
+import android.database.*;
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -65,14 +68,39 @@ public class ResultActivity extends AppCompatActivity {
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
             getWindow().setNavigationBarColor(getResources().getColor(R.color.navigationBarColor));
         }
-
+		
         //fab
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+				
+				//收藏
+				Db db = new Db(getApplicationContext());
+				SQLiteDatabase dbWrite = db.getWritableDatabase();
+				ContentValues cv = new ContentValues();
+				cv.put("word", word);
+				SQLiteDatabase dbRead = db.getReadableDatabase();
+				boolean isWordExistInFavorites = false;
+				Cursor c = dbRead.query("favorites", null, null, null, null, null, null);
+				while (c.moveToNext()) {
+					if (word.equals(c.getString(c.getColumnIndex("word")))) {
+						isWordExistInFavorites = true; //收藏夹中有该词汇
+						break;
+					}
+				}
+				
+				//如收藏夹中有该词汇则删除，否则添加
+				if (isWordExistInFavorites){
+					dbWrite.delete("favorites", "word = \'" + word + "\'", null);
+					Snackbar.make(view, "Removed from favorites", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+				}else {
+					dbWrite.insert("favorites", null, cv);
+					Snackbar.make(view, "Added to favorites", Snackbar.LENGTH_LONG)
+                        .setAction("Action", null).show();
+				}
+				dbWrite.close();
             }
         });
 
@@ -101,31 +129,35 @@ public class ResultActivity extends AppCompatActivity {
 		//本地词典结果
 		DictionaryOpenHelper helper = new DictionaryOpenHelper();
 		String [] dictList = helper.listExistDictionaries(this);
-		for (int i = 0; i < dictList.length; i++){ //遍历词典
-			Log.d("ResultActivity", "" + dictList [i]);
-			//第 i 个词典的搜索结果
-			String result = helper.search(this, DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList [i], word);
-			if (result != null)
-			{
-				Log.d("ResultActivity", result);
-				//创建卡片用于显示结果
-				AppCard localDictCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
-				localDictCard.setTitle(dictList [i]);
-				localDictCard.setText(result);
-				resultView.addView(localDictCard);
-			}
-		}
-		for (int i = 0; i < dictList.length; i++) //删除临时文件
+		if (dictList != null)
 		{
-			if((dictList [i]).endsWith(".output")
-			   || (dictList [i]).endsWith(".inflated")
-			   || (dictList [i]).endsWith(".idx")
-			   || (dictList [i]).endsWith(".words")
-			   || (dictList [i]).endsWith(".ld2.xml")
-				)
+			for (int i = 0; i < dictList.length; i++)
+			{ //遍历词典
+				Log.d("ResultActivity", "" + dictList[i]);
+				//第 i 个词典的搜索结果
+				String result = helper.search(this, DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList[i], word);
+				if (result != null)
+				{
+					Log.d("ResultActivity", result);
+					//创建卡片用于显示结果
+					AppCard localDictCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
+					localDictCard.setTitle(dictList[i]);
+					localDictCard.setText(result);
+					resultView.addView(localDictCard);
+				}
+			}
+			for (int i = 0; i < dictList.length; i++) //删除临时文件
 			{
-				File file = new File(DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList [i]);
-				file.delete();
+				if ((dictList[i]).endsWith(".output")
+					|| (dictList[i]).endsWith(".inflated")
+					|| (dictList[i]).endsWith(".idx")
+					|| (dictList[i]).endsWith(".words")
+					|| (dictList[i]).endsWith(".ld2.xml")
+					)
+				{
+					File file = new File(DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList[i]);
+					file.delete();
+				}
 			}
 		}
     }
