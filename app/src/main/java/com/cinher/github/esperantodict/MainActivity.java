@@ -200,12 +200,12 @@ public class MainActivity extends AppCompatActivity
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.main, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -232,13 +232,13 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_TRANSLATE));
         } else if (id == R.id.nav_import) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_IMPORT));
-        } else if (id == R.id.nav_settings) {
+        /*} else if (id == R.id.nav_settings) {
             startActivity(new Intent().setClass(MainActivity.this, SettingsActivity.class));
-        } else if (id == R.id.nav_opensource) {
+        */} else if (id == R.id.nav_opensource) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_OPENSOURCE));
-        } else if (id == R.id.nav_donate) {
+        /*} else if (id == R.id.nav_donate) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_DONATE));
-        } else if (id == R.id.nav_favorits) { 
+        */} else if (id == R.id.nav_favorits) { 
 			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_FAVORITES));
 		}
 
