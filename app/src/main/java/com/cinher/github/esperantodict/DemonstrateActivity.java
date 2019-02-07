@@ -17,6 +17,7 @@ import android.support.v4.app.*;
 import android.*;
 import android.content.pm.*;
 import java.util.*;
+import android.webkit.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
@@ -198,7 +199,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 				card2.setOnClickListener(new View.OnClickListener(){
 						@Override
 						public void onClick(View p){
-							Uri url = Uri.parse("http://translate.google.cn/");
+							Uri url = Uri.parse("http://translate.google.cn/?hl=en#eo|en|");
 							Intent intent = new Intent(Intent.ACTION_VIEW,url);
 							startActivity(intent);
 						}
@@ -211,6 +212,16 @@ public class DemonstrateActivity extends AppCompatActivity {
 				break;
 			case 3:
 				//Open Source
+				WebView webview = new WebView(this);
+				webview.loadUrl("file:///android_asset/opensource.html");
+				webview.setWebViewClient(new WebViewClient(){
+						@Override
+						public boolean shouldOverrideUrlLoading(WebView view, String url) {
+							view.loadUrl(url);
+							return true;
+						}
+					});
+				layout.addView(webview);
 				break;
 			case 4:
 				//Favorites

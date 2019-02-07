@@ -1,6 +1,1292 @@
 <?xml version="1.0" encoding="utf-8"?>
 <words>
-    <word eo="abelo" en="bee" />
-    <word eo="abomeno" en="abomination" />
-    <word eo="aboni" en="subscribe" />
+	<word eo="abelo" en="bee" />
+	<word eo="abomeno" en="abomination" />
+	<word eo="aboni" en="subscribe" />
+	<word eo = "abrupta" en= "abrupt" /> 
+	<word eo = "absoluta" en= "absolute" /> 
+	<word eo = "abstrakta" en= "abstract" /> 
+	<word eo = "absurda" en= "funny" /> 
+	<word eo = "abunda" en= "rich" /> 
+	<word eo = "acida" en= "acid" /> 
+	<word eo = "aĉeti" en= "buy" /> 
+	<word eo = "adapti" en= "adapt" /> 
+	<word eo = "adiaŭ" en= "goodbye" /> 
+	<word eo = "adicii" en= "add" /> 
+	<word eo = "adjektivo" en= "adjective" /> 
+	<word eo = "administri" en= "administer" /> 
+	<word eo = "admiri" en= "admire" /> 
+	<word eo = "admoni" en= "warning" /> 
+	<word eo = "adopti" en= "adoption" /> 
+	<word eo = "adori" en= "love" /> 
+	<word eo = "adreso" en= "address" /> 
+	<word eo = "adverbo" en= "vice word" /> 
+	<word eo = "aero" en= "air" /> 
+	<word eo = "afero" en= "event" /> 
+	<word eo = "afikso" en= "prefix or suffix" /> 
+	<word eo = "afiŝo" en= "poster" /> 
+	<word eo = "afriko" en= "Africa" />
+	<word eo = "agento" en= "agent" /> 
+	<word eo = "aglo" en= "eagle" /> 
+	<word eo = "agrabla" en= "comfortable" /> 
+	<word eo = "aĝa" en= "older" /> 
+	<word eo = "aĝo" en= "age" /> 
+	<word eo = "aidoso" en= "AIDS" /> 
+	<word eo = "ajlo" en= "garlic" /> 
+	<word eo = "ajn" en= "every" /> 
+	<word eo = "aĵo" en= "stuff" /> 
+	<word eo = "akademio" en= "academy" /> 
+	<word eo = "akceli" en= "accelerate" /> 
+	<word eo = "akcento" en= "stress" /> 
+	<word eo = "akcepti" en= "accept" /> 
+	<word eo = "akcio" en= "share" /> 
+	<word eo = "akcidento" en= "accident" /> 
+	<word eo = "akiri" en= "get" /> 
+	<word eo = "akompani" en= "accompany" /> 
+	<word eo = "akra" en= "sharp" /> 
+	<word eo = "akrobato" en= "circus" /> 
+	<word eo = "akso" en= "axis" /> 
+	<word eo = "akto" en= "screen" /> 
+	<word eo = "aktiva" en= "active" /> 
+	<word eo = "aktoro" en= "actor" /> 
+	<word eo = "aktuala" en= "real" /> 
+	<word eo = "akurata" en= "on time" /> 
+	<word eo = "akuzi" en= "accuse" /> 
+	<word eo = "akvo" en= "water" /> 
+	<word eo = "akvumi" en= "watering" /> 
+	<word eo = "al" en= "to" /> 
+	<word eo = "alarmo" en= "warning" /> 
+	<word eo = "albumo" en= "album" /> 
+	<word eo = "aldoni" en= "add" /> 
+	<word eo = "alergio" en= "allergy" /> 
+	<word eo = "alfabeto" en= "alphabet" /> 
+	<word eo = "algo" en= "seaweed" /> 
+	<word eo = "alia" en= "other" /> 
+	<word eo = "aliĝi" en= "filled" /> 
+	<word eo = "alko" en= "elk" /> 
+	<word eo = "alkoholo" en= "alcohol" /> 
+	<word eo = "almenaŭ" en= "minimum" /> 
+	<word eo = "almozo" en= "charity" /> 
+	<word eo = "alta" en= "high" /> 
+	<word eo = "alterni" en= "alternative" /> 
+	<word eo = "alternativo" en= "instead of" /> 
+	<word eo = "alumeto" en= "match" /> 
+	<word eo = "aluminio" en= "aluminum" /> 
+	<word eo = "ami" en= "love" /> 
+	<word eo = "amaso" en= "a lot of" /> 
+	<word eo = "amatoro" en= "amateur" /> 
+	<word eo = "ambasadoro" en= "ambassador" /> 
+	<word eo = "ambaŭ" en= "both" /> 
+	<word eo = "ambulanco" en= "ambulance" /> 
+	<word eo = "amelo" en= "starch" /> 
+	<word eo = "ameriko" en= "America" /> 
+	<word eo = "amfibio" en= "amphibians" /> 
+	<word eo = "amiko" en= "friend" /> 
+	<word eo = "amuzi" en= "entertain" /> 
+	<word eo = "anekdoto" en= "anecdote" /> 
+	<word eo = "angla" en= "English, British" /> 
+	<word eo = "angulo" en= "angle" /> 
+	<word eo = "anĝelo" en= "Angel" /> 
+	<word eo = "animo" en= "soul" /> 
+	<word eo = "animalo" en= "animal" /> 
+	<word eo = "ankaŭ" en= "also" /> 
+	<word eo = "ankoraŭ" en= "still" /> 
+	<word eo = "ano" en= "member" /> 
+	<word eo = "anonci" en= "declared" /> 
+	<word eo = "ansero" en= "goose" /> 
+	<word eo = "anstataŭ" en= "instead of" /> 
+	<word eo = "antaŭ" en= "previously" /> 
+	<word eo = "antaŭulo" en= "senior" /> 
+	<word eo = "anteno" en= "antenna" /> 
+	<word eo = "antibiotiko" en= "antibiotic" /> 
+	<word eo = "antilopo" en= "Antelope" /> 
+	<word eo = "aparta" en= "other" /> 
+	<word eo = "apartamento" en= "apartment" /> 
+	<word eo = "aparteni" en= "belongs" /> 
+	<word eo = "apenaŭ" en= "close" /> 
+	<word eo = "aperi" en= "appear" /> 
+	<word eo = "apetito" en= "appetite" /> 
+	<word eo = "aplaŭdi" en= "applaud" /> 
+	<word eo = "apliki" en= "application" /> 
+	<word eo = "apogi" en= "support" /> 
+	<word eo = "apoteko" en= "pharmacy" /> 
+	<word eo = "apro" en= "wild boar" /> 
+	<word eo = "aprilo" en= "April" /> 
+	<word eo = "aprobi" en= "recognized" /> 
+	<word eo = "apud" en= "close" /> 
+	<word eo = "aranĝi" en= "arrangements" /> 
+	<word eo = "arbo" en= "tree" /> 
+	<word eo = "arbitra" en= "any of the" /> 
+	<word eo = "armeo" en= "Army" /> 
+	<word eo = "armi" en= "armed" /> 
+	<word eo = "armo" en= "weapon" /> 
+	<word eo = "aromo" en= "aroma" /> 
+	<word eo = "arto" en= "art" /> 
+	<word eo = "arterio" en= "artery" /> 
+	<word eo = "artifiko" en= "tricks" /> 
+	<word eo = "artiko" en= "joint" /> 
+	<word eo = "artiklo" en= "object" /> 
+	<word eo = "artikolo" en= "article" /> 
+	<word eo = "asekuri" en= "insurance" /> 
+	<word eo = "asembleo" en= "rally" /> 
+	<word eo = "aserti" en= "assertion" /> 
+	<word eo = "asisti" en= "help" /> 
+	<word eo = "asocio" en= "association" /> 
+	<word eo = "aspekti" en= "looks like" /> 
+	<word eo = "astro" en= "astronomical" /> 
+	<word eo = "ataki" en= "attack" /> 
+	<word eo = "atenci" en= "infringement" /> 
+	<word eo = "atendi" en= "wait" /> 
+	<word eo = "atenta" en= "note" /> 
+	<word eo = "atesti" en= "prove" /> 
+	<word eo = "Atlantiko" en= "Atlantic" /> 
+	<word eo = "atomo" en= "atom" /> 
+	<word eo = "aŭ" en= "or" /> 
+	<word eo = "aŭdi" en= "listen" /> 
+	<word eo = "aŭgusto" en= "August" /> 
+	<word eo = "aŭskulti" en= "listen" /> 
+	<word eo = "Aŭstralio" en= "Australia" /> 
+	<word eo = "aŭto" en= "car" /> 
+	<word eo = "aŭtobuso" en= "bus" /> 
+	<word eo = "aŭtomato" en= "automatic sold device" /> 
+	<word eo = "aŭtomobilo" en= "car" /> 
+	<word eo = "aŭtoro" en= "author" /> 
+	<word eo = "aŭtuno" en= "fall" /> 
+	<word eo = "avo" en= "grandfather" /> 
+	<word eo = "avantaĝo" en= "advantages" /> 
+	<word eo = "avara" en= "mean" /> 
+	<word eo = "aventuro" en= "adventure" /> 
+	<word eo = "avenuo" en= "avenue" /> 
+	<word eo = "averti" en= "notice" /> 
+	<word eo = "aviadilo" en= "aircraft" /> 
+	<word eo = "avida" en= "eager" /> 
+	<word eo = "azeno" en= "ass" /> 
+	<word eo = "Azio" en= "Asia" />
+	<word eo = "babili" en= "chat" />
+	<word eo = "baki" en= "bake"/>
+	<word eo = "bakterio" en= "bacteria" />
+	<word eo = "balo" en= "dance" />
+	<word eo = "balai" en= "cleaning" />
+	<word eo = "balanci" en= "balanced" />
+	<word eo = "balbuti" en= "stutter"/>
+	<word eo = "baldaŭ" en= "immediately" />
+	<word eo = "baleno" en= "whale" />
+	<word eo = "balkono" en= "balcony" />
+	<word eo = "balono" en= "ball"/>
+	<word eo = "baloti" en= "voting" />
+	<word eo = "bambuo" en= "bamboo"/>
+	<word eo = "bani" en= "bath"/>
+	<word eo = "banano" en= "banana"/>
+	<word eo = "bandaĝo" en= "bandage" />
+	<word eo = "banko" en= "bank" />
+	<word eo = "banto" en= "bow tie" />
+	<word eo = "barbo" en= "whiskers" />
+	<word eo = "barbiro" en= "barber" />
+	<word eo = "barelo" en= "barrel" /> 
+	<word eo = "barilo" en= "railing" />
+	<word eo = "bastono" en= "stir" />
+	<word eo = "bati" en= "hit"/>
+	<word eo = "batali" en= "hiccup"/>
+	<word eo = "baterio" en= "battery" />
+	<word eo = "bazo" en= "base"/>
+	<word eo = "bazaro" en= "shopping, market"/>
+	<word eo = "bebo" en= "baby"/>
+	<word eo = "bedaŭri" en= "repent"/>
+	<word eo = "bela" en= "beautiful" />
+	<word eo = "beni" en= "blessing" />
+	<word eo = "bendo" en= "band" />
+	<word eo = "benko" en= "bench"/>
+	<word eo = "besto" en= "animal" />
+	<word eo = "beto" en= "beet" />
+	<word eo = "betono" en= "concrete" />
+	<word eo = "bezoni" en= "need"/>
+	<word eo = "biblioteko" en= "library" />
+	<word eo = "biciklo" en= "bicycle" />
+	<word eo = "bido" en= "small bead"/>
+	<word eo = "biero" en= "beer"/>
+	<word eo = "bifsteko" en= "steak"/>
+	<word eo = "birdo" en= "bird" />
+	<word eo = "blanka" en= "white" />
+	<word eo = "blinda" en= "blind"/>
+	<word eo = "bloko" en= "block"/>
+	<word eo = "blonda" en= "blonde" />
+	<word eo = "blovi" en= "blowing"/>
+	<word eo = "blua" en= "blue" />
+	<word eo = "boato" en= "ship"/>
+	<word eo = "bombo" en= "bomb" />
+	<word eo = "bona" en= "good"/>
+	<word eo = "bonvoli" en= "please"/>
+	<word eo = "bordo" en= "boundary" />
+	<word eo = "botelo" en= "bottle"/>
+	<word eo = "bovo" en= "cow" />
+	<word eo = "bovlo" en= "bowl"/>
+	<word eo = "braceleto" en= "bracelet" />
+	<word eo = "brako" en= "arm"/>
+	<word eo = "brakumi" en= "hug"/>
+	<word eo = "brava" en= "Brave" />
+	<word eo = "bredi" en= "raise" />
+	<word eo = "bremso" en= "brake" />
+	<word eo = "briko" en= "brick"/>
+	<word eo = "brili" en= "bright"/>
+	<word eo = "broĉo" en= "pin"/>
+	<word eo = "broso" en= "brush"/>
+	<word eo = "brovo" en= "eyebrows"/>
+	<word eo = "bruli" en= "burning" />
+	<word eo = "bruna" en= "brown" />
+	<word eo = "brusto" en= "chest"/>
+	<word eo = "bruto" en= "livestock"/>
+	<word eo = "budĝeto" en= "budget" />
+	<word eo = "bulvardo" en= "street"/>
+	<word eo = "burĝo" en= "citizen"/>
+	<word eo = "buso" en= "bus"/>
+	<word eo = "buŝo" en= "mouth"/>
+	<word eo = "butero" en= "cream"/>
+	<word eo = "butiko" en= "shop"/>
+	<word eo="cedi" en="give up" />
+	<word eo="celo" en="target" />
+	<word eo="cemento" en="cement, concrete" />
+	<word eo="cendo" en="cent" />
+	<word eo="cent" en="hundred" />
+	<word eo="centimetro" en="cm" />
+	<word eo="centro" en="center" />
+	<word eo="cerbo" en="brain" />
+	<word eo="cerbumi" en="think" />
+	<word eo="ceremonio" en="ceremony" />
+	<word eo="certa" en="OK" />
+	<word eo="cervo" en="deer" />
+	<word eo="cetera" en="other" />
+	<word eo="ci" en="you (disrespectful)" />
+	<word eo="cifero" en="number" />
+	<word eo="cigaredo" en="cigarette" />
+	<word eo="cigno" en="swan" />
+	<word eo="ciklo" en="circle" />
+	<word eo="cikonio" en="crane" />
+	<word eo="cilindro" en="column" />
+	<word eo="cirklo" en="circle" />
+	<word eo="cirkvito" en="circuit" />
+	<word eo="civila" en="citizen's" />
+	<word eo="civilizi" en="civilization" />
+	<word eo="colo" en="inch" />
+	<word eo="ĉambro" en="room" />
+	<word eo="Ĉanŝa" en="Changsha" />
+	<word eo="ĉapo" en="hat" />
+	<word eo="ĉapelo" en="hat" />
+	<word eo="ĉar" en="because" />
+	<word eo="ĉarma" en="cute" />
+	<word eo="ĉasta" en="clean, pure" />
+	<word eo="ĉefuzanto" en="root" />
+	<word eo="ĉeko" en="check" />
+	<word eo="ĉelo" en="cell" />
+	<word eo="ĉemizo" en="shirt" />
+	<word eo="ĉeno" en="chain" />
+	<word eo="ĉerizo" en="cherry" />
+	<word eo="ĉerko" en="棺材" />
+	<word eo="ĉesi" en="stop" />
+	<word eo="ĉevalo" en="horse" />
+	<word eo="ĉia" en="any" />
+	<word eo="ĉial" en="any reason" />
+	<word eo="ĉiam" en="at any time" />
+	<word eo="ĉie" en="anywhere" />
+	<word eo="ĉiel" en="in any way" />
+	<word eo="ĉielo" en="sky" />
+	<word eo="ĉies" en="anyone" />
+	<word eo="Ĉina" en="Chinese" />
+	<word eo="Ĉingdaŭo" en="Qingdao" />
+	<word eo="Ĉinio" en="China" />
+	<word eo="ĉio" en="all" />
+	<word eo="ĉiom" en="all" />
+	<word eo="ĉirkaŭaĵo" en="environment" />
+	<word eo="ĉiu" en="any" />
+	<word eo="Ĉjiĉjiharo" en="Qiqihar" />
+	<word eo="ĉokolado" en="chocolate" />
+	<word eo="Ĉongĉingo" en="Chongqing" />
+	<word eo="ĉu" en="whether" />
+	<word eo="danci" en="dancing" />
+	<word eo="danĝero" en="danger" />
+	<word eo="dankegon" en="thank you" />
+	<word eo="danki" en="thank you" />
+	<word eo="dankon" en="thanks" />
+	<word eo="dato" en="date" />
+	<word eo="daŭro" en="during" />
+	<word eo="de" en="of" />
+	<word eo="debeto" en="debt" />
+	<word eo="deci" en="fit" />
+	<word eo="decembro" en="December" />
+	<word eo="decidi" en="decision" />
+	<word eo="defendi" en="resistance" />
+	<word eo="definitiva" en="determined" />
+	<word eo="degeli" en="melting" />
+	<word eo="deĵori" en="on duty" />
+	<word eo="dek" en="ten" />
+	<word eo="deklari" en="declaration" />
+	<word eo="dekstra" en="right" />
+	<word eo="delikata" en="exquisite" />
+	<word eo="demandi" en="demand" />
+	<word eo="demokratio" en="democracy" />
+	<word eo="denove" en="re" />
+	<word eo="densa" en="thick" />
+	<word eo="dento" en="tooth" />
+	<word eo="deponi" en="inventory, deposit" />
+	<word eo="depreni" en="take away, remove" />
+	<word eo="deprimi" en="frustrated" />
+	<word eo="derivi" en="export" />
+	<word eo="determini" en="determination" />
+	<word eo="detrui" en="destruction" />
+	<word eo="devi" en="must" />
+	<word eo="devontigi" en="obligation" />
+	<word eo="dezerto" en="desert" />
+	<word eo="dio" en="god" />
+	<word eo="diablo" en="devil" />
+	<word eo="dialogo" en="dialog" />
+	<word eo="dianto" en="carnation" />
+	<word eo="dieto" en="dieting" />
+	<word eo="difekti" en="destruction" />
+	<word eo="diferenci" en="difference" />
+	<word eo="difini" en="definition" />
+	<word eo="digesti" en="digestion" />
+	<word eo="dika" en="thick" />
+	<word eo="dimanĉo" en="Sunday" />
+	<word eo="dimensio" en="margin, size" />
+	<word eo="diplomo" en="certificate" />
+	<word eo="diri" en="say" />
+	<word eo="direkto" en="direction" />
+	<word eo="direktoro" en="leader" />
+	<word eo="disko" en="disk" />
+	<word eo="diskuti" en="discussion" />
+	<word eo="disputi" en="arguing" />
+	<word eo="distanco" en="distance" />
+	<word eo="distingi" en="difference" />
+	<word eo="distribui" en="distribution" />
+	<word eo="dividi" en="diving, except" />
+	<word eo="doktoro" en="doctor" />
+	<word eo="dokumento" en="document" />
+	<word eo="dolĉa" en="sweet" />
+	<word eo="doloro" en="fear" />
+	<word eo="domo" en="house" />
+	<word eo="domaĝi" en="sorry" />
+	<word eo="domaĝo" en="loss" />
+	<word eo="doni" en="give" />
+	<word eo="donaco" en="gifts" />
+	<word eo="dormi" en="sleep" />
+	<word eo="du" en="two" />
+	<word eo="dubi" en="doubt" />
+	<word eo="dum" en="in" />
+	<word eo="ebla" en="able" />
+	<word eo="eĉ" en="even" />
+	<word eo="eduki" en="education" />
+	<word eo="edzo" en="husband" />
+	<word eo="efekto" en="reaction" />
+	<word eo="efiki" en="effect" />
+	<word eo="egala" en="same" />
+	<word eo="eĥo" en="echo" />
+	<word eo="ekipi" en="equipment" />
+	<word eo="ekonomio" en="economics" />
+	<word eo="ekrano" en="display" />
+	<word eo="ekspedi" en="send" />
+	<word eo="eksperimento" en="experiment" />
+	<word eo="eksplodi" en="explosion" />
+	<word eo="eksporti" en="export" />
+	<word eo="ekspozicio" en="exhibition" />
+	<word eo="ekzerci" en="practice, exercise" />
+	<word eo="ekzisti" en="presence" />
+	<word eo="el" en="from" />
+	<word eo="elefanto" en="elephant" />
+	<word eo="eleganta" en="elegant" />
+	<word eo="elekti" en="election, choose" />
+	<word eo="elektro" en="electricity" />
+	<word eo="elektroniko" en="electrical" />
+	<word eo="elemento" en="element" />
+	<word eo="emocio" en="emotion" />
+	<word eo="en" en="in" />
+	<word eo="energio" en="energy, energy" />
+	<word eo="enhavo" en="content" />
+	<word eo="entrepreni" en="business" />
+	<word eo="entuziasma" en="enthusiasm" />
+	<word eo="envii" en="envy" />
+	<word eo="Eo" en="Esperanto (abbreviation)" />
+	<word eo="epoko" en="age" />
+	<word eo="escepti" en="except" />
+	<word eo="esenco" en="factor" />
+	<word eo="espero" en="hope" />
+	<word eo="Esperanto" en="Esperanto" />
+	<word eo="Esperantisto" en="Esperantist" />
+	<word eo="esplori" en="explore" />
+	<word eo="esprimi" en="performance" />
+	<word eo="esti" en="yes" />
+	<word eo="estas" en="yes" />
+	<word eo="establi" en="establish" />
+	<word eo="estigi" en="development" />
+	<word eo="estimi" en="estimate" />
+	<word eo="estingi" en="destroy" />
+	<word eo="Eŭropo" en="Europe" />
+	<word eo="evidenta" en="obvious" />
+	<word eo="evolui" en="envolve" />
+	<word eo="fabelo" en="fairy" />
+	<word eo="fablo" en="fables" />
+	<word eo="fabriko" en="factor" />
+	<word eo="faco" en="plane" />
+	<word eo="facila" en="simple" />
+	<word eo="fajro" en="fire" />
+	<word eo="faksi" en="fax" />
+	<word eo="fakto" en="facts" />
+	<word eo="familio" en="family" />
+	<word eo="familiara" en="familiar" />
+	<word eo="fandi" en="melting" />
+	<word eo="farti" en="do" />
+	<word eo="februaro" en="February" />
+	<word eo="feliĉa" en="happy" />
+	<word eo="felto" en="felt" />
+	<word eo="fero" en="iron" />
+	<word eo="ferio" en="holiday" />
+	<word eo="fermi" en="off" />
+	<word eo="fianĉo" en="fiancé" />
+	<word eo="filo" en="child" />
+	<word eo="fini" en="end" />
+	<word eo="fingro" en="finger" />
+	<word eo="firma" en="hard" />
+	<word eo="fiŝo" en="fish" />
+	<word eo="fiziko" en="physical" />
+	<word eo="flago" en="flag" />
+	<word eo="flagri" en="blinking" />
+	<word eo="flamo" en="flame" />
+	<word eo="flava" en="yellow" />
+	<word eo="floro" en="flower" />
+	<word eo="flugi" en="fly" />
+	<word eo="for" en="Leave" />
+	<word eo="formala" en="formulated" />
+	<word eo="formulo" en="formula" />
+	<word eo="foto" en="photo" />
+	<word eo="fotografi" en="photography" />
+	<word eo="frago" en="sweet" />
+	<word eo="frako" en="Tuxedo" />
+	<word eo="frakasi" en="breaking" />
+	<word eo="frato" en="brother" />
+	<word eo="fraŭdi" en="cheat" />
+	<word eo="freŝa" en="fresh" />
+	<word eo="futbalo" en="soccer" />
+	<word eo="gasto" en="guest" />
+	<word eo="gazeto" en="newspaper" />
+	<word eo="generalo" en="general" />
+	<word eo="genio" en="genius" />
+	<word eo="geografio" en="geography" />
+	<word eo="gesti" en="gesturing" />
+	<word eo="gramatiko" en="grammar" />
+	<word eo="granda" en="large" />
+	<word eo="grandioza" en="gogerous" />
+	<word eo="gratuli" en="congratulations" />
+	<word eo="grundo" en="ground" />
+	<word eo="grupo" en="group" />
+	<word eo="Ĝalantungo" en="Zhalantun" />
+	<word eo="ĝardeno" en="garden" />
+	<word eo="ĝemi" en="groan, moan" />
+	<word eo="ĝemelo" en="twin" />
+	<word eo="ĝenerala" en="general" />
+	<word eo="ĝentilo" en="gentleman" />
+	<word eo="ĝermo" en="bud" />
+	<word eo="ĝi" en="it" />
+	<word eo="ĝirafo" en="giraffe" />
+	<word eo="ĝis" en="until" />
+	<word eo="ĝoji" en="happy" />
+	<word eo="ĝusta" en="correct" />
+	<word eo="halo" en="hall" />
+	<word eo="halti" en="stop" />
+	<word eo="haro" en="hair" />
+	<word eo="harmonio" en="harmony" />
+	<word eo="harpo" en="harp" />
+	<word eo="havi" en="has" />
+	<word eo="haveno" en="port" />
+	<word eo="hejmo" en="home" />
+	<word eo="helikoptero" en="helicopter" />
+	<word eo="helpi" en="help" />
+	<word eo="historio" en="history" />
+	<word eo="homo" en="human" />
+	<word eo="honesta" en="honest" />
+	<word eo="honoro" en="glory" />
+	<word eo="honti" en="shame" />
+	<word eo="horo" en="hour" />
+	<word eo="horaro" en="timetable" />
+	<word eo="horizontalo" en="horizontal line" />
+	<word eo="hospitalo" en="hospital" />
+	<word eo="hotelo" en="hotel" />
+	<word eo="humana" en="humanity" />
+	<word eo="humoro" en="humor" />
+	<word eo="hundo" en="dog" />
+	<word eo="ĥoro" en="chorus" />
+	<word eo="iam" en="sometime" />
+	<word eo="ideala" en="ideal" />
+	<word eo="ie" en="somewhere" />
+	<word eo="iel" en="some reason" />
+	<word eo="ies" en="someone's" />
+	<word eo="ignori" en="ignore" />
+	<word eo="ili" en="they" />
+	<word eo="imagi" en="imagination" />
+	<word eo="imiti" en="imitation" />
+	<word eo="imperio" en="empire" />
+	<word eo="importi" en="export" />
+	<word eo="impreso" en="impression" />
+	<word eo="individuo" en="personal" />
+	<word eo="industrio" en="industrial" />
+	<word eo="infano" en="child" />
+	<word eo="infekti" en="infection" />
+	<word eo="injekti" en="injection" />
+	<word eo="inko" en="ink" />
+	<word eo="inkluziva" en="include" />
+	<word eo="insekto" en="insect" />
+	<word eo="insigno" en="badge" />
+	<word eo="insisti" en="persist" />
+	<word eo="instali" en="installation" />
+	<word eo="instrumento" en="instrument, musical instrument" />
+	<word eo="insulo" en="island" />
+	<word eo="intelekto" en="wisdom" />
+	<word eo="inteligenta" en="Smart" />
+	<word eo="intenci" en="imagination" />
+	<word eo="inter" en="inter" />
+	<word eo="intereso" en="interest" />
+	<word eo="interna" en="internal" />
+	<word eo="internacia" en="international" />
+	<word eo="interpreti" en="interpreter" />
+	<word eo="interrompi" en="interrupt" />
+	<word eo="inventi" en="invention" />
+	<word eo="inversa" en="reverse" />
+	<word eo="inviti" en="invitation" />
+	<word eo="io" en="something" />
+	<word eo="iri" en="go" />
+	<word eo="ja" en="yes" />
+	<word eo="januaro" en="January" />
+	<word eo="jaro" en="year" />
+	<word eo="je" en="in" />
+	<word eo="jen" en="here" />
+	<word eo="jes" en="yes" />
+	<word eo="julio" en="July" />
+	<word eo="juna" en="young" />
+	<word eo="junio" en="June" />
+	<word eo="jupo" en="skirt" />
+	<word eo="justa" en="just" />
+	<word eo="juvelo" en="jewel" />
+	<word eo="ĵaluza" en="jealous" />
+	<word eo="ĵaŭdo" en="Thursday" />
+	<word eo="ĵurnalo" en="magazine" />
+	<word eo="ĵus" en="just" />
+	<word eo="kafo" en="coffee" />
+	<word eo="kaj" en="and" />
+	<word eo="kalkuli" en="calculation" />
+	<word eo="kampo" en="farm" />
+	<word eo="kanalo" en="canal" />
+	<word eo="kancero" en="cancer" />
+	<word eo="kandelo" en="candle" />
+	<word eo="kandidato" en="candidate" />
+	<word eo="kanti" en="singing" />
+	<word eo="kapo" en="hat" />
+	<word eo="kara" en="dear" />
+	<word eo="karto" en="card" />
+	<word eo="kastelo" en="castle" />
+	<word eo="kaŭzo" en="cause" />
+	<word eo="kemio" en="chemistry" />
+	<word eo="kerno" en="kernal, center" />
+	<word eo="kesto" en="box" />
+	<word eo="kia" en="how" />
+	<word eo="kial" en="why" />
+	<word eo="kiam" en="when" />
+	<word eo="kie" en="what place" />
+	<word eo="kiel" en="how" />
+	<word eo="kies" en="how" />
+	<word eo="kilogramo" en="kilogram" />
+	<word eo="kilometro" en="kilometer" />
+	<word eo="kio" en="what" />
+	<word eo="kiom" en="how much" />
+	<word eo="kiu" en="who" />
+	<word eo="klaso" en="class" />
+	<word eo="klavaro" en="keyboard" />
+	<word eo="knabo" en="child" />
+	<word eo="koloro" en="color" />
+	<word eo="komandi" en="command" />
+	<word eo="kombi" en="combination, group" />
+	<word eo="kombini" en="combined" />
+	<word eo="komenti" en="comment" />
+	<word eo="komforta" en="comfortable" />
+	<word eo="kompanio" en="company" />
+	<word eo="kompari" en="compare" />
+	<word eo="kompati" en="sympathy" />
+	<word eo="kompensi" en="compensation" />
+	<word eo="komposti" en="composition" />
+	<word eo="kpmputilo" en="computer" />
+	<word eo="koncerto" en="concert" />
+	<word eo="konfirmi" en="confirm" />
+	<word eo="kongreso" en="meeting" />
+	<word eo="konjekti" en="guess" />
+	<word eo="konko" en="mollus" />
+	<word eo="konkludo" en="conclusion" />
+	<word eo="konservi" en="save" />
+	<word eo="konsili" en="recommended" />
+	<word eo="konstati" en="notice" />
+	<word eo="konto" en="account" />
+	<word eo="kontesti" en="arguing" />
+	<word eo="kontinento" en="continient" />
+	<word eo="kontrasto" en="contrast" />
+	<word eo="kontribui" en="contribution" />
+	<word eo="kontroli" en="control" />
+	<word eo="kopi" en="copy" />
+	<word eo="koro" en="heart" />
+	<word eo="korekti" en="correct" />
+	<word eo="korpo" en="body" />
+	<word eo="kortumo" en="court" />
+	<word eo="kosmo" en="universe" />
+	<word eo="kosti" en="spending" />
+	<word eo="kostumo" en="clothing" />
+	<word eo="krajono" en="pencil" />
+	<word eo="krampo" en="bracket" />
+	<word eo="kredi" en="trust" />
+	<word eo="kredito" en="credit" />
+	<word eo="krepusko" en="morning" />
+	<word eo="kreski" en="growth" />
+	<word eo="krii" en="scream" />
+	<word eo="kriterio" en="view" />
+	<word eo="kritiki" en="critic" />
+	<word eo="krokodilo" en="crocodile" />
+	<word eo="kruro" en="leg" />
+	<word eo="kubo" en="cube" />
+	<word eo="kulturo" en="culture" />
+	<word eo="kun" en="and" />
+	<word eo="kupro" en="copper" />
+	<word eo="kuri" en="run" />
+	<word eo="kurso" en="course" />
+	<word eo="kutimo" en="habit" />
+	<word eo="kvadrato" en="square" />
+	<word eo="kvankam" en="although" />
+	<word eo="kvar" en="four" />
+	<word eo="kvartalo" en="urban" />
+	<word eo="kvieta" en="quiet" />
+	<word eo="kvin" en="five" />
+	<word eo="kvitanci" en="write receipt" />
+	<word eo="la" en="the" />
+	<word eo="labori" en="work" />
+	<word eo="laboratorio" en="studio, lab" />
+	<word eo="laca" en="tired" />
+	<word eo="laĉo" en="lace" />
+	<word eo="lago" en="lake" />
+	<word eo="lakto" en="milk" />
+	<word eo="lando" en="land" />
+	<word eo="lanterno" en="lantern" />
+	<word eo="lardo" en="grease" />
+	<word eo="lasta" en="final" />
+	<word eo="lavi" en="wash" />
+	<word eo="leciono" en="course" />
+	<word eo="lerni" en="study" />
+	<word eo="letero" en="letter" />
+	<word eo="levi" en="lift" />
+	<word eo="li" en="he" />
+	<word eo="libera" en="free" />
+	<word eo="libro" en="book" />
+	<word eo="liceo" en="high school" />
+	<word eo="licenco" en="license" />
+	<word eo="lifto" en="elevator" />
+	<word eo="ligo" en="organization, league" />
+	<word eo="limo" en="boundary" />
+	<word eo="lingvo" en="language" />
+	<word eo="linio" en="line" />
+	<word eo="listo" en="list" />
+	<word eo="lito" en="bed" />
+	<word eo="litero" en="character" />
+	<word eo="literaturo" en="literature" />
+	<word eo="lojala" en="loyal" />
+	<word eo="longa" en="long" />
+	<word eo="ludi" en="play" />
+	<word eo="lumi" en="illuminate" />
+	<word eo="lumo" en="light" />
+	<word eo="luno" en="moon" />
+	<word eo="lundo" en="Monday" />
+	<word eo="magio" en="magic" />
+	<word eo="magneto" en="magnet" />
+	<word eo="majo" en="May" />
+	<word eo="mano" en="hand" />
+	<word eo="mango" en="mango" />
+	<word eo="manĝi" en="eat" />
+	<word eo="mapo" en="map" />
+	<word eo="maro" en="ocean" />
+	<word eo="mardo" en="Tuesday" />
+	<word eo="marko" en="mark" />
+	<word eo="Marks-Leninismo" en="Marxism-Leninism" />
+	<word eo="marto" en="March" />
+	<word eo="maso" en="quality" />
+	<word eo="masko" en="mask" />
+	<word eo="mastro" en="owner, master" />
+	<word eo="matematiko" en="math" />
+	<word eo="mateno" en="morning" />
+	<word eo="materialo" en="material" />
+	<word eo="matura" en="mature" />
+	<word eo="medicino" en="medicine" />
+	<word eo="menuo" en="menu, menu" />
+	<word eo="merkredo" en="Wednesday" />
+	<word eo="mesaĝo" en="information" />
+	<word eo="metalo" en="metal" />
+	<word eo="metro" en="meter" />
+	<word eo="mezo" en="middle" />
+	<word eo="mi" en="I" />
+	<word eo="mil" en="thousand" />
+	<word eo="miliono" en="million" />
+	<word eo="militi" en="do battle" />
+	<word eo="ministerio" en="department, ministry" />
+	<word eo="ministro" en="minister" />
+	<word eo="minus" en="minus" />
+	<word eo="minuto" en="minute" />
+	<word eo="miraklo" en="miracle" />
+	<word eo="moderna" en="modern" />
+	<word eo="modifi" en="edit" />
+	<word eo="moki" en="smirking" />
+	<word eo="mola" en="soft" />
+	<word eo="molekulo" en="molecule" />
+	<word eo="mono" en="money" />
+	<word eo="monaĥo" en="dystiny" />
+	<word eo="mondo" en="world" />
+	<word eo="monto" en="mountain" />
+	<word eo="moralo" en="moral" />
+	<word eo="morti" en="dead" />
+	<word eo="motoro" en="engine" />
+	<word eo="multipliki" en="multiply" />
+	<word eo="muso" en="mouse" />
+	<word eo="muzeo" en="museum" />
+	<word eo="muziko" en="music" />
+	<word eo="nacio" en="nation, country" />
+	<word eo="naĝi" en="swim" />
+	<word eo="naiva" en="naive" />
+	<word eo="naski" en="born" />
+	<word eo="naturo" en="natural" />
+	<word eo="naŭ" en="nine" />
+	<word eo="naŭzi" en="disgusting" />
+	<word eo="ne" en="not" />
+	<word eo="nebulo" en="cloud" />
+	<word eo="necesa" en="necessary" />
+	<word eo="necesejo" en="toilet" />
+	<word eo="negativa" en="negative" />
+	<word eo="neĝo" en="snow" />
+	<word eo="nenia" en="nothing" />
+	<word eo="neniam" en="not at any time" />
+	<word eo="nenie" en="nowhere" />
+	<word eo="neniel" en="no matter how" />
+	<word eo="nenio" en="none" />
+	<word eo="nervo" en="neural" />
+	<word eo="ni" en="we" />
+	<word eo="nigra" en="black" />
+	<word eo="nobla" en="noble" />
+	<word eo="nokto" en="night" />
+	<word eo="nomo" en="name" />
+	<word eo="nombro" en="number" />
+	<word eo="nordo" en="north" />
+	<word eo="normala" en="normal" />
+	<word eo="noto" en="notes" />
+	<word eo="nova" en="new" />
+	<word eo="novaĵo" en="news" />
+	<word eo="novelo" en="short novel" />
+	<word eo="novembro" en="November" />
+	<word eo="nun" en="now" />
+	<word eo="obei" en=" respect" />
+	<word eo="obligacio" en="responsibility" />
+	<word eo="observi" en="observation" />
+	<word eo="oceano" en="ocean" />
+	<word eo="oferti" en="provided" />
+	<word eo="ofico" en="position" />
+	<word eo="oficiala" en="official" />
+	<word eo="oficiro" en="officer" />
+	<word eo="ofta" en="often" />
+	<word eo="ok" en="eight" />
+	<word eo="okcidento" en="western" />
+	<word eo="oksigeno" en="oxygen" />
+	<word eo="oktobro" en="October" />
+	<word eo="okulo" en="eyes" />
+	<word eo="okupi" en="occupation" />
+	<word eo="ol" en="than" />
+	<word eo="oleo" en="oil" />
+	<word eo="olivo" en="olive" />
+	<word eo="ombro" en="shadow" />
+	<word eo="ombrelo" en="umbrella" />
+	<word eo="oni" en="one person" />
+	<word eo="onidiro" en="legend" />
+	<word eo="opero" en="opera" />
+	<word eo="oranĝo" en="orange" />
+	<word eo="ordinara" en="normal" />
+	<word eo="ordoni" en="command" />
+	<word eo="orelo" en="ear" />
+	<word eo="orfo" en="orphan" />
+	<word eo="organo" en="organ" />
+	<word eo="organika" en="organic" />
+	<word eo="organizi" en="organization" />
+	<word eo="orgeno" en="accord" />
+	<word eo="oriento" en="Oriental" />
+	<word eo="originalo" en="original" />
+	<word eo="orkestro" en="band" />
+	<word eo="ornami" en="decoration" />
+	<word eo="orto" en="right angle" />
+	<word eo="osto" en="bone" />
+	<word eo="ovo" en="egg" />
+	<word eo="paco" en="peace" />
+	<word eo="pacienca" en="patient" />
+	<word eo="paciento" en="patient" />
+	<word eo="Pacifiko" en="Pacific" />
+	<word eo="paĉjo" en="dad" />
+	<word eo="pado" en="path" />
+	<word eo="pafi" en="shooting" />
+	<word eo="pagi" en="payment" />
+	<word eo="paĝo" en="page" />
+	<word eo="pajlo" en="hay" />
+	<word eo="pako" en="package" />
+	<word eo="palaco" en="gong" />
+	<word eo="paliso" en="pile, stick" />
+	<word eo="pano" en="bread" />
+	<word eo="pando" en="panda" />
+	<word eo="papero" en="paper" />
+	<word eo="papilio" en="butterfly" />
+	<word eo="paralelprozo" en="parallel (relative to prose)" />
+	<word eo="pardoni" en="forgive" />
+	<word eo="parfumo" en="perfume" />
+	<word eo="parko" en="park" />
+	<word eo="paroli" en="say" />
+	<word eo="parto" en="part" />
+	<word eo="partio" en="party" />
+	<word eo="participo" en="participle" />
+	<word eo="pasporto" en="passport" />
+	<word eo="pasto" en="dough" />
+	<word eo="patro" en="father" />
+	<word eo="paŭzi" en="pause" />
+	<word eo="pavo" en="peacock" />
+	<word eo="peco" en="flake" />
+	<word eo="Pekino" en="Beijing" />
+	<word eo="per" en="use" />
+	<word eo="perfekta" en="perfect" />
+	<word eo="periodo" en="oeriod" />
+	<word eo="perlo" en="pearl" />
+	<word eo="permesi" en="allow" />
+	<word eo="persiko" en="peach" />
+	<word eo="persono" en="person" />
+	<word eo="peti" en="request" />
+	<word eo="piano" en="piano" />
+	<word eo="pisi" en="pee" />
+	<word eo="placo" en="square" />
+	<word eo="planedo" en="planet" />
+	<word eo="planti" en="planting" />
+	<word eo="planto" en="plant" />
+	<word eo="plasto" en="plastic" />
+	<word eo="plej" en="most" />
+	<word eo="plena" en="full" />
+	<word eo="pli" en="more" />
+	<word eo="plori" en="cry" />
+	<word eo="plus" en="plus" />
+	<word eo="pluvo" en="rain" />
+	<word eo="poemo" en="poem" />
+	<word eo="poento" en="score" />
+	<word eo="poeto" en="poet" />
+	<word eo="polico" en="police" />
+	<word eo="politiko" en="political" />
+	<word eo="poluso" en="polar" />
+	<word eo="polvo" en="powder" />
+	<word eo="pomo" en="apple" />
+	<word eo="ponto" en="bridge" />
+	<word eo="popolo" en="people" />
+	<word eo="populara" en="popular" />
+	<word eo="por" en="for" />
+	<word eo="porcelano" en="porcelain" />
+	<word eo="pordo" en="door" />
+	<word eo="porko" en="pig" />
+	<word eo="porti" en="port, bring" />
+	<word eo="poste" en="after" />
+	<word eo="poŝo" en="pocket" />
+	<word eo="poŝto" en="postal" />
+	<word eo="poto" en="can" />
+	<word eo="potenco" en="power" />
+	<word eo="povi" en="may" />
+	<word eo="pozicio" en="location" />
+	<word eo="pozitiva" en="positive, affirmative" />
+	<word eo="praktiko" en="practice" />
+	<word eo="prezidento" en="president" />
+	<word eo="pri" en="about" />
+	<word eo="princo" en="prince" />
+	<word eo="principo" en="theory" />
+	<word eo="printempo" en="spring" />
+	<word eo="privata" en="private" />
+	<word eo="pro" en="for, by" />
+	<word eo="probabla" en="possible" />
+	<word eo="problemo" en="problem" />
+	<word eo="procedi" en="process" />
+	<word eo="procento" en="percent" />
+	<word eo="profesoro" en="professor" />
+	<word eo="programo" en="program" />
+	<word eo="progresi" en="making progress" />
+	<word eo="projekcio" en="projection" />
+	<word eo="projekto" en="plan" />
+	<word eo="prokrasti" en="delay" />
+	<word eo="proksima" en="near" />
+	<word eo="proksimume" en="about" />
+	<word eo="promeni" en="walking" />
+	<word eo="promesi" en="promise" />
+	<word eo="pronomo" en="pronoun" />
+	<word eo="prononci" en="pronounced" />
+	<word eo="propagandi" en="advocacy, advertising" />
+	<word eo="proponi" en="recommended" />
+	<word eo="proporcio" en="distribution ratio" />
+	<word eo="prosperi" en="prosperity" />
+	<word eo="protekti" en="Protection" />
+	<word eo="protesti" en="protest" />
+	<word eo="protokolo" en="record" />
+	<word eo="provi" en="proof" />
+	<word eo="proverbo" en="slang" />
+	<word eo="provinco" en="province" />
+	<word eo="provizo" en="savings" />
+	<word eo="provizora" en="temporary" />
+	<word eo="provoki" en="provocation" />
+	<word eo="prozo" en="prose" />
+	<word eo="prudenta" en="wise" />
+	<word eo="pruvi" en="proof" />
+	<word eo="pulvo" en="gunpowder" />
+	<word eo="pulvoro" en="powder" />
+	<word eo="puni" en="punish" />
+	<word eo="punkto" en="dot" />
+	<word eo="punto" en="lace" />
+	<word eo="pupo" en="doll" />
+	<word eo="pupilo" en="pupil" />
+	<word eo="pura" en="clean" />
+	<word eo="purpura" en="purple" />
+	<word eo="puso" en="sick" />
+	<word eo="puŝi" en="push" />
+	<word eo="puto" en="well" />
+	<word eo="radio" en="radio" />
+	<word eo="rajdi" en="ride" />
+	<word eo="raketo" en="rocket" />
+	<word eo="rakonti" en="said" />
+	<word eo="rampi" en="crawl" />
+	<word eo="rango" en="level" />
+	<word eo="rapida" en="fast" />
+	<word eo="raporti" en="report" />
+	<word eo="raso" en="ethnic" />
+	<word eo="reakcio" en="reaction" />
+	<word eo="reala" en="real" />
+	<word eo="recenzi" en="comment" />
+	<word eo="recepto" en="prescription" />
+	<word eo="recikligi" en="recycling" />
+	<word eo="reciproka" en="reciprocating" />
+	<word eo="redakcio" en="edit" />
+	<word eo="redakti" en="write" />
+	<word eo="redaktoro" en="editor" />
+	<word eo="redukti" en="reduce" />
+	<word eo="reflekti" en="reflection" />
+	<word eo="reformi" en="reform" />
+	<word eo="regali" en="hospitality" />
+	<word eo="regiono" en="region" />
+	<word eo="registaro" en="government" />
+	<word eo="registro" en="login" />
+	<word eo="regno" en="country" />
+	<word eo="regulo" en="rule" />
+	<word eo="reĝo" en="king" />
+	<word eo="reĝimo" en="political" />
+	<word eo="reĝisoro" en="producer" />
+	<word eo="rekomendi" en="recommended" />
+	<word eo="rekompenco" en="reward" />
+	<word eo="rekordo" en="record" />
+	<word eo="rekta" en="straight" />
+	<word eo="rektangulo" en="rectangular" />
+	<word eo="relo" en="track" />
+	<word eo="relativa" en="relative" />
+	<word eo="religio" en="religion" />
+	<word eo="renkonti" en="meeting" />
+	<word eo="rento" en="rent" />
+	<word eo="rentumo" en="interest" />
+	<word eo="renversi" en="overturn" />
+	<word eo="reprezenti" en="representative" />
+	<word eo="respekti" en="respect" />
+	<word eo="respondi" en="answer" />
+	<word eo="respondeca" en="reaction" />
+	<word eo="respubliko" en="republic" />
+	<word eo="resti" en="rest" />
+	<word eo="restoracio" en="restaurant" />
+	<word eo="resumo" en="resume, CV" />
+	<word eo="reto" en="network" />
+	<word eo="revi" en="dream" />
+	<word eo="revizii" en="correct" />
+	<word eo="revolucii" en="revolution" />
+	<word eo="revuo" en="magazine" />
+	<word eo="rezulto" en="Results" />
+	<word eo="ribeli" en="react" />
+	<word eo="ricevi" en="receive" />
+	<word eo="riĉa" en="rich" />
+	<word eo="ridi" en="laugh" />
+	<word eo="rifuĝi" en="asylum" />
+	<word eo="rifuzi" en="reject" />
+	<word eo="rigardi" en="see" />
+	<word eo="rigida" en="strict" />
+	<word eo="rikolti" en="harvest" />
+	<word eo="rilati" en="related" />
+	<word eo="rimo" en="rythm" />
+	<word eo="ripeti" en="duplicate" />
+	<word eo="ripozi" en="rest" />
+	<word eo="riproĉi" en="blame" />
+	<word eo="riski" en="adventure" />
+	<word eo="rivero" en="river" />
+	<word eo="riverenci" en="respect" />
+	<word eo="rivoluo" en="rotation" />
+	<word eo="rizo" en="rice" />
+	<word eo="rompi" en="destruction" />
+	<word eo="rondo" en="circle" />
+	<word eo="rosti" en="baked" />
+	<word eo="rotacii" en="rotation" />
+	<word eo="ruĝa" en="red" />
+	<word eo="saĝa" en="smart" />
+	<word eo="salo" en="salt" />
+	<word eo="salti" en="jump" />
+	<word eo="saluti" en="salute, say hello to" />
+	<word eo="saluton" en="hello" />
+	<word eo="sama" en="same" />
+	<word eo="sana" en="healthy" />
+	<word eo="sandviĉo" en="sandwich" />
+	<word eo="sango" en="blood" />
+	<word eo="sankta" en="sacred" />
+	<word eo="sata" en="satisfaction" />
+	<word eo="satelito" en="satellite" />
+	<word eo="savi" en="save" />
+	<word eo="scii" en="know" />
+	<word eo="scienco" en="science" />
+	<word eo="sciuro" en="squirrel" />
+	<word eo="se" en="if" />
+	<word eo="sed" en="but" />
+	<word eo="seĝo" en="seat" />
+	<word eo="seka" en="dry" />
+	<word eo="sekalo" en="rye" />
+	<word eo="sekreto" en="secret" />
+	<word eo="sekretario" en="secretary" />
+	<word eo="sekso" en="sex" />
+	<word eo="sekundo" en="second" />
+	<word eo="sekura" en="safe" />
+	<word eo="selo" en="saddle" />
+	<word eo="semo" en="seed" />
+	<word eo="semajno" en="week" />
+	<word eo="sen" en="none" />
+	<word eo="senco" en="meaning" />
+	<word eo="sendi" en="send" />
+	<word eo="senso" en="perception" />
+	<word eo="senti" en="feel" />
+	<word eo="sep" en="seven" />
+	<word eo="sepio" en="squid" />
+	<word eo="septembro" en="September" />
+	<word eo="serĉi" en="search, check" />
+	<word eo="servi" en="service, service" />
+	<word eo="ses" en="six" />
+	<word eo="sidi" en="sit down" />
+	<word eo="signo" en="symbol, token" />
+	<word eo="signalo" en="signal" />
+	<word eo="signifi" en="indicates" />
+	<word eo="silabo" en="syllable" />
+	<word eo="silenti" en="keep quiet" />
+	<word eo="silko" en="silk" />
+	<word eo="simbolo" en="symbol" />
+	<word eo="simila" en="similar" />
+	<word eo="simpatio" en="sympathy" />
+	<word eo="simpla" en="simple" />
+	<word eo="simptomo" en="sign" />
+	<word eo="sino" en="chest" />
+	<word eo="sincera" en="sincere" />
+	<word eo="sinjoro" en="Mr." />
+	<word eo="sistemo" en="system" />
+	<word eo="situo" en="condition" />
+	<word eo="skatolo" en="box" />
+	<word eo="sklavo" en="slave" />
+	<word eo="skribi" en="write" />
+	<word eo="socio" en="social" />
+	<word eo="soifi" en="thirst" />
+	<word eo="sola" en="separate" />
+	<word eo="solido" en="solid" />
+	<word eo="solvi" en="solution" />
+	<word eo="somero" en="summer" />
+	<word eo="soni" en="out" />
+	<word eo="sonĝi" en="dream" />
+	<word eo="sopiri" en="worry" />
+	<word eo="sorbi" en="absorbent" />
+	<word eo="spaco" en="space" />
+	<word eo="speciala" en="special" />
+	<word eo="spiri" en="breath" />
+	<word eo="spirito" en="soul" />
+	<word eo="stacio" en="station" />
+	<word eo="stampo" en="seal" />
+	<word eo="standardo" en="standard" />
+	<word eo="starti" en="start" />
+	<word eo="stelo" en="star" />
+	<word eo="stilo" en="style" />
+	<word eo="stiri" en="driving" />
+	<word eo="strato" en="street" />
+	<word eo="streĉi" en="strecth" />
+	<word eo="studento" en="student" />
+	<word eo="studi" en="learn" />
+	<word eo="studio" en="studio" />
+	<word eo="sub" en="down" />
+	<word eo="subita" en="sudden" />
+	<word eo="subjekto" en="subject" />
+	<word eo="subskribi" en="signature" />
+	<word eo="substanco" en="substance" />
+	<word eo="sudo" en="southern" />
+	<word eo="sukcesi" en="success" />
+	<word eo="sumo" en="and, sum" />
+	<word eo="suno" en="sun" />
+	<word eo="supozi" en="assumed" />
+	<word eo="sur" en="on" />
+	<word eo="surfaco" en="surface" />
+	<word eo="suspekti" en="doubt" />
+	<word eo="svingi" en="waving" />
+	<word eo="ŝafo" en="sheep" />
+	<word eo="Ŝanhajo" en="Shanghai" />
+	<word eo="ŝati" en="like" />
+	<word eo="ŝi" en="her" />
+	<word eo="ŝteli" en="steal" />
+	<word eo="ŝtono" en="stone" />
+	<word eo="tago" en="day" />
+	<word eo="teksto" en="article" />
+	<word eo="telefono" en="phone" />
+	<word eo="telegrafo" en="telegraph" />
+	<word eo="tempo" en="time" />
+	<word eo="temperaturo" en="temperature" />
+	<word eo="tenera" en="gentle" />
+	<word eo="teo" en="tea" />
+	<word eo="teorio" en="theory" />
+	<word eo="termometro" en="thermometer" />
+	<word eo="tia" en="that" />
+	<word eo="tiam" en="then" />
+	<word eo="tie" en="where" />
+	<word eo="tiel" en="like" />
+	<word eo="ties" en="that one" />
+	<word eo="timi" en="afraid" />
+	<word eo="tinkturo" en="ink" />
+	<word eo="tio" en="that" />
+	<word eo="titolo" en="title" />
+	<word eo="tiu" en="that (person)" />
+	<word eo="Tjanĝino" en="Tianjin" />
+	<word eo="tolo" en="cloth" />
+	<word eo="toleri" en="tolerance" />
+	<word eo="tomato" en="tomato" />
+	<word eo="tombo" en="Tomb" />
+	<word eo="tono" en="tone" />
+	<word eo="tondi" en="cut" />
+	<word eo="tondri" en="thundering" />
+	<word eo="torturi" en="abuse" />
+	<word eo="tra" en="through" />
+	<word eo="tradicio" en="traditional" />
+	<word eo="traduki" en="translation" />
+	<word eo="trafiko" en="Traffic" />
+	<word eo="tragedio" en="traged" />
+	<word eo="trajno" en="train" />
+	<word eo="tre" en="very" />
+	<word eo="tri" en="three" />
+	<word eo="trompi" en="cheat" />
+	<word eo="tropiko" en="tropical" />
+	<word eo="trotuaro" en="sidewalk" />
+	<word eo="trovi" en="find" />
+	<word eo="trovita" en="discover" />
+	<word eo="troviĝi" en="appears" />
+	<word eo="truo" en="hole" />
+	<word eo="trumpeto" en="trumpet" />
+	<word eo="tubo" en="tube" />
+	<word eo="tuj" en="immediately" />
+	<word eo="tuko" en="pipe" />
+	<word eo="tumulto" en="riot" />
+	<word eo="tuno" en="ton" />
+	<word eo="tunelo" en="tunnel" />
+	<word eo="turo" en="tower" />
+	<word eo="turismo" en="tourism, sightseeing" />
+	<word eo="turmenti" en="torture" />
+	<word eo="tuta" en="all" />
+	<word eo="ungo" en="gloves" />
+	<word eo="uniformo" en="uniform" />
+	<word eo="universala" en="universal, global" />
+	<word eo="universitato" en="university" />
+	<word eo="unu" en="one" />
+	<word eo="urbo" en="city" />
+	<word eo="urĝi" en="urge" />
+	<word eo="urso" en="bear" />
+	<word eo="Usono" en="United States of America" />
+	<word eo="utila" en="useful" />
+	<word eo="uzi" en="use" />
+	<word eo="vadi" en="walking" />
+	<word eo="vagi" en="roaming" />
+	<word eo="vagino" en="pussy" />
+	<word eo="vakcino" en="vaccine" />
+	<word eo="vakuo" en="vacuum" />
+	<word eo="valo" en="Valley" />
+	<word eo="valida" en="valid" />
+	<word eo="valizo" en="suitcase" />
+	<word eo="valoro" en="value" />
+	<word eo="vando" en="wall" />
+	<word eo="vango" en="cheek" />
+	<word eo="vanta" en="craving" />
+	<word eo="vaporo" en="steam" />
+	<word eo="varo" en="goods" />
+	<word eo="varii" en="change" />
+	<word eo="variolo" en="smallpox" />
+	<word eo="varma" en="warm" />
+	<word eo="vasta" en="large" />
+	<word eo="vato" en="cotton" />
+	<word eo="vazo" en="vase" />
+	<word eo="vejno" en="vein" />
+	<word eo="veki" en="wake" />
+	<word eo="velo" en="sailboat" />
+	<word eo="velki" en="wilted" />
+	<word eo="veni" en="fur" />
+	<word eo="vendi" en="sell" />
+	<word eo="vendredo" en="Friday" />
+	<word eo="vento" en="wind" />
+	<word eo="ventro" en="belly" />
+	<word eo="ventumi" en="fan, blow" />
+	<word eo="vera" en="true" />
+	<word eo="verbo" en="verb" />
+	<word eo="verda" en="green" />
+	<word eo="verŝi" en="pour water" />
+	<word eo="verŝajna" en="seems to be" />
+	<word eo="vertebro" en="spine" />
+	<word eo="vertico" en="vertex" />
+	<word eo="vertikalo" en="vertical line" />
+	<word eo="veruko" en="tumor" />
+	<word eo="vespo" en="wasp" />
+	<word eo="vespero" en="evening" />
+	<word eo="veti" en="bet" />
+	<word eo="vetero" en="weather" />
+	<word eo="veturi" en="Travel" />
+	<word eo="vi" en="you" />
+	<word eo="viando" en="meat" />
+	<word eo="vibri" en="vibration" />
+	<word eo="vidpunkto" en="view" />
+	<word eo="viktimo" en="pretend" />
+	<word eo="vilaĝo" en="village" />
+	<word eo="vino" en="wine" />
+	<word eo="vinagro" en="cool" />
+	<word eo="vindi" en="bandage" />
+	<word eo="vintro" en="winter" />
+	<word eo="violo" en="violet" />
+	<word eo="violono" en="violin" />
+	<word eo="vipo" en="whipping" />
+	<word eo="viro" en="man" />
+	<word eo="virga" en="virgin" />
+	<word eo="virtuala" en="virtual" />
+	<word eo="viruso" en="virus" />
+	<word eo="vito" en="grupe" />
+	<word eo="vitro" en="glass" />
+	<word eo="vivi" en="life" />
+	<word eo="vizo" en="visa" />
+	<word eo="vizaĝo" en="face" />
+	<word eo="viziti" en="visit" />
+	<word eo="voĉo" en="sound" />
+	<word eo="voĉdoni" en="voting" />
+	<word eo="vojo" en="way" />
+	<word eo="vojaĝi" en="travel" />
+	<word eo="vokalo" en="vowel" />
+	<word eo="voli" en="will" />
+	<word eo="volbo" en="arched roof" />
+	<word eo="volonta" en="volunteer" />
+	<word eo="volumo" en="volume" />
+	<word eo="volumeno" en="volume" />
+	<word eo="volvi" en="rotation" />
+	<word eo="vomi" en="bring out" />
+	<word eo="vorto" en="word" />
+	<word eo="vortaro" en="dictionary" />
+	<word eo="vosto" en="tail" />
+	<word eo="vualo" en="veil" />
+	<word eo="vulkano" en="volcano" />
+	<word eo="Zamenhofo" en="Zamenhof" />
+	<word eo="zinko" en="zinc" />
+	<word eo="zono" en="zone" />
+	<word eo="zoo" en="Zoo" />
+	<word eo="zoologio" en="zoology" />
 </words>
+
