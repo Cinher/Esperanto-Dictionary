@@ -1,3 +1,13 @@
-# Esperanto-Dictionary 世界语词典
-[![experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://img.shields.io/badge/stability-experimental-orange.svg)
-[![API](https://img.shields.io/badge/API-23%2B-blue.svg?style=flat)](https://android-arsenal.com/api?level=23)
+﻿# Esperanto-Dictionary 世界语词典
+A Material-designed Esperanto dictionary. You can import your own dictionaries or get definitions of words online. 
+
+[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-APK-green.svg?style=for-the-badge)](docs/esperanto_dictionary_0.9.apk)
+
+## Features 
+
+* Online and offline search.
+* Translate Esperanto sentences to English offline.
+* Import [Lingoes](http://www.lingoes.net/en/index.html) dictionaries.
+* English and Chinese search result.
+
+This is a basic version. It will have more functions in the future. 
