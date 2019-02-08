@@ -225,7 +225,7 @@ of proper nouns. */
       try {
         editText2.setText(translateEsperanto(message));
       } catch (RuntimeException ee) {
-    	editText2.setText("Untranslatable. Ne tradukebla.");
+    	editText2.setText("[Untranslatable]");
       }
       if ((!(editText.getText().toString().endsWith(" nul"))) &&
     	(textIn2.endsWith(" nul"))) textIn2 = textIn2.substring(0, 

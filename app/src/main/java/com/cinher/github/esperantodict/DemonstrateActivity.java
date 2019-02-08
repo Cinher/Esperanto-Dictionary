@@ -103,7 +103,7 @@ public class DemonstrateActivity extends AppCompatActivity {
                 fabParams.gravity = Gravity.END;
                 fabParams.setMargins(768, 72, 72, 72);
                 fab.setLayoutParams(fabParams);
-                fab.setImageResource(R.drawable.ic_note_white);
+                fab.setImageResource(R.drawable.ic_add_white_48dp);
                 fab.setOnClickListener(new View.OnClickListener(){
                     @Override
                     public void onClick(View v) {
@@ -123,8 +123,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 						{
 							AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
 							card.setTitle(list[i]);
-							card.setText(" ");
-							card.setImage(R.drawable.ic_favorite_black_48dp);
+							card.setImage(R.drawable.ic_insert_drive_file_black_48dp);
 							layout.addView(card);
 						}
 					}
@@ -264,7 +263,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		try{
             //请求系统选择文件
-			startActivityForResult(Intent.createChooser(intent, "Select a File"), 0);
+			startActivityForResult(Intent.createChooser(intent, "Select a File (*.ld2)"), 0);
 		}catch (ActivityNotFoundException e){
 			e.printStackTrace();
 		}

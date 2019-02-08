@@ -14,6 +14,7 @@
 		android:id="@+id/edit_message"
 		android:layout_width="match_parent"
 		android:layout_height="150dp"
+		android:hint="Enter text (Esperanto)"
 		android:gravity="bottom" >
 	</EditText>
 	<LinearLayout
@@ -33,6 +34,7 @@
 		android:id="@+id/edit_message2"
 		android:layout_width="match_parent"
 		android:layout_height="150dp"
+		android:hint="Translation (English)"
 		android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
 		android:windowSoftInputMode="stateVisible"
 		android:textIsSelectable="true" />

@@ -34,7 +34,9 @@ public class AppCard extends CardView
 
         typeImageView = (ImageView) findViewById(R.id.card_imageView);
         typeTextView = (TextView) findViewById(R.id.card_typeTextView);
-        centralTextView = (TextView) findViewById(R.id.card_centralTextView);
+		if (type == TYPE_DICTIONARY){
+        	centralTextView = (TextView) findViewById(R.id.card_centralTextView);
+		}
     }
 
     public void setImage(int id){
