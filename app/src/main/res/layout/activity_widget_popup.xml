@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:background="#33333333"
+    android:fitsSystemWindows="true" >
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="@drawable/ripple"
+		android:elevation="4dp"
+		android:radius="5dp"
+		android:layout_marginTop="30dp"
+		android:layout_marginBottom="15dp"
+		android:layout_marginRight="15dp"
+		android:layout_marginLeft="15dp"
+		android:orientation="horizontal">
+
+		<EditText
+			android:id="@+id/widget_popup_search_edittext"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="@string/search"
+			android:textColor="#303030"
+			android:singleLine="true"
+			android:textCursorDrawable="@null"
+			android:background="@null"
+			android:layout_marginTop="15dp"
+			android:layout_marginBottom="15dp"
+			android:layout_marginRight="15dp"
+			android:layout_marginLeft="15dp"
+			android:imeOptions="actionSearch"/>
+
+	</LinearLayout>
+
+</LinearLayout>
