@@ -272,7 +272,55 @@ public class ResultActivity extends AppCompatActivity {
                 message.obj = card;
                 messageHandler.sendMessage(message);
 				
-            }
+            }else{
+				//在 isWordExists 为 false 的情况下尝试模糊搜索 
+				SimplaVortaroResult = "";//清空 SimplaVortaroResult 准备把 trovi 的结果赋值给它 
+				String contentWords = "";//存储 malpreciza 后面 [] 之间的内容
+				
+				try
+				{
+					URL urlSearch = new URL("http://www.simplavortaro.org/api/v1/trovi/" + word);
+					URLConnection connection = urlSearch.openConnection();
+					connection.connect();
+					in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+					String line;
+					while ((line = in.readLine()) != null)
+					{
+						SimplaVortaroResult += line;
+					}
+				}
+				catch (Exception e)
+				{
+					e.printStackTrace();
+				}
+				
+				if((SimplaVortaroResult.indexOf("\"malpreciza\"") != -1) 
+				   && (SimplaVortaroResult.indexOf("\"malpreciza\": []") == -1)){
+					   //trovi 的结果中有模糊搜索的词汇
+					int pointer = SimplaVortaroResult.indexOf("{\"malpreciza\":");
+					do
+					{
+						pointer = SimplaVortaroResult.indexOf("{\"malpreciza\":", pointer - 1);
+						String s = "";
+						if (pointer != -1)
+						{
+							for (pointer = pointer + 17;(Character.toString(SimplaVortaroResult.charAt(pointer))).compareTo("\"") != 0;pointer ++)
+							{
+								s = s + SimplaVortaroResult.charAt(pointer);
+							}
+						}
+						contentWords = contentWords + s + "\n";
+					}while(pointer != -1);
+					//contentWords 已取得 malpreciza 后 [] 内的内容
+					//将模糊搜索结果显示出来
+					AppCard card = new AppCard(getApplicationContext(), AppCard.TYPE_DICTIONARY);
+					card.setTitle("La Simpla Vortaro");
+					card.setText("Do you mean: \n\n" + contentWords);
+					Message message = Message.obtain();
+					message.obj = card;
+					messageHandler.sendMessage(message);
+				}
+			}
         }
     };
 
