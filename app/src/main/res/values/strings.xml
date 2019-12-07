@@ -7,7 +7,7 @@
     <string name="action_settings">Settings</string>
 
     <string name="hello">Saluton!</string>
-    <string name="search">Search Dictionary</string>
+    <string name="search">Search</string>
     <string name="no_result_found">No local interpretation</string>
 
     <string name="definition">Definition (Esperanto) :</string>

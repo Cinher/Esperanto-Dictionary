@@ -13,7 +13,7 @@
 
 	<LinearLayout
 		android:layout_width="match_parent"
-		android:layout_height="230dp"
+		android:layout_height="200dp"
 		android:gravity="center"
 		android:background="?attr/colorPrimary">
 		
@@ -58,6 +58,33 @@
 
 		</LinearLayout>
 
+	</LinearLayout> 
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="80dp"
+		android:layout_marginLeft="16dp"
+		android:layout_marginRight="16dp"
+		android:orientation="horizontal">
+			
+		<Button
+			style="@style/Widget.AppCompat.Button.Colored"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_weight="1"
+			android:text="dictionary"/>
+		
+		<Button
+			style="@style/Widget.AppCompat.Button.Colored"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="4dp"
+			android:layout_marginRight="4dp"
+			android:layout_weight="1"
+			android:text="corpus"/>
+		
 	</LinearLayout>
 
 </LinearLayout>
