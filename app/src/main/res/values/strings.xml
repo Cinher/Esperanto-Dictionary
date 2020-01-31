@@ -13,14 +13,14 @@
     <string name="definition">Definition (Esperanto) :</string>
     <string name="examples">Examples :</string>
     <string name="english">Definition (English) :</string>
-	
-	<string name="drawer_import">Import</string>
-	<string name="drawer_translate">Translate</string>
-	<string name="drawer_tools">Tools</string>
-	<string name="drawer_donate">Donate</string>
-	<string name="drawer_open_source">Open Source</string>
-	<string name="translate_esperanto">TRANSLATE ESPERANTO</string>
-	<string name="translate_via_google">TRANSLATE VIA GOOGLE</string>
+
+    <string name="drawer_import">Import</string>
+    <string name="drawer_translate">Translate</string>
+    <string name="drawer_tools">Tools</string>
+    <string name="drawer_donate">Donate</string>
+    <string name="drawer_open_source">Open Source</string>
+    <string name="translate_esperanto">TRANSLATE ESPERANTO</string>
+    <string name="translate_via_google">TRANSLATE VIA GOOGLE</string>
 
     <string name="list">Esperanto Lists</string>
     <string name="title_activity_result">Result</string>

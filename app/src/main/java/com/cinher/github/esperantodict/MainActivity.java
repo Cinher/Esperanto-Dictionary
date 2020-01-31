@@ -23,6 +23,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.inputmethod.EditorInfo;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.database.sqlite.*;
@@ -144,38 +145,25 @@ public class MainActivity extends AppCompatActivity
         }
 
         //启动服务
-        Intent serviceIntent = new Intent(this, DictService.class);
-        startService(serviceIntent);
+        //Intent serviceIntent = new Intent(this, DictService.class);
+        //startService(serviceIntent);
 
-        //搜索
+        /*
+         * 在主界面上有三个前往不同搜索结果的方式
+         * 1. 直接在搜索框输入时点击输入法中的搜索按钮
+         * 2. 点击按钮搜索词典
+         * 3. 点击按钮搜索语料库
+         */
+
+        //1. 直接在输入法回车 默认搜索词典
         ((EditText) findViewById(R.id.searchEditText))
                 .setOnEditorActionListener(new TextView.OnEditorActionListener() {
                     public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                         if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
                             String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
                             if (!word.trim().equals("")) {
-
-                                //Save to database
-                                Db db = new Db(getApplicationContext());
-                                SQLiteDatabase dbWrite = db.getWritableDatabase();
-                                ContentValues cv = new ContentValues();
-                                cv.put("word", word);
-                                SQLiteDatabase dbRead = db.getReadableDatabase();
-                                Cursor c = dbRead.query("history", null, null, null, null, null, null);
-                                while (c.moveToNext()) {
-                                    if (word.equals(c.getString(c.getColumnIndex("word")))) {
-                                        dbWrite.delete("history", "word = \'" + word + "\'", null);
-                                        break;
-                                    }
-                                }
-                                dbWrite.insert("history", null, cv);
-                                dbWrite.close();
-
-                                //Go to the result activity
-                                startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", word));
-                                MainActivity.this.finish();
+                                searchInDictionary(word);
                             } else {
-                                //Log.w("Debug","No Word Found");
                                 Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
                                         .setAction("Action", null).show();
                             }
@@ -185,9 +173,56 @@ public class MainActivity extends AppCompatActivity
 
                     }
                 });
-        // ATTENTION: This was auto-generated to implement the App Indexing API.
-        // See https://g.co/AppIndexing/AndroidStudio for more information.
-        //client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+
+        //2&3. 点击按钮搜索词典或语料库
+        ((Button) findViewById(R.id.main_dictionary_button)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
+                if (!word.trim().equals("")) {
+                    searchInDictionary(word);
+                } else {
+                    Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            }
+        });
+        ((Button) findViewById(R.id.main_corpus_button)).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
+                if (!word.trim().equals("")) {
+                    searchInDictionary(word);
+                } else {
+                    Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+                            .setAction("Action", null).show();
+                }
+            }
+        });
+
+    }
+
+    //这个方法用来搜索词典，直接开启一个新的 Activity
+    private void searchInDictionary(String word){
+        //将搜索记录添加到数据库
+        Db db = new Db(getApplicationContext());
+        SQLiteDatabase dbWrite = db.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+        cv.put("word", word);
+        SQLiteDatabase dbRead = db.getReadableDatabase();
+        Cursor c = dbRead.query("history", null, null, null, null, null, null);
+        while (c.moveToNext()) {
+            if (word.equals(c.getString(c.getColumnIndex("word")))) {
+                dbWrite.delete("history", "word = \'" + word + "\'", null);
+                break;
+            }
+        }
+        dbWrite.insert("history", null, cv);
+        dbWrite.close();
+
+        //进入 ResultActivity
+        startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", word));
+        MainActivity.this.finish();
     }
 
     @Override
@@ -240,23 +275,7 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    /**
-     * ATTENTION: This was auto-generated to implement the App Indexing API.
-     * See https://g.co/AppIndexing/AndroidStudio for more information.
-     */
-    /*public Action getIndexApiAction() {
-        Thing object = new Thing.Builder()
-                .setName("Main Page") // TODO: Define a title for the content shown.
-                // TODO: Make sure this auto-generated URL is correct.
-                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
-                .build();
-        return new Action.Builder(Action.TYPE_VIEW)
-                .setObject(object)
-                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
-                .build();
-    }
-
-    @Override
+    /*@Override
     public void onStart() {
         super.onStart();
 
