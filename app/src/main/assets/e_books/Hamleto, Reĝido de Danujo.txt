@@ -1,0 +1,2699 @@
+﻿The Project Gutenberg EBook of Hamleto, by William Shakespeare
+
+This eBook is for the use of anyone anywhere at no cost and with
+almost no restrictions whatsoever.  You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.net
+
+
+Title: Hamleto
+       Reghido de Danujo
+
+Author: William Shakespeare
+
+Translator: L. L. Zamenhof
+
+Release Date: August 31, 2011 [EBook #37279]
+
+Language: Esperanto
+
+Character set encoding: UTF-8
+
+*** START OF THIS PROJECT GUTENBERG EBOOK HAMLETO ***
+
+
+
+
+Produced by Andrew Sly, David Starner and the Online
+Distributed Proofreading Team at http://www.pgdp.net (This
+book was produced from scanned images of public domain
+material from the Google Print project.)
+
+
+
+
+
+
+Kolekto Esperanta Aprobita de D-o Zamenhof
+
+
+W. SHAKESPEARE
+
+HAMLETO
+
+REĜIDO DE DANUJO
+
+
+TRAGEDIO EN KVIN AKTOJ
+
+TRADUKIS
+
+L. ZAMENHOF
+
+
+KVARA ELDONO
+
+
+FRANCUJO.--HACHETTE ET Cie, _PARIS_.
+
+  ANGLUJO.--«REVIEW of REVIEWS», _LONDON_.
+  DANUJO.--ANDR.-FRED. HÖST & SÖN, _KJOBENHAVN_.
+  GERMANUJO.--MOLLER & BOREL, _BERLIN_.
+  HISPANUJO.--J. ESPASA, _BARCELONA_.
+  ITALUJO.--RAFFAELLO GIUSTI, _LIVORNO_.
+  POLUJO.--M. ARCT, _WARSZAWA_.
+  SVEDUJO.--ESPERANTO FÖRENING, _STOCKHOLM_.
+
+
+
+PERSONOJ:
+
+  Klaŭdio, reĝo de Danujo.
+  Hamleto, filo de la estinta kaj nevo de la nuna reĝo.
+  Gertrudo, reĝino de Danujo, patrino de Hamleto.
+  Polonio, eminenta kortegano.
+  Ofelio, filino de Polonio.
+  Horacio, amiko de Hamleto.
+  Laerto, filo de Polonio.
+  Voltimand     }
+  Kornelio      }
+  Rosenkranz    }  korteganoj.
+  Güldenstern  }
+  Osrik         }
+  Pastro.
+  Marcello     }
+  Bernardo     }  oficiroj.
+  Francisko, soldato.
+  Reinhold, servanto de Polonio.
+  Fortinbras, reĝido de Norvegujo.
+  La spirito de la patro de Hamleto.
+  Kapitano.
+  Nobelo.
+  Ambasadoro.
+  Aktoroj.
+  Servanto.
+
+Sinjoroj kaj sinjorinoj de la kortego, oficiroj, soldatoj, ŝipanoj,
+tombistoj, kurieroj kaj popolanoj.
+
+La agado havas lokon en Elsinoro.
+
+
+
+
+HAMLETO
+
+REĜIDO DE DANUJO
+
+
+
+
+AKTO I
+
+
+SCENO I
+
+Teraso antaŭ la palaco. Francisko staras sur la posteno; Bernardo venas.
+
+BERNARDO
+
+  He! Kiu?
+
+FRANCISKO
+
+           Halt'! Respondu: kiu iras?
+
+BERNARDO
+
+  La reĝo vivu!
+
+FRANCISKO
+
+                 Ĉu Bernardo?
+
+BERNARDO
+
+                               Jes!
+
+FRANCISKO
+
+  Vi akurate venis al la servo!
+
+BERNARDO
+
+  Dekdua horo sonis. Iru dormi.
+
+FRANCISKO
+
+  Mi dankas. La malvarmo estas tranĉa,
+  Kaj mi min sentas nun ne tute bone.
+
+BERNARDO
+
+  Ĉu ĉio estis orda kaj trankvila?
+
+FRANCISKO
+
+  Eĉ mus' ne preterkuris.
+
+BERNARDO
+
+                           Bonan nokton!
+  Se vidos vi Marcellon, Horacion,
+  Kolegojn miajn, rapidigu ilin!
+
+FRANCISKO
+
+  Jen, ŝajnas, ili. Haltu! Kiu iras?
+
+(Horacio kaj Marcello venas.)
+
+HORACIO
+
+  Amikoj de la lando.
+
+MARCELLO
+
+                      Kaj de l' reĝo.
+
+FRANCISKO
+
+  Nu, bonan nokton!
+
+MARCELLO
+
+                    Bonan al vi dormon!
+  Vin kiu anstataŭas nun?
+
+FRANCISKO
+
+                           Bernardo.
+  Li gardas nun. Adiaŭ! (Foriras.)
+
+MARCELLO
+
+                                     He! Bernardo!
+
+BERNARDO
+
+  Ĉu Horacio?
+
+HORACIO
+
+               Peco de li mem.
+
+BERNARDO
+
+  Salut' al vi, Marcello, Horacio!
+
+HORACIO
+
+  Ĉu la apero nun denove venis?
+
+BERNARDO
+
+  Nenion vidis mi.
+
+MARCELLO
+
+                   Jen Horacio
+  Parolas, ke ĝi estas nur imago,
+  Ne kredas li pri la fantom' terura,
+  Kiun ni vidis jam la duan fojon.
+  Kaj tial mi lin tien ĉi invitis,
+  Ke li kun ni maldormu nunan nokton
+  Kaj, kiam la fantomo reaperos,
+  Li vidu kaj kun la fantom' parolu.
+
+HORACIO
+
+  He, babilaĵo! Kredu, ĝi ne venos.
+
+BERNARDO
+
+  Sidiĝu do, kaj provos mi denove
+  Ataki per rakont' orelon vian,
+  Ke ĝi forĵetu sian obstinecon
+  Kaj kredu, kion ni du fojojn vidis.
+
+HORACIO
+
+  Nu, mi konsentas. Bone, ni sidiĝu,
+  Kaj vi rakontu.
+
+BERNARDO
+
+                  En la lasta nokto,
+  En la momento, kiam tiu stelo
+  Tre luma, kiun vidas vi, en sia
+  Kurado trans arkaĵo la ĉiela
+  En tiu sama loko, kiel nun,
+  Troviĝis, tiam ni--mi kaj Marcello--
+  Ekvidis...
+
+MARCELLO
+
+  Haltu! Jen ĝi mem aperas!
+
+(Montras sin spirito en armaĵo.)
+
+BERNARDO
+
+  Li mem, li mem, mortinta nia reĝo!
+
+MARCELLO (al Horacio)
+
+  Vi estas instruita, Horacio,
+  Parolu vi kun li!
+
+BERNARDO
+
+                    Ĉu ne simila
+  Li estas al la reĝo? Diru mem!
+
+HORACIO
+
+  Jes, jes! Li mem! Mi miras, timas, tremas.
+
+BERNARDO
+
+  Li volas, ke kun li oni parolu.
+
+MARCELLO
+
+  Parolu, Horacio!
+
+HORACIO (al la spirito).
+
+                   Kiu estas
+  Vi, kiu vagas en la nokta horo
+  En la majesta nobla eksteraĵo
+  De la mortinta reĝo de Danujo?
+  Mi vin petegas per ĉielo: diru!
+
+MARCELLO
+
+  Li estas ofendita.
+
+BERNARDO
+
+                     Li foriras.
+
+HORACIO
+
+  En nomo de ĉielo! Restu! Diru!
+
+(La spirito foriras.)
+
+MARCELLO
+
+  Li iris for, respondi li ne volis.
+
+BERNARDO
+
+  Ha, Horacio, kio al vi estas?
+  Vi estas pala, tremas? Ĉu ne pli,
+  Ol sonĝo estas tiu ĉi apero?
+
+HORACIO
+
+  Per Dio! Mi ne povus tion kredi,
+  Se mi ne vidus ĝin per miaj propraj
+  Okuloj.
+
+MARCELLO
+
+          Ne simila al la reĝo?
+
+HORACIO
+
+  Ne malpli multe, ol vi al vi mem.
+  Jes, ĝuste tian portis li armaĵon
+  En la batalo kontraŭ la Norvegoj,
+  Li ĝuste tian vidon havis, kiam
+  Li en kolero sian pezan glavon
+  En la glacion batis. Strange!
+
+MARCELLO
+
+                                Tiel
+  Li jam du fojojn kun minaca vido
+  Aperis antaŭ ni en sama horo.
+
+HORACIO
+
+  Ne povas mi precize ĝin klarigi;
+  Sed la apero, kiom mi komprenas,
+  Al nia land' malbonon antaŭdiras.
+
+MARCELLO
+
+  Ĉu ne militon? Ĉu vi scias, kial
+  Nun gardoj ĉie staras, pafilegoj
+  Nun estas pretigataj ĉiam novaj,
+  El l' eksterlando venas bataliloj,
+  Rapide ŝipoj estas konstruataj
+  En granda nombro, kaj eĉ en dimanĉoj
+  Ne ĉesas la prepara laborado?
+  El kia kaŭzo tiu rapidado
+  Kaj laborad' en tago kaj en nokto?
+  Ĉu povas iu diri?
+
+HORACIO
+
+                     Jes, mi povas,--
+  Almenaŭ tiom, kiom mi ĝin aŭdis.
+  La lasta reĝo, kies la figuro
+  Ĵus antaŭ ni aperis, estis iam
+  Vokita--vi ĝin scias--al batalo
+  De la Norvega reĝo Fortinbras.
+  Hamleto, nia brava, glora reĝo,
+  En la batalo venkis Fortinbrason.
+  Laŭ la kontrakto antaŭsigelita
+  Kaj sankciita de la rajt' kaj moro
+  Post morto de l' venkita Fortinbras
+  La tuta lando de l' venkita reĝo
+  Transiris en posedon de l' venkinto.
+  Se la venkinto estus Fortinbras,
+  Al li transiri devus nia lando.
+  Sed nun la juna fil' de Fortinbras,
+  Kuraĝigita eble per la morto
+  De nia reĝo, amasigis aron
+  Da kuraĝuloj kaj aventuristoj
+  Por entrepreno, kiun nia regno
+  Komprenas bone; lia celo estas:
+  Per forta mano de la bataliloj
+  Elŝiri nun el nia man' la landon,
+  Perditan per batal' de lia patro.
+  Kaj tio, kiel ŝajnas, estas kaŭzo
+  De niaj prepariĝoj kaj gardado
+  Kaj laborado en la tuta lando.
+
+BERNARDO
+
+  Mi pensas ankaŭ, ke la kaŭzo estas
+  Nun tio ĉi. Pro tio ankaŭ certe
+  Nun vizitadas nokte nian gardon
+  Terura la fantomo en armaĵo
+  De l' reĝo, kiu kaŭzis la militon.
+
+HORACIO
+
+  Ne! Mi alion timas de l' fantomo!
+  En la plej glora temp' de l' granda Romo,
+  Ĵus antaŭ la pereo de Cezaro,
+  Mortintoj sin ellevis el la tomboj.
+  Kaj promenadis tra la urbaj stratoj;
+  Kaj steloj kun teruraj fajraj vostoj,
+  Kaj sanga roso, makulita suno,
+  Mallumigita luno,--ĉio tio
+  Aperis tiam kiel antaŭsignoj
+  De granda malfeliĉo. Tiel ofte
+  Antaŭ la veno de renversoj grandaj
+  Sin montras strangaj teruraj signoj
+  En la naturo. Al ni ankaŭ certe
+  Nun la ĉielo sendas tian signon...
+
+(La spirito denove aperas.)
+
+HORACIO
+
+  Sed ha! denove li aperas! Nepre
+  Mi nun kun li parolos, se eĉ morto
+  Al mi per ĝi minacos! Halt', fantomo!
+  Se voĉon vi posedas kaj parolon,--
+  Parolu! Se per ia bona faro
+  Al vi trankvilon povas mi alporti,--
+  Parolu! Se danĝero al la lando
+  Minacas kaj ankoraŭ estas eblo
+  La landon antaŭsavi,--ho, parolu!
+  Kaj se en via vivo vi kolektis
+  Trezorojn kaj enfosis en la teron
+  Kaj nun pro ili vagas en la noktoj,--
+  Parolu! Diru! Restu kaj respondu! (Koko krias).
+  Haltigu ĝin, Marcello! Ĝi foriras!
+
+MARCELLO
+
+  Ĉu piki lin per mia halebardo?
+
+HORACIO
+
+  Jes, piku lin, se li ne volas stari!
+
+BERNARDO
+
+  Jen ĝi!
+
+HORACIO
+
+            Jen ĝi! Ho, halt'!
+
+MARCELLO
+
+                                Ha, ĝi foriris!
+
+(La spirito foriras).
+
+  Ni lin ofendas! Kontraŭ majesteco
+  Ni venas kun sovaĝa atakado!
+  Kiel aer' li estas nevundebla,
+  Kaj nia atakado estas vana!
+
+BERNARDO
+
+  Li volis jam paroli, sed la koko
+  Ekkriis.
+
+HORACIO
+
+           Kaj subite li ektremis,
+  Simile al estaĵo pekoplena
+  Ĉe krio de teruro. Oni diras,
+  La koko, trumpetisto de l' mateno,
+  Per sia laŭta, forta, hela voĉo
+  El dormo vekas dion de la tago,
+  Kaj laŭ la krio de la koko tuj
+  El akvo, fajro, tero kaj aero
+  Spirito ĉiu, kie ajn li vagas,
+  Rapidas hejmen; la fantomo pruvis
+  Al ni, ke tio estas ne malvero.
+
+MARCELLO
+
+  Li malaperis ĉe la koka krio.
+  Mi aŭdis, ke en nokto Kristonaska,
+  En kiu sur la teron venas Kristo,
+  La koko krias tra la tuta nokto:
+  Kaj ne kuraĝas tiam la spiritoj
+  Sin montri, kaj la nokto estas pura,
+  La steloj ne minacas, la koboldoj
+  Sin kaŝas kaj la sorĉistinoj dormas:
+  Ĉar tiel sankta estas tiu nokto.
+
+HORACIO
+
+  Mi ankaŭ aŭdis, kaj mi iom kredas.
+  Sed vidu, la mateno purpurvesta
+  Leviĝas sur la roson de l' monteto:
+  Ni povas jam forlasi la postenon,
+  Kaj mi konsilas: tion, kion vidis
+  Ni en la nokto, ni rakontu ĉion
+  Al la Hamleto juna; ĉar mi ĵuras,
+  Ke la spirito, por ni tiel muta,
+  Al li parolos. Ĉu konsentas vi,
+  Ke ni al li raportu, kiel amo
+  Kaj ŝuldo al ni fari ĝin ordonas!
+
+MARCELLO
+
+  Mi petas vin, ni faru ĝin! Mi scias,
+  En kia loko ni lin certe trovos. (Ĉiuj foriras).
+
+
+SCENO II
+
+Salono en la palaco. La reĝo, la reĝino, Hamleto, Polonio, Laerto,
+Voltimand, Kornelio, Korteganoj eniras.
+
+REĜO
+
+  Ankoraŭ freŝa estas la memoro
+  Pri l' morto de la kara nia frato,
+  Al nia kor' konvenus nun funebri,
+  Kaj kvazaŭ unu frunto de malĝojo
+  La tuta regno devus nun sulkiĝi:
+  Sed tamen la prudento necesigas
+  Nin venki la naturon; kun malĝojo
+  Pri la mortinto ni decidis ligi
+  Memoron pri ni mem kaj pri la regno.
+  Kaj tial ni kun ĝojo depremita,
+  Per unu el l' okuloj plezurante
+  Kaj per la dua larmojn verŝegante,
+  Kun ĝoj' funebra, plor' edziĝofesta,
+  Pesante juste ĝojon kun doloro,
+  Edziĝis kun l' edzin' de nia frato,
+  Kun la reĝino nia kaj vidvino,
+  Heredantino de la glora regno.
+  Obeis ni per tio ĉi al via
+  Konsilo tre prudenta kaj libera.
+  Akceptu nian dankon kaj saluton!
+  Kaj nun transiru ni al la aferoj.
+  Vi scias, ke la juna Fortinbras,
+  Ne respektante dece nian indon,
+  Pensante eble nun, ke per la morto
+  De nia kara frato renversiĝis
+  La ordo kaj la fort' en nia lando,--
+  Ekpensis, ke li estas pli potenca
+  Kaj ekturmentis nin per la postulo
+  Redoni nun al li la tutan landon,
+  Perditan de mortinta lia patro
+  Laŭ plena rajt' al glora nia frato.
+  Ni tial vin kunvokis nun. Aŭskultu
+  Decidon nian: Jen ni skribis skribon
+  Al l' onklo de la juna Fortinbras--
+  Malforta kaj malsana en la lito,
+  L' intencon de la nevo li ne scias--
+  Ni skribis, ke retenu li la nevon
+  De liaj krimaj, arogantaj agoj,
+  Ĉar ĉiuj prepariĝoj ja fariĝas
+  En lia propra lando kaj popolo.
+  Vin, bravaj Voltimand kaj Kornelio,
+  Ni sendas kun la skribo kaj saluto
+  Al la maljuna estro de l' norvegoj.
+  Sed ne ricevas vi la rajton trakti
+  Kun la norvego pli, ol en mezuro
+  De tio, kion ĵus ni al vi diris.
+  Adiaŭ, kaj per rapideco montru
+  Al ni fervoron vian!
+
+KORNELIO kaj VOLTIMAND.
+
+                       Kredu, reĝo,
+  Fidele ni plenumos la ordonon.
+
+REĜO
+
+  Ne dubas ni pri ĝi. Feliĉan vojon!
+
+(Voltimand kaj Kornelio foriras.)
+
+  Kaj nun, Laerto, al l' afero via!
+  Vi diris, ke vi peti ion volas!
+  Pri kio ajn prudenta vi al ni
+  Parolos, viaj vortoj ne perdiĝos.
+  Volonte ni plenumos vian peton.
+  Ne pli obea estas kap' al koro,
+  Ne pli servema mano al la buŝo,
+  Ol la Danuja tron' al via patro.
+  Sciigu nin pri la deziro via.
+
+LAERTO
+
+  Mi petas vin, permesu al mi, reĝo,
+  Reiri nun Francujon. Mi volonte
+  El tie venis tien ĉi, por fari
+  La servon mian ĉe l' kronado via;
+  Sed nun, jam plenuminte mian ŝuldon,
+  Sopiras mi denove al Francujo,
+  Kaj nun de vi permeson mi petegas.
+
+REĜO
+
+  Ĉu via patro ĝin permesas? Kion
+  Al tio diras Polonio?
+
+POLONIO
+
+                        Reĝo!
+  Li eldevigis la permeson mian
+  Per ne ĉesanta ripetado, tiel,
+  Ke fine mi al lia peto donis
+  Sigelon mian. Nun por li mi petas
+  Permeson vian, via reĝo moŝto.
+
+REĜO
+
+  Mi liberigas vin. Nun via tempo
+  Libere estas al dispono via.--
+  Kaj nun al vi mi turnas min, Hamleto,
+  Vi, kara nevo, kara filo mia!
+
+HAMLETO (flanken).
+
+  Sed certe tute fremda per la koro!
+
+REĜO
+
+  Ankoraŭ ĉiam nuboj sur la frunto?
+
+HAMLETO
+
+  Ho, ne! Mi staras ja antaŭ la suno!
+
+REĜINO
+
+  Forĵetu la doloron, kara filo,
+  Amikan frunton montru al la reĝo.
+  Ne serĉu kun palpebroj mallevitaj
+  Eterne vian patron en la polvo.
+  Vi scias ja: la leĝoj de l' naturo
+  Ne estas refareblaj! Kio vivas,
+  Necese devas iam morti. Vivo
+  Eterna post la tombo nur ekzistas.
+
+HAMLETO
+
+  Ho, jes, reĝino, ĉiuj devas morti.
+
+REĜINO
+
+  Nu kial do la morto de la patro
+  Al vi ekŝajnis tiel eksterorda?
+
+HAMLETO
+
+  Ekŝajnis? Ne, ĝi estas, ho, patrino.
+  Ne mia nigra vesto, nek la ĝemoj,
+  Nek la okuloj plenaj de larmaro,
+  Nek la funebra vido de l' vizaĝo,
+  Nek ĉiuj moroj de senkonsoleco
+  Min vere montras. Ĉio estas ŝajno.
+  Funebron estas tre facile ludi.
+  L' efektivaĵon portas mi interne;
+  Eksteraj gestoj estas ja nur vestoj.
+
+REĜO
+
+  Tre bela kaj laŭdinda estas via
+  Malĝojo pri la patro la mortinta.
+  Sed sciu, ankaŭ via patro perdis
+  La patron sian, tiu--ankaŭ sian.
+  La filo, laŭ la ŝuldo de infano,
+  Funebri devas kelkan tempon. Tamen
+  Obstine kaj sen ia fino plendi,--
+  Agado tia estas granda peko
+  Kaj tute ne konvenas al la viro.
+  Ribel' ĝi estas kontraŭ la ĉielo,
+  Signo de kor' sovaĝa kaj senbrida,
+  De kapo nematura kaj malforta.
+  Pri kio ĉiu scias, ke fariĝi
+  Ĝi devis; kio estas tute simpla,
+  Plej ordinara fakto en la mondo:
+  Pro kia kaŭzo tion ĉi obstine
+  Alpreni al la koro? Fi, ĝi estas
+  Pekado kontraŭ Dio kaj naturo,
+  Pekado kontraŭ la mortinto mem;
+  Malsaĝo antaŭ pura la prudento,
+  Kiu predikas: «patroj devas morti»,
+  Kaj kiu ĉiam, de l' mortint' unua
+  Ĝis nuna tempo, diras kaj ripetas:
+  «Ĝi devas tiel esti!»--Mi vin petas,
+  Forĵetu la doloron la sencelan
+  Kaj vidu patron en persono nia;
+  La mondo sciu, ke al nia trono
+  Vi estas la sendube plej proksima,
+  Kaj, kiel plej amanta el la patroj,
+  Mi portas por vi amon plej varmegan
+  En mia koro. Ke vi nun reiru
+  Al la lernejo alta Vittenberga,
+  Ni tion ne dezirus; ni vin petas,
+  Vi restu apud ni, amata nevo,
+  Unua kortegano, kara filo.
+
+REĜINO
+
+  Vi ne rifuzu al patrino via:
+  Mi petas vin, Hamleto, restu hejme.
+
+HAMLETO
+
+  Al vi obei estas mia ŝuldo.
+
+REĜO
+
+  Jen tio estas bele respondita.
+  Mi ĝojas, ke vi restas. Nun, reĝino,
+  La propravola cedo de Hamleto
+  Plenigas mian koron je plezuro;
+  Kaj tial ni aranĝos nun festenon,
+  Kaj kune kun la sono de l' pokaloj
+  La pafilegoj tondru; ĉiun fojon,
+  Kiam la reĝo levos la pokalon,
+  De l' tero tondro iru al ĉielo,
+  Tra l' mondo ĝojon disportante.--Venu!
+
+(La reĝo, reĝino, Laerto kaj korteganoj foriras).
+
+HAMLETO
+
+  Ho, kial ne fandiĝas homa korpo,
+  Ne disflugiĝas kiel polv' en vento!
+  Sin mem mortigi kial malpermesis
+  La Plejpotenca! Dio mia granda!
+  Ho, kiel bestaj kaj abomenindaj
+  Aperas ĉiuj agoj de la mondo!
+  Fi, fi! Ĝardeno plena de venenaj
+  Malbelaj herboj, ĉie senescepte!
+  Apenaŭ pasis du monatoj! Ne!
+  Nur ses semajnoj! Tia granda homo!
+  Se lin kompari kun la nuna reĝo,
+  Li estis Apolono ĉe Satiro!
+  Kaj tiel amis li patrinon mian,
+  Ke al la vento eĉ li ne permesis
+  Vizaĝon ŝian tuŝi! Ho, ĉielo!
+  Ho tero! Ĉu forgesi estas eble?
+  Kaj ŝi ja lin pasie tiel amis!
+  Kaj tamen nun post kelke da semajnoj...
+  Pri tio mi ne volas eĉ ekpensi!
+  Malforto! via nom' estas: virino!
+  Monato! Ŝi ankoraŭ ne eluzis
+  La ŝuojn, kiujn portis ŝi, irante
+  Funebre post la ĉerk' de mia patro,
+  Verŝante larmojn kvazaŭ per riveroj.
+  Ho Dio mia! Besto senprudenta
+  Malĝojus ja pli longe! Nun edzino
+  De mia onklo, frat' de mia patro,
+  Sed ne simila pli al mia patro,
+  Ol mi al Herkuleso! Nur monato!
+  La signoj de mensogaj ŝiaj larmoj
+  Ankoraŭ de l' vizaĝ' ne malaperis,--
+  Ŝi estas jam edzino de alia!
+  Ho, malbenita rapideco flugi
+  En kriman liton, liton de adulto!
+  Ne bonon ĝi alportos! Tamen krevu
+  Kor' mia, sed silentu mia buŝo!
+
+(Horacio, Bernardo kaj Marcello venas.)
+
+HORACIO
+
+  Salut' al la reĝido!
+
+HAMLETO
+
+                        Ha, mi ĝojas
+  Vin vidi! Se memoro min ne trompas,
+  Vi estas Horacio?
+
+HORACIO
+
+                    Jes, reĝido.
+  Kaj ĉiam tute preta al vi servi.
+
+HAMLETO
+
+  Ne nomu min «reĝido», sed «amiko».
+  Sed kial vi forlasis Vittenbergon?
+
+(Al Marcello)
+
+  Marcello?
+
+MARCELLO
+
+            Jes, reĝido.
+
+HAMLETO
+
+                          Mi tre ĝojas
+  Revidi vin.
+    (Al Horacio) Sed diru serioze,
+  Por kio vi forlasis Vittenbergon?
+
+HORACIO
+
+  De maldiligenteco, ho, reĝido.
+
+HAMLETO
+
+  Al malamiko via ne permesus
+  Mi tion diri, kaj vi vane penas
+  Kredigi min, ke tio estas vero.
+  Mi scias, vi ne amas sen laboro
+  Vagadi. Kion tie ĉi vi faras?
+  Ĉu trinki vi ankoraŭ volas lerni?
+
+HORACIO
+
+  Mi alveturis al la enterigo
+  De via patro.
+
+HAMLETO
+
+                Ha, ne moku min,
+  Kolego; diru, ke vi alveturis
+  Al fest' edziĝa de patrino mia!
+
+HORACIO
+
+  Jes, vero, princ', la dua baldaŭ sekvis
+  Post la unua.
+
+HAMLETO
+
+                Vidu, mia kara,--
+  Afero simpla de ekonomio:
+  De l' fest' funebra restis multaj manĝoj,--
+  Por ke la manĝoj vane ne pereu,
+  Edziĝon fari oni nun rapidis.
+  Ho, pli volonte mi en la infero
+  Renkontus malamikon plej malbonan,
+  Ol tagon tiun ĉi alvivi! ŝajnas
+  Al mi, ke mi la patron mian vidas...
+
+HORACIO
+
+  Ha, kie?
+
+HAMLETO
+
+           En l' okuloj de l' animo.
+
+HORACIO
+
+  Mi konis lin, li estis brava reĝo.
+
+HAMLETO
+
+  Li estis homo en plej pura senco.
+  Al li similan ni neniam vidos.
+
+HORACIO
+
+  Reĝido, al mi ŝajnas, ke mi vidis
+  Lin en la lasta nokto.
+
+HAMLETO
+
+                         Vidis? Kiun?
+
+HORACIO
+
+  La reĝon, vian patron, mia princo.
+
+HAMLETO
+
+  La reĝon? Mian patron?
+
+HORACIO
+
+                          Trankviligu,
+  Reĝido, por momento vian miron
+  Kaj elaŭskultu, kion mi raportos
+  Pri mirindaĵo, kies la verecon
+  Atestos ambaŭ tiuj ĉi kolegoj.
+
+HAMLETO
+
+  Pro Dio, ho, rakontu pli rapide!
+
+HORACIO
+
+  Du noktojn al Marcello kaj Bernardo
+  Aperis ĝi: postene ili staris,--
+  Kaj jen en noktomeza silentego
+  Aperas antaŭ ili ia ombro,
+  Simila tute al patro via,
+  Armita de la kapo ĝis piedoj;
+  Per paŝo serioza kaj majesta,
+  Ne rapidante, ĝi sin preterŝovas;
+  Tri fojojn ĝi ripetas sian marŝon
+  Antaŭ la teruritaj oficiroj,
+  Proksime tiel, ke per halebardo
+  Ĝin ili povus tuŝi. Dispremitaj
+  De granda timo, ili mute staras
+  Kaj eĉ ne provas ion ekparoli.
+  Pri la aper' mistera kaj terura
+  Al mi ili rakontis. Mi kun ili
+  En la sekvanta tria nokto gardis,
+  Kaj jen tre vere en la sama horo,
+  Pri kiu ili diris, en la sama,
+  Perfekte tiu sama maniero
+  Aperis la fantomo. Vian patron
+  Mi konis,--la fantom' al li similis,
+  Kiel de l' sama akvo gut' al guto.
+
+HAMLETO
+
+  Sed kie ĝi okazis?
+
+MARCELLO
+
+                      Ĝi okazis
+  Sur la teras', kie ni staris garde.
+
+HAMLETO
+
+  (al Horacio) Al li parolis vi?
+
+HORACIO
+
+                                 Jes, mia princo;
+  Sed li al mi eĉ vorton ne respondis.
+  Nur unu fojon ŝajnis, ke li levas
+  La kapon kaj moveton ian faras,
+  Por ekparoli: sed subite tiam
+  Ekkriis laŭte koko la matenon,
+  Kaj tuje forrapidis la fantomo
+  Kaj malaperis.
+
+HAMLETO
+
+                 Efektive strange!
+
+HORACIO
+
+  Mi ĵuras, ke ĝi estas pura vero!
+  Ni ĝin kalkulis kiel nian devon
+  Al vi raporti pri l' afero.
+
+HAMLETO
+
+                              Vere,
+  Sinjoroj, tio min maltrankviligas.
+  Ĉu vi hodiaŭ staros gardon?
+
+ĈIUJ
+
+                                Jes.
+
+HAMLETO
+
+  Kaj, diras vi, li estis en armaĵo?
+
+ĈIUJ
+
+  Jes, princo.
+
+HAMLETO
+
+               De la kapo ĝis piedoj?
+
+ĈIUJ
+
+  De l' kapo ĝis piedoj, nia princo.
+
+HAMLETO
+
+  Kaj sekve la vizaĝon vi ne vidis?
+
+HORACIO
+
+  Levita estis lia viziero,
+  Kaj ni tre bone vidis la vizaĝon.
+
+HAMLETO
+
+  Ĉu la rigardo estis malafabla?
+
+HORACIO
+
+  Mieno lia montris pli suferon,
+  Sed ne koleron.
+
+HAMLETO
+
+                  Ĉu li estis pala,
+  Aŭ ĉu koloron havis en vizaĝo?
+
+HORACIO
+
+  Terure pala.
+
+HAMLETO
+
+               Ĉu li vin rigardis?
+
+HORACIO
+
+  Tre forte.
+
+HAMLETO
+
+             Kial mi kun vi ne estis!
+
+HORACIO
+
+  Por vi l' apero estus tro terura!
+
+HAMLETO
+
+  Tre povas esti. Ĉu li longe restis?
+
+HORACIO
+
+  Apenaŭ centon povus vi kalkuli
+  Ĉe nerapida kalkulad'.
+
+MARCELLO kaj BERNARDO
+
+                          Pli longe!
+
+HORACIO
+
+  Almenaŭ tiam, kiam mi ĝin vidis.
+
+HAMLETO
+
+  La barbo estis griza, ĉu ne vere?
+
+HORACIO
+
+  Ĝi estis tia, kiel mi ĝin vidis
+  Ĉe lia vivo: duonnigre-griza.
+
+HAMLETO
+
+  Hodiaŭ mi kun vi en nokto staros;
+  Denove eble venos la fantomo.
+
+HORACIO
+
+  Ĝi certe venos.
+
+HAMLETO
+
+                   Kaj se ĝi aperos
+  En l' eksteraĵ' de mia nobla patro,
+  Al ĝi mi ekparolos, se eĉ tuta
+  Al mi minacus la infero. Vin
+  Mi ĉiujn petas, se ĝis nun silentis
+  Vi pri l' apero, tenu ankaŭ plu
+  Ĝin en sekreto; kaj al ĉio, kio
+  Okazos eble en la nokto, havu
+  Okulojn kaj orelojn, sed ne buŝon.
+  Per mia amo mi vin rekompencos.
+  Adiaŭ do! en la dekdua horo
+  Sur la teraso mi vin revizitos.
+
+ĈIUJ
+
+  Al via princa moŝto niaj servoj!
+
+HAMLETO
+
+  Ne, via amo, kiel al vi mia.
+  Adiaŭ do! (Horacio, Marcello kaj Bernardo foriras.)
+             Spirit' de mia patro
+  En bataliloj! Mi supozas ion
+  Malbonan. Ho, se venus jam la nokto!
+  Ĝis tiam do trankvile! Malbenaĵoj
+  Kaj krimoj venas al la lum' de l' tago,
+  Se eĉ murego tera ilin kovras. (Foriras).
+
+
+SCENO III
+
+Ĉambro en la domo de Polonio. Laerto kaj Ofelio eniras.
+
+LAERTO
+
+  Pakaĵo mia estas sur la ŝipo.
+  Adiaŭ, fratineto! Se vi havos
+  Okazon, ne forgesu al mi skribi
+  Pri via farto.
+
+OFELIO
+
+                 Ĉu vi tion dubas?
+
+LAERTO
+
+  Sed pri Hamleto kaj pri lia amo
+  Konsilas mi al vi, vi ĝin rigardu,
+  Kiel kapricon kaj nur kiel ludon
+  De juna sango; bela violeto
+  En la printempo: frue elkreskinta,
+  Sed ne konstanta,--dolĉa, sed ne daŭra,
+  Odoro, ĝuo de momento unu,
+  Nenio pli.
+
+OFELIO
+
+             Nenio pli?
+
+LAERTO
+
+                        Jes, tiel
+  Vi ĝin rigardu. La natur', kreskante,
+  Grandiĝas pli ne sole per la korpo
+  Kaj per la forto de la sama sento;
+  Kun la kreskado de la tempo ofte
+  Ŝanĝiĝas la spirito kaj la servo
+  Interne. Nun li eble amas vin;
+  Nek trompo nek malico nun makulas
+  La virton de l' animo lia: tamen
+  Memoru vi, ke en la rango lia
+  De sia volo li ne estas mastro.
+  Li mem ja estas sklav' de sia stato;
+  Ne povas li, kiel la simplaj homoj,
+  Por si elekti: de elekto lia
+  Dependas farto de la tuta regno,--
+  Li tial devas gvidi la elekton
+  Per la aprob' kaj voĉo de la korpo,
+  Al kiu li mem servas kiel kapo.
+  Se li nun diras, ke li amas vin,
+  Prudente estas, ke vi al li kredu
+  Nur tiom, kiom povas li plenumi
+  La vorton sian,--tio estas tiom,
+  Kiom permesas la komuna voĉo
+  De tuta la Danujo. Ekmemoru,
+  En kia grad' honoro via povas
+  Suferi, se aŭskultos tro kredeme
+  Vi lian kanton, se la koron vian
+  Vi perdos kaj al lia persistado
+  Malkovros la trezoron vian ĉastan.
+  Vi timu ĝin, fratino mia kara,
+  Evitu flaman mezon de la amo,
+  Atakon kaj atencon de deziro!
+  Knabin' plej ĉasta perdis jam modeston,
+  Se al la lun' ŝi montris sian ĉarmon.
+  Eĉ virto ne evitas kalumnion,
+  L' infanojn de printempo ofte mordas
+  La verm' ankoraŭ en la burĝoneco,
+  Kaj al la frua roso de juneco
+  Spiret' venena estas plej danĝera.
+  Vin gardu do! Tim' donas garantion.
+  Por la juneco ĉie staras retoj.
+
+OFELIO
+
+  La sencon de l' instruo via bona
+  Konservos mi, por gardi mian bruston;
+  Sed, bona mia frato, vi ne agu
+  Simile al la predikistoj, kiuj
+  Predikas krutan vojon al ĉielo,
+  Dum ili mem senzorge kaj volupte
+  Sur flora vojo de gajeco paŝas,
+  Mokante pri prediko sia propra.
+
+LAERTO
+
+  Ne timu! Tamen mi tro longe restis.--
+  La patro venas jen! (Polonio eniras.)
+                      (Al Polonio) Duobla beno
+  Sendube duobligas la feliĉon:
+  Dank' al okazo mi denove povas
+  Adiaŭ al vi diri.
+
+POLONIO
+
+                     Vi ankoraŭ
+  La domon ne forlasis? Al la ŝipo!
+  La vento blovas helpe al la vojo,
+  Kaj oni vin atendas. Nu, akceptu
+  Denove mian benon.
+
+(Li metas la manon sur la kapon de Laerto.)
+
+                     Kaj memoru
+  Regulojn, kiujn mi al vi instruis:
+  Ne ĉian penson metu sur la langon,
+  Ne donu tuj al ĉia penso faron.
+  Afabla estu, sed ne tro kredema.
+  Al la amiko saĝe elektita
+  Kunforĝu vin en fera fideleco,
+  Sed gardu vian manon de la premo
+  De ĉiu renkontota bona frato.
+  Vi gardu vin de ĉia malpaciĝo;
+  Se vi ĝin ne evitos,--tiam agu
+  Fortike, ke la malamik' vin timu.
+  Al ĉiu servu per orelo via,
+  Sed ne al ĉiu servu per la buŝo.
+  Konsilojn ĉiam prenu vi de ĉiu,
+  Sed propran juĝon en la kapo tenu
+  Laŭ via mon' mezuru vian veston,
+  Sed ĉio estu takta kaj konvena;
+  Vin vestu bone, sed ne kiel dando:
+  Laŭ vest' ekkonas oni ofte viron,
+  La homoj altastataj en Francujo
+  En tiu punkto estas tre zorgemaj.
+  Ne prenu prunte kaj ne prunte donu:
+  Per pruntedono ofte oni perdas
+  Krom sia havo ankaŭ la amikon,
+  Kaj pruntepren' kondukas al ruino
+  De la mastraĵo. Antaŭ ĉio estu
+  Fidela al vi mem,--de tio sekvos,
+  Ke vi ne estos ankaŭ malfidela
+  Al la aliaj homoj. Nun adiaŭ,
+  Kaj mia beno vin akompanadu!
+
+LAERTO
+
+  Adiaŭ, mia patro kaj sinjoro!
+
+POLONIO
+
+  Jam tempo. Iru, oni vin atendas.
+
+LAERTO
+
+  Adiaŭ, Ofelio, kaj memoru
+  Pri tio, kion diris mi al vi!
+
+OFELIO
+
+  Mi bone ŝlosis ĝin en mia kapo,
+  Kaj la ŝlosilon mi al vi fordonas.
+
+LAERTO (al Polonio kaj Ofelio)
+
+  Adiaŭ! (Foriras.)
+
+POLONIO
+
+          Kia estas la konsilo,
+  Pri kiu li parolis?
+
+OFELIO
+
+                      Pri Hamleto,
+  Pri la reĝido.
+
+POLONIO
+
+                  Ha, jes, ĝustatempe!
+  Mi aŭdis, ke en lasta temp' Hamleto
+  Al vi komencis montri amikecon
+  Kaj ke vi mem apartan afablecon
+  Al li montradis. Se ĝi estas vero--
+  Mi aŭdis ĝin en formo de averto--
+  Mi devas al vi diri, ke vi mem
+  Kredeble ne komprenas tute klare
+  Danĝeron, kiu al filino mia
+  Kaj al honoro via nun minacas.
+  Kiel vi estas unu kun la dua?
+  La veron al mi diru!
+
+OFELIO
+
+                       De mallonge
+  Al mi li ripetadis kelkajn fojojn,
+  Ke li estimas min.
+
+POLONIO
+
+                     Ha, ha! Estimo!
+  Parolo de nesperta knabineto!
+  Kaj kredas vi al la «estimo» lia?
+
+OFELIO
+
+  Mi mem ne scias, kiel pri ĝi pensi.
+
+POLONIO
+
+  Nu, aŭdu do! Vi estas tre malsaĝa,
+  Ke vi akceptas por kontanta mono
+  La vortojn, kiuj vere ne enhavas
+  Eĉ plej malgrandan indon. Vi vin tenu
+  Prudente kaj singarde, ĉar alie
+  La malsaĝeco via la grandega
+  Vin pereigos!
+
+OFELIO
+
+                Li al mi proponis
+  La amon sian pure kaj honeste.
+
+POLONIO
+
+  Jes, pure kaj honeste! Vi, senkapa!
+
+OFELIO
+
+  Li ĵuris al mi, patro mia kara,
+  Per ĉiuj sanktaj ĵuroj de ĉielo.
+
+POLONIO
+
+  Kaptiloj por la birdoj! Mi ja scias,
+  Ke se la sango bolas, tiam lango
+  La ĵurojn ne avaras. Ho, filino,
+  Ne prenu vi por fajro tiun flamon,--
+  Ĝi lumas, sed ĝi tute ne varmigas,
+  Ĝi estingiĝas tuj, ne supervivas
+  Eĉ la minuton de la promesado.
+  De nun kun via virga afableco
+  Avaru pli; la paroladon vian
+  Vi ŝatu pli, ne estu tute preta
+  Tuj laŭ ordono! La reĝid' Hamleto
+  Ankoraŭ estas juna, kaj li havas
+  Pli grandan liberecon, ol al vi
+  Donata povas esti. Ofelio,
+  Mallonge mi sed klare al vi diras:
+  Ne kredu al ĵurado lia; ĵuroj
+  Similaj estas trompaj delogantoj,
+  Antaŭparoloj de tre pekaj petoj;
+  Promesojn piajn ili hipokritas,
+  Por pli sukcese veni al la celo.
+  Per unu vorto: nun vi eĉ minuton
+  Ne restu en intima parolado
+  Kun la reĝid' Hamleto! Ne kuraĝu
+  Forgesi mian tiun ĉi ordonon!
+  Nun iru!
+
+OFELIO
+
+           Mi obeos, mia patro. (Ambaŭ foriras.)
+
+
+SCENO IV
+
+La teraso antaŭ la palaco. Hamleto, Horacio kaj Marcello venas.
+
+HAMLETO
+
+  Ho, kiel akra estas la aero!
+
+HORACIO
+
+  Jes, princo, blovas vento malvarmega.
+
+HAMLETO
+
+  Kioma horo?
+
+HORACIO
+
+            Baldaŭ la dekdua.
+
+MARCELLO
+
+  Ne, ne, jam la dekdua horo batis.
+
+HORACIO
+
+  Ĉu efektive? Mi ne aŭdis. Sekve
+  Alproksimiĝas jam la temp', en kiu
+  Aperas ordinare la spirito.
+
+(Post la sceno estas aŭdataj tamburado kaj ektondro de pafilego.)
+
+  Ha, kion tio ĉi signifas, princo?
+
+HAMLETO
+
+  La reĝo diligente nun pasigas
+  La nokton en gajega festenado;
+  Kaj ĉiun fojon, kiam li eltrinkas
+  Pokalon, pafilegoj al la mondo
+  Anoncas la grandfaron de la reĝo.
+
+HORACIO
+
+  Ekzistas tia moro?
+
+HAMLETO
+
+                     Jes, sendube.
+  Sed pensas mi, ke estas pli honore
+  Forgesi tian moron, ol ĝin sekvi.
+  La brua kaj diboĉa festenado
+  Alportis al ni tre malbonan gloron
+  Ĉe la popoloj de la tuta mondo.
+  Drinkistoj oni nomas nin insulte;
+  Kaj tiu ĉi makulo malpurigas
+  La gloron de plej grandaj niaj faroj.
+  Similan sorton ofte ankaŭ havas
+  Privataj homoj, se sen propra kulpo
+  Makulon ian ili de naturo
+  Ricevis; se ekzemple de naskiĝo--
+  En kio ne ilia vol' ja estis--
+  Ilia sango estas tro bolanta,
+  Rompanta ofte digon de prudento;
+  Aŭ se kutimo ilin malbonigis,--
+  La mond' ilin atakas sen kritiko,
+  Se eĉ iliaj virtoj estas puraj
+  Kaj multenombraj. Grajno da malbono
+  Por la okul' de l' mondo ofte kovras
+  La tutan indon de plej bona homo.
+
+(Aperas la spirito en armaĵo.)
+
+HORACIO
+
+  Ho, vidu, princo, ĝi aperas!
+
+HAMLETO
+
+                                Dio!
+  Defendu nin, anĝeloj de ĉielo!
+
+(Li staras kelkajn minutojn senmove.)
+
+  Spirito sankta, aŭ demon' terura,
+  Ĉu el ĉielo aŭ el la infero,
+  Ĉu vi intencas bonon aŭ malbonon,--
+  Aperis vi en tia nobla formo,
+  Ke mi paroli devas. Ho, Hamleto,
+  Ho, patro, ho vi, reĝo de Danujo,
+  Respondu! Ho, ne lasu min perei
+  En nesciado! Diru al mi, kial
+  Sin levis el la tombo viaj ostoj?
+  Kaj la ĉerkujo, kien ni trankvile
+  Vin metis, kial ĝi malfermis nun
+  La pezan sian buŝon de marmoro,
+  Por vin elĵeti? Kion ĝi signifas,
+  Ke vi, senviva korpo, en armaĵo
+  Denove venis en la lunan lumon,
+  Por ektimigi nin, malsaĝajn homojn,
+  Kaj nin ataki per teruraj pensoj
+  Ne klarigeblaj por l' animo nia?
+  Por kio! Diru! Kial? Kion fari?
+
+(La spirito faras signojn al Hamleto.)
+
+HORACIO
+
+  Li vokas vin, ke iru vi kun li,
+  Li kvazaŭ volas ion komuniki
+  Nur al vi sola.
+
+MARCELLO
+
+                  Kun afablaj gestoj
+  Li vokas vin pli malproksimen, princo;
+  Sed ho, pro Di', ne iru!
+
+HORACIO
+
+                           Ne, ne iru!
+
+HAMLETO
+
+  Sed tie ĉi ne volas li paroli,
+  Kaj mi lin sekvos.
+
+HORACIO
+
+                     Ho, ne, ne, reĝido!
+
+HAMLETO
+
+  Nu, kion do mi timos? Mia vivo
+  Ne havas por mi indon, kaj l' animo,
+  Senmorta, kiel la spirito mem,
+  Ja ne bezonas timi la spiriton.
+  Li vokas min denove; mi lin sekvos.
+
+HORACIO
+
+  Sed se li vin allogos al la maro,
+  Aŭ eble al la supro de l' ŝtonego,
+  Staranta super la senfunda akvo,
+  Kaj tie per terura nova vido
+  Subite nebuligos vian saĝon
+  Kaj pereigos vin? Memoru, princo!
+  Jam per si mem al ĉiu viva homo
+  Terura estas tiu alta pinto,
+  Pendanta super la bruantaj ondoj
+  De plej profunda loko de la maro.
+
+HAMLETO
+
+  Li ĉiam vokas. (Al la spirito) Iru, mi vin sekvas!
+
+MARCELLO (retenante Hamleton).
+
+  Ho, princo, vi ne iros!
+
+HAMLETO
+
+                          For la manojn!
+
+HORACIO
+
+  Aŭskultu nin, ne iru!
+
+HAMLETO
+
+                         Mia sorto
+  Min vokas, kaj per ĝi mi sentas nun
+  En ĉiu vejno de la korpo mia
+  Potencan feran forton de leono.
+
+(La spirito faras signojn)
+
+  Li ĉiam vokas! Lasu! Pro ĉielo! (Li sin elŝiras.)
+  Fantomon faros mi el ĉiu, kiu
+  Kuraĝos min reteni! For! (Al la spirito) Ho, iru!
+  Mi post vi iras. (La spirito kaj Hamleto foriras.)
+
+HORACIO
+
+                   Ha, li freneziĝis!
+
+MARCELLO
+
+  Ni sekvu lin! La dev' al ni ordonas!
+
+HORACIO
+
+  Ni iru! Kiel tio ĉi finiĝos?!
+
+MARCELLO
+
+  Malbona io estas en Danujo.
+
+HORACIO
+
+  Nin gardos la ĉielo.
+
+MARCELLO
+
+                        Ni rapidu!
+
+
+SCENO V
+
+Izolita loko de la teraso. La spirito kaj Hamleto venas.
+
+HAMLETO
+
+  Ho, kien vi kondukas min? Parolu!
+  Mi plu ne iros jam!
+
+SPIRITO
+
+                      Aŭskultu!
+
+HAMLETO
+
+                                 Diru!
+
+SPIRITO
+
+  Jam proksimiĝas mia horo. Baldaŭ
+  Reiri devos mi al la sulfuraj
+  Turmentaj flamoj.
+
+HAMLETO
+
+                    Malfeliĉa patro!
+
+SPIRITO
+
+  Min ne bedaŭru, sed atentu bone,
+  Al tio, kion diros mi.
+
+HAMLETO
+
+                         Parolu!
+  Atenti estas mia sankta ŝuldo.
+
+SPIRITO
+
+  Kaj venĝi ankaŭ, kiam vi ekscios.
+
+HAMLETO
+
+  Ho, Dio! Venĝi? Kion?
+
+SPIRITO
+
+                         Aŭdu bone.
+  Mi estas la spirit' de via patro,
+  Mi estas kondamnita longan tempon
+  Vagadi en la nokto kaj bruladi
+  La tutan tagon en eternaj flamoj,
+  Ĝis mi puriĝos de la ĉiuj pekoj
+  De mia tera vivo. Se ne estus
+  Al mi malpermesite paroladi,
+  Rakonton tiam povus mi komenci,
+  De kiu ĉiu vort' al vi dispremus
+  La koron, rigidigus vian sangon,
+  El kapo elsaltigus la okulojn,
+  Kaj ĉiun vian haron disstarigus
+  Simile al haregoj de histriko.
+  Sed la misteroj de posttomba vivo
+  Ne devas soni al orelo tera.
+  Aŭskultu! Se vi amis vian patron...
+
+HAMLETO
+
+  Ho, Dio!
+
+SPIRITO
+
+           Venĝu por mortigo lia!
+
+HAMLETO
+
+  Mortigo?
+
+SPIRITO
+
+           Jes, mortigo plej malnobla,
+  Terura, nenatura, neaŭdita.
+
+HAMLETO
+
+  Ho, nomu lin! Ke povu mi tuj flugi,
+  Simile al la penso de amanto
+  Mi flugu venĝi tuj.
+
+SPIRITO
+
+                       Vi ŝajnas preta
+  Vi estus dorma, kiel pala herbo,
+  Kreskanta sur la bordo de la Leto,
+  Se restus vi trankvila. Aŭdu, filo:
+  La famon oni faris, ke en tempo
+  De mia dormo en ĝardeno mia
+  Serpento mordis min; kaj oni trompas
+  Per la mensoga fam' pri mia morto
+  L' orelon de la regno; tamen sciu,
+  Ho, nobla mia filo: la serpento,
+  De kies mordo mortis via patro,
+  Nun portas lian kronon.
+
+HAMLETO
+
+                          Mia onklo!
+  Ho, la profeta mia antaŭsento!
+
+SPIRITO
+
+  Jes, tiu plej malnobla adultulo
+  Per sorĉo de la sprito, per perfido
+  (Ho, malbenita sprito kaj donacoj!)
+  Delogis la reĝinon ŝajne virtan
+  Al la plezuroj de malnobla amo.
+  Hamleto mia! Ho, kia defalo!
+  De mi, kies la amo estis sankta,
+  Sendekliniĝa ĉiam de la ĵuro,
+  Farita en la tago de l' edziĝo,--
+  Ŝi malaltiĝis al pekulo, kiun
+  Per ĉio la naturo ja malbenis!
+  Sed kiel virton peko ne delogas,
+  Se ĝi eĉ en ĉiela vest' aperas,
+  Tiel volupto, se eĉ kun anĝelo
+  Vi ligos ĝin, enuas tamen baldaŭ
+  Kaj serĉas ion novan... Sed silentu!
+  Mi sentas jam aeron de mateno,--
+  Mi mallongigos la rakonton. Kiam
+  En la ĝardeno laŭ kutimo mia
+  Mi dormis post tagmezo, via onklo
+  Mallaŭte alŝteliĝis kaj enverŝis
+  Al mi en la orelon plej teruran
+  Venenon el malgranda boteleto,
+  Venenon tian, kiu tre rapide
+  Trakuras tuj la tutan homan korpon
+  Kaj, kvazaŭ acidaĵo en la lakto,
+  Momente malbonigas en la korpo
+  La tutan puran sangon. Mi pereis,
+  Kaj lepro mian tutan glatan korpon
+  Tuj kovris per abomeninda ŝelo.
+  Kaj tiel mi perfide en la dormo
+  Per frata mano estis senigita
+  De l' vivo, krono kaj edzino kune,
+  Mi estis mortigita en florado
+  De miaj pekoj, sen konfesodono,
+  Sen komunio sankta; la kalkulon
+  Ne resuminte, estis mi sendita
+  Kun ĉiuj kulpoj sur la kapo
+  Al granda, fina juĝo.
+
+HAMLETO
+
+                         Ho, terure!
+
+SPIRITO
+
+  Se havas vi animon, ne permesu,
+  Ke reĝa lito de Danujo servu
+  Por sangomiks' adulta kaj volupto.
+  Sed kiel ajn vi volos tion fari,--
+  Vi ne makulu vian filan koron:
+  Nenion faru kontraŭ la patrino,--
+  Ŝin juĝos la ĉielo kaj la pikoj
+  De ŝia propra koro. Nun adiaŭ!
+  La paliĝado de l' lumanta vermo
+  Anoncas la aperon de l' mateno.
+  Adiaŭ, filo, kaj memoru min! (Foriras.)
+
+HAMLETO
+
+  Ho, vi, ĉielo! Tero! Eble ankaŭ
+  L' inferon voki?--Fi, halt' mia koro!
+  Ne maljuniĝu tuj, ho mia korpo!
+  Fortike vi min portu! Vin memori?
+  Jes, malfeliĉa patro! Tiel longe,
+  Ĝis mia kapo perdos la kapablon
+  De ĉia memorado! Vin memori?
+  Sed de l' tabulo de memoro mia
+  Forviŝos mi nun ĉion, kio restis,
+  Sentencojn ĉiujn el la libroj, ĉiujn
+  Pentraĵojn, postesignojn, kiujn lasis
+  Sur ĝi la pasintaĵo kaj juneco,
+  Observojn kaj la spertojn de la vivo;
+  Ordono via vivos tute sola
+  De nun en mia cerbo, ne miksita
+  Kun io malpli inda. Ho, ĉielo!
+  Virino malhonesta kaj perfida!
+  Fripono! Vi, fripono ridetanta!...
+  La tabuleton donu! Mi enskribos,
+  Ke oni povas ĉiam ridetadi
+  Kaj tamen esti friponeg'. Almenaŭ
+  En nia lando tio estas ebla. (Li skribas.)
+  Mi vin enskribis, onklo! Nun al mia
+  Deviz'! «Adiaŭ kaj memoru min!»
+  Mi ĵuris.
+
+HORACIO (post la sceno).
+
+             Princo! Princo!
+
+MARCELLO (post la sceno).
+
+                             Princ' Hamleto!
+
+HORACIO (post la sceno).
+
+  Ho, Dio lin defendu!
+
+HAMLETO (decide, al si mem).
+
+                       Tiel estu!
+
+MARCELLO (post la sceno).
+
+  He! Princo! He!
+
+HAMLETO
+
+                  He! kara mia, he!
+  Al mi, birdeto mia, he! mi estas.
+
+(Horacio kaj Marcello venas.)
+
+MARCELLO
+
+  Nu, kio do sinjoro?
+
+HORACIO
+
+                      Kio nova?
+
+HAMLETO
+
+  Ho, tre mirinde!
+
+HORACIO
+
+                   Diru, kara princo.
+
+HAMLETO
+
+  Vi elbabilos.
+
+HORACIO
+
+                Ne, pro la ĉielo!
+
+MARCELLO
+
+  Mi ankaŭ ne.
+
+HAMLETO
+
+                He, kion vi parolas
+  Ĉu oni povus kredi?! Vi silentos?
+
+HORACIO kaj MARCELLO
+
+  Jes, jes, pro la ĉielo, kara princo!
+
+HAMLETO
+
+  En tuta la Danujo vi ne trovos
+  Friponon, kiu estus hom' honesta.
+
+HORACIO
+
+  Spirito ne bezonis ja sin levi
+  El tombo, por sciigi nin pri tio.
+
+HAMLETO
+
+  Vi estas prava. Tial mi nun pensas,
+  Sen plua disputado ni jam povas
+  Al ni la manojn premi reciproke
+  Kaj iri hejmen. Iru, kien vokas
+  Vin la aferoj kaj deziroj viaj--
+  Aferojn kaj dezirojn ĉiu havas--
+  Mi ankaŭ, la mizera, iros fari
+  Aferon mian,--mi nun iros preĝi.
+
+HORACIO
+
+  Malklare kaj tre strange vi parolas.
+
+HAMLETO
+
+  Ha, mi bedaŭras, ke mi vin ĉagrenas.
+  Mi ĝin bedaŭras el la tuta koro.
+
+HORACIO
+
+  Vi ne ĉagrenas nin.
+
+HAMLETO
+
+                       Ne, Horacio,
+  Ĉagren' ĝi estas, pro Patriko sankta...
+  Pri la spirito de mi al vi diros,
+  Ĝi estas tre senkulpa kaj honesta.
+  La scivolecon pri la estintaĵo
+  Vi venkos, kiel povos. Nun, kolegoj,
+  Amataj kunlernantoj kaj amikoj,
+  Malgrandan unu peton mi vin petos.
+
+HORACIO
+
+  Parolu, princo, ni ĝin certe faros.
+
+HAMLETO
+
+  Neniu devas scii pri l' apero
+  De nuna nokto.
+
+HORACIO kaj MARCELLO
+
+                 Ni promesas, princo.
+
+HAMLETO
+
+  Sed ĵuru!
+
+HORACIO
+
+             Pro honoro, mi silentos!
+
+MARCELLO
+
+  Mi ankaŭ, pro honor'!
+
+HAMLETO
+
+                         Sur mia glavo!
+
+MARCELLO
+
+  Ni ĵuris jam, sinjoro.
+
+HAMLETO
+
+                          Sed mi petas,
+  Sur mia glavo ĵuru al mi.
+
+SPIRITO (sub la tero).
+
+                             Ĵuru!
+
+HAMLETO
+
+  Ha, mia kara! Vi al ni alrampis?
+  Nu, bone! La bravul' aŭskultas. Ĵuru!
+
+HORACIO
+
+  Sed kiel ĵuri?
+
+HAMLETO
+
+                  Ke neniam vi
+  Parolos eĉ per unu sola vorto
+  Pri tio, kion en la lasta nokto
+  Vi vidis. Ĵuru sur la glavo!
+
+SPIRITO (sub la tero).
+
+                                Ĵuru!
+
+HAMLETO
+
+  Hic et ubique? Ŝanĝu ni la lokon!
+  Al mi, sinjoroj! Metu viajn manojn
+  Denove sur la glavon kaj ripetu,
+  Ke vi neniam al neniu diros
+  Pri la apero de la nokto. Ĵuru
+  Pri tio ĉi sur mia glavo!
+
+SPIRITO (sub la tero).
+
+                             Ĵuru!
+
+HAMLETO
+
+  Ha, brave, mia talp'! Vi bone fosas!
+  Pli malproksimen do, amikoj!
+
+HORACIO
+
+                               Dio!
+  Tre strange kaj neniel kompreneble!
+
+HAMLETO
+
+  Plej bona estos, se vi ĝin forgesos!
+  Ekzistas en ĉiel' kaj sur la tero
+  Pli da aferoj, ol en la lernejoj
+  Instruas filozofoj, Horacio.
+  Sed venu! Kaj mi tie ĉi denove
+  Vin petas, ĵuru: kiel ajn mirindaj
+  Al vi agado mia poste ŝajnos,
+  Se eble poste trovos mi utile
+  Ŝajnigi, ke mi perdis la prudenton,--
+  Neniam vi kunmetu viajn manojn
+  En tia formo, nek la kapon vian
+  Balancu tiel, nek per parolado
+  Dusenca montru, ke vi ion scias,--
+  Ekzemple: «nu, ni scias», aŭ «ni povus,
+  Se ni nur volus», aŭ «se nur paroli
+  Ni povus», aŭ «ekzistas unu punkto»...
+  Ne helpu al vi Dio en mizero,
+  Se tion ĉi vi faros,--ĵuru!
+
+SPIRITO (sub la tero).
+
+                                Ĵuru!
+
+HAMLETO
+
+  Ripozu, ho, spirito malfeliĉa!
+  Kaj nun, sinjoroj, mi min rekomendas
+  Al vi kun mia tuta amikeco.
+  Kaj ĉion, kion mi, malriĉa, povas
+  Al vi alporti aman kaj amikan,
+  Kun Dia help' al vi mi ne rifuzos.
+  Ni iru! Kaj denove mi vin petas,
+  La fingron ĉiam tenu sur la buŝo!
+  Ni vivas en terura tempo! Ve,
+  Ke mi naskiĝis esti la punanto!
+  Nu, venu do! Ni iros ĉiuj kune.
+
+(Ĉiuj foriras.)
+
+
+
+
+AKTO II
+
+
+SCENO I
+
+Ĉambro en la domo de Polonio. Eniras Polonio kaj Reinhold.
+
+POLONIO
+
+  Jen tiujn ĉi paperojn kaj la monon
+  Al li transdonu!
+
+REINHOLD
+
+                   Jes, sinjoro, bone.
+
+POLONIO
+
+  Sed antaŭ ol viziti lin, vi faros
+  Prudente, se vi bone eldemandos
+  Pri la konduto lia.
+
+REINHOLD
+
+                      Efektive,
+  Mi mem intencis tion fari.
+
+POLONIO
+
+                             Bone!
+  Tre bone! Antaŭ ĉio vi demandu,
+  Kielaj Danoj loĝas en Parizo,
+  De kia speco, kiel ili vivas,
+  Kun kiu kaj en kiaj societoj;
+  Se per demandoj tiel deflankiĝaj
+  Vi vidos, ili konas mian filon,
+  Vi venos pli proksime al la celo,
+  Ol per demandoj rektaj. Agu, kvazaŭ
+  Vi konus lin nur iom, malproksime;
+  Ekzemple: «Ha, mi konas lian patron,
+  Kaj lian familion, eĉ lin mem
+  Mi iom konas». Ĉu vi min komprenas?
+
+REINHOLD
+
+  Ho, jes, sinjoro!
+
+POLONIO
+
+                    «Eĉ lin mem», vi diros,
+  «Sed nur malmulte; se mi ne eraras,
+  Li estas tre sovaĝa, faras tion
+  Kaj tion...» nun vi povas lin kulpigi
+  Per plej diversaj elpensitaj faktoj;
+  Nur ne per ia malbonaĵo, kiu
+  Al li alporti povus malhonoron!
+  Ho, nur ne tion! Gardu vin de tio!
+  Nur tiajn faktojn, kiuj ordinare
+  Junecon akompanas.
+
+REINHOLD
+
+                     Nu, ekzemple
+  Ludado...
+
+POLONIO
+
+            Jes! drinkado, duelado,
+  Insultemeco, aŭ malpacemeco,
+  Eĉ petolado kun virinoj.
+
+REINHOLD
+
+                            Tamen
+  Ĉu tio jam ne estos malhonoro?
+
+POLONIO
+
+  Ho, ne, se vi nur lerte ĝin esprimos.
+  Ne diru, ke li estas tute sklavo
+  De volupteco; ne, prezentu liajn mankojn
+  En tia lumo, ke ili aperu
+  Kiel makuloj nur de libereco,
+  Esprimoj de flameco de l' spirito,
+  Ekboloj de senbrida juna sango.
+
+REINHOLD
+
+  Sed, ho, sinjoro...
+
+POLONIO
+
+                      Kial tion fari?
+
+REINHOLD
+
+  Jes, mi dezirus scii, kia celo...
+
+POLONIO
+
+  Nu, vidu, mia plano estas tia,
+  Kaj mi esperas, ke ĝi bone fruktos:
+  Se vi sur mian filon tiel ĵetos
+  La makuletojn, tiam diligente
+  Atentu! Se kunparolanto via
+  La junan homon iam vidis kulpan
+  En la malvirtoj ĵus nomitaj, tiam,
+  Ho, kredu, li en tia maniero
+  Al vi sin turnos: «Jes, sinjoro mia»,
+  Aŭ «jes, amiko», aŭ «jes, estimata»,
+  Aŭ kiel ajn en tiu lando estas
+  La form' uzata de ekparolado...
+
+REINHOLD
+
+  Nu, bone.
+
+POLONIO
+
+            Kaj li poste faros tiel:
+  Li faros... jes... kion mi volis diri?..
+  Mi volis ion diri... Al diablo!
+  Nu, kie do mi haltis? He?
+
+REINHOLD
+
+                            Vi haltis
+  Ĉe l' vortoj «li en tia maniero
+  Al vi sin turnos»
+
+POLONIO
+
+                    Ha! Al vi sin turnos.
+  Li turnos sin al vi: «Jes, mi lin konas,
+  Sinjoron tiun vidis mi hieraŭ,
+  Aŭ antaŭ kelka temp', aŭ kiam ajn;
+  En tia aŭ tiela societo;
+  Li tie efektive alte ludis,
+  Li tie estis en malsobra stato,
+  Li tie sin batadis kun kolegoj»;
+  Aŭ «mi lin vidis, kiam li eniris
+  En domon de virinoj de malĉasto»;
+  Aŭ tiel plu. Kaj tiam vi rimarkos,
+  Ke via kaptileto la mensoga
+  Alkaptis la ezokon de la vero;
+  Kaj tiel ni, sprituloj, ĉiam povas
+  Per anguletoj kaj per artifikoj,
+  Per kurba voj' al rekta celo veni;
+  Kaj tiel vi laŭ mia klarigado
+  Facile elesploros mian filon.
+  Ĉu vi komprenis bone?
+
+REINHOLD
+
+                         Jes, sinjoro.
+
+POLONIO
+
+  Kaj nun kun Dio iru! Bonan vojon!
+
+REINHOLD
+
+  Sinjor'...
+
+POLONIO
+
+             Vi ankaŭ mem lin elobservu,
+  Per la rilat' al vi.
+
+REINHOLD
+
+                       Mi ĉion faros.
+
+POLONIO
+
+  Ke li nur diligente muzikadu!
+
+REINHOLD
+
+  Tre bone. Mi salutas!
+
+POLONIO
+
+                        Nu, adiaŭ!
+
+(Reinhold foriras. Eniras Ofelio.)
+
+POLONIO
+
+  Nu, kio, Ofelio? Kio nova?
+
+OFELIO
+
+  Ha, estimata patro! De teruro
+  Mi tuta tremas!
+
+POLONIO
+
+                  Kio do fariĝis?
+
+OFELIO
+
+  En mia ĉambro sidis mi, kudrante,--
+  Subite venas la reĝid' Hamleto,
+  Kun disŝirita vesto, sen ĉapelo,
+  La ŝtrumpoj disligitaj kaj malpuraj
+  Senorde pendas sur la maleoloj;
+  Tre pala, kun piedoj skuiĝantaj;
+  Kun vido tiel plena de teruro,
+  Kvazaŭ li venus ĵus el la infero,
+  Por antaŭdiri ian teruregon.
+
+POLONIO
+
+  De am' al vi li eble freneziĝis?
+
+OFELIO
+
+  Sinjoro, mi ne scias, sed mi timas,
+  Ke tiel estas.
+
+POLONIO
+
+                 Kion do li diris?
+
+OFELIO
+
+  Li prenis mian manon kaj ĝin premis,
+  Kaj poste sin retiris kaj, tenante
+  La duan manon super la okuloj,
+  Li rigardadis sur vizaĝon mian
+  Kun tia atenteco, kvazaŭ volus
+  Li pentri ĝin. Li tiel longe staris;
+  Kaj fine, ekskuinte mian manon,
+  Tri fojojn balancinte sian kapon,
+  Ekĝemis li kun tia sopireco
+  Kaj tia profundeco, kvazaŭ volus
+  Li kun la ĝemo fini sian vivon.
+  Kaj poste li min lasis iri for,
+  Kaj ankaŭ mem foriris, sed la kapon
+  Ankoraŭ ĉiam tenis li turnite
+  Al mia flanko, ĝis li malaperis.
+
+POLONIO
+
+  Sufiĉe! Venu! al la reĝ' ni iru!
+  Ĝi estas freneziĝo de la amo;
+  La amo ruinigas la amanton,
+  Kondukas al decidoj malesperaj,
+  La homon ofte ĝi turmentas pli,
+  Ol ĉiuj la pasioj en la mondo.
+  Bedaŭras mi la princon! Ĉu vi eble
+  Akceptis lin jam tro maldelikate?
+
+OFELIO
+
+  Ne, kara patro; laŭ ordono via
+  Mi nur de li leterojn ne akceptis
+  Kaj malpermesis vizitadi min.
+
+POLONIO
+
+  Nu, tio ĉi lin certe frenezigis.
+  Bedaŭras mi jam mian severecon.
+  Mi pensis ja, ke li nur petoladas
+  Kaj volas pereigi vin. Ho, Dio,
+  Ho, mia malbenita suspektado!
+  Ni, maljunuloj, havas la kutimon
+  Tro malproksime peli la singardon,
+  Kiel junuloj ofte tro suferas
+  Je absoluta manko de singardo.
+  Ni iru al la reĝo! La konfeso
+  Ne plaĉos al la reĝo, sed pli multe
+  Lin kolerigus la kaŝado. Venu!
+
+(Ambaŭ foriras.)
+
+
+SCENO II
+
+Ĉambro en la palaco. La reĝo, la reĝino, Rosenkranz, Güldenstern
+kaj korteganoj.
+
+REĜO
+
+  Ni vin salutas, nia Rosenkranz
+  Kaj nia Güldenstern! Ne sole vidi
+  Ni volis vin, sed ankaŭ la bezono
+  De viaj servoj igis nin vin voki.
+  Vi aŭdis jam pri la metamorfozo
+  De la reĝid' Hamleto: nek ekstere
+  Kaj nek interne li similas nun
+  Al tio, kio li antaŭe estis.
+  La kaŭzon, kiu, krom la patra morto,
+  Al tia stato nun lin alkondukis,
+  Ne povas mi diveni. Nun mi petas
+  Vin ambaŭ, kiuj tutan la junecon
+  Kun li pasigis kune kaj tre bone
+  Lin konas,--vin mi petas, volu resti
+  Tra kelka tempo en palaco nia,
+  Penadu lin altiri al amuzoj
+  Kaj ĉe okazoj esploradu lerte
+  La kaŭzon, kiu premas lin kaŝite.
+  Se konos ni la kaŭzon, ni jam povos
+  Kuraci lin.
+
+REĜINO
+
+              Sinjoroj miaj karaj,
+  Pri vi li tiel ofte paroladis,--
+  Mi scias, li vin amas pli, ol ĉiujn.
+  Se vi konsentos fari la komplezon
+  Al ni kaj ĉe ni resti kelkan tempon,
+  Por helpi al la malfeliĉo nia,
+  Ni rekompencos la viziton vian
+  Per plej konvena reĝa rekompenco.
+
+ROSENKRANZ
+
+  Vi havas rajton, viaj reĝaj moŝtoj,
+  Al ni ordoni. Vi ne devas peti
+  Pri tio, kio estas nia ŝuldo.
+
+GÜLDENSTERN
+
+  Obeos ni kaj ambaŭ ni promesas
+  Laŭ ĉiuj fortoj servi akurate
+  Al viaj reĝaj moŝtoj.
+
+REĜO
+
+                          Ni vin dankas,
+  Ho, karaj Rosenkranz kaj Güldenstern!
+
+REĜINO
+
+  Mi dankas vin, ho, karaj Güldenstern
+  Kaj Rosenkranz! Vizitu plej rapide
+  Hamleton, mian filon malfeliĉan.
+  Kaj iu el la korteganoj iru
+  Sinjorojn akompani al Hamleto!
+
+GÜLDENSTERN
+
+  La Plejpotenca faru nian venon
+  Por li saniga!
+
+REĜINO
+
+                 Dio volu! Amen!
+
+(Rosenkranz, Güldenstern kaj kelkaj korteganoj foriras. Venas
+Polonio.)
+
+POLONIO
+
+  Afabla reĝo! Jam el Norvegujo
+  Revenis la senditoj kun sukceso.
+
+REĜO
+
+  Vi ĉiam estis patro de agrablaj
+  Sciigoj.
+
+POLONIO
+
+           Ĉu ne vere, mia reĝo?
+  Jes, kredu, mia reĝo, mi dediĉas
+  La tutan mian kapon kaj animon
+  Post mia Dio nur al mia reĝo.
+  Kaj nun mi pensas--se la cerbo mia
+  Ne ĉesis sur vojeto de prudento
+  Sukcese ĉasi--ke la veran kaŭzon
+  De l' freneziĝo de l' reĝid' mi trovis.
+
+REĜO
+
+  Ho, diru! Mi rapide volas aŭdi!
+
+POLONIO
+
+  Aŭskultu antaŭ ĉio la senditojn;
+  Kaj mia bona scio al vi estu
+  Postmanĝo al festeno la agrabla.
+
+REĜO
+
+  Nu, bone, alkonduku la senditojn! (Polonio foriras.)
+  Li diras, ho, Gertrudo mia kara,
+  Ke trovis li la kaŭzon de malsano
+  De via filo.
+
+REĜINO
+
+               Mi la kaŭzon vidas
+  Nur en la morto de la patro lia
+  Kaj en edziĝo nia tro rapida.
+
+REĜO
+
+  Ni baldaŭ ĉion scios, mia kara.
+
+(Polonio revenas kun Voltimand kaj Kornelio.)
+
+  Ni vin salutas, karaj revenintoj!
+  Rakontu, Voltimand, kion alportis
+  Vi de la frato nia la Norvega?
+
+VOLTIMAND
+
+  Redonon de salut' kaj bondeziroj.
+  Tuj post' alveno nia li elsendis
+  Ordonon, por haltigi la preparojn
+  De sia nev', pri kiu li supozis,
+  Ke li armiĝas kontraŭ la Polujo;
+  Li post esploro efektive vidis,
+  Ke ĉio estis kontraŭ via moŝto.
+  Kaj ĉagrenita, ke malsanon lian
+  Kaj maljunecon oni tiel trompis,
+  Li sendis tuj, por voki Fortinbrason,
+  Riproĉis lin severe, kaj la nevo
+  Solene ĵuris, ke li plu neniam
+  Batalos kontraŭ via reĝa moŝto.
+  Per tio ĝojigita, la maljuna
+  Por li asignis la salajron jaran
+  De tri mil kronoj kaj al li permesis
+  Kontraŭ Polujo uzi la varbitan
+  Militistaron; kaj por via moŝto
+  Al ni li donis jenan skriban peton,
+  Ke vi permesi volu al l' anaro
+  Tra via lando fari la trairon
+  Sub la kondiĉoj, kiujn pli detale
+  Vi legos en la jena skriba peto.
+
+REĜO
+
+  Ni trovas ĉion bona. Ni en tempo
+  Pli oportuna legos kaj pripensos
+  Kaj donos la respondon. Vin ni dankas
+  Por viaj penoj kaj fidela servo.
+  Nun iru vi ripozi, kaj hodiaŭ
+  Al la vespero ni vin petas veni
+  Kun ni festeni. Estu bonaj gastoj!
+
+(Voltimand kaj Kornelio foriras.)
+
+POLONIO
+
+  Nun la negoco estas jam finita.
+  Ho, reĝo kaj reĝino, se mi volus
+  Komenci nun klarigojn, kio estas
+  Reĝa moŝteco, kio servemeco,
+  Kaj kial tago estas tago, kial
+  La nokto estas nokto, tempo--tempo:
+  Signifus tio perdi senutile
+  La tagon kaj la nokton kaj la tempon;
+  Ĉar mallongeco estas la spirito
+  De saĝo kaj multevorteco estas
+  La korpo kaj ekstera ornamaĵo,
+  Mi ĉion tial diros tre mallonge.
+  La nobla via filo freneziĝis;
+  Mi diras «freneziĝis», ĉar en kio
+  Konsistas freneziĝo? Ja en tio,
+  Ke oni frenezumas. Sed ni lasu
+  Ĝin flanke kaj komencu...
+
+REĜINO
+
+                             Mi vin petas.
+  Pli da enhavo, malpli da artaĵo!
+
+POLONIO
+
+  Mi ĵuras, mi parolas sen artaĵo!
+  Li estas nun freneza,--estas vero;
+  Kaj vere tio estas tre domaĝa,
+  Kaj tre domaĝe, ke ĝi estas vero;
+  Cetere mi konsentas, ke mi uzis
+  Figuron neprudentan,--ni ĝin lasu,
+  Kaj mi sen arto iru al l' afero.
+  Ni sekve diras, ke li freneziĝis;
+  Nun restas, ke ni trovu nur la kaŭzon
+  De la efekto, aŭ, pli vere diri,
+  De la difekto, ĉar neniu dubas,
+  Ke tiu ĉi difekt-efekto havas
+  Sendube ian kaŭzon. Nun finite,--
+  La stato de l' afero estas tia:
+  Atenti volu! (Li elprenas paperon el la poŝo.)
+               Mi filinon havas
+  --Mi havas ŝin, ĉar ŝi ja estas mia--
+  Nun el obeo, kiun ŝi ja ŝuldas,
+  Ŝi tion ĉi al mi transdonis. Vidu
+  Kaj konsideru! (Li legas)
+
+«Al la ĉiela, la idolo de mia animo, la ravanta Ofelio»--Tio ĉi
+estas malbona frazo, triviala frazo; «ravanta» estas triviala
+frazo.--Sed aŭskultu plu: «Al ŝia belega delikata brusto tiuj
+ĉi linioj» k. t. p.
+
+REĜINO
+
+  Ĉu tion ĉi Hamleto al ŝi sendis?
+
+POLONIO
+
+  Ho tuj, reĝino, mi raportos ĉion.
+  (Li legas.) «Dubu pri la sun' super la tero,
+  Dubu, ĉu en steloj brilas flamo,
+  Dubu pri vereco de la vero,
+  Sed ne dubu nur pri mia amo.
+
+Ho, kara Ofelio, la versofarado ne prosperas al mi; mi ne posedas
+la arton ritmigi miajn sopirojn; sed ke mi forte vin amas, ho
+plej kara mia, tion ĉi kredu al mi. Adiaŭ! Via por eterne,
+plej kara fraŭlino, tiel longe kiel tiu ĉi tera maŝino al li
+apartenas--Hamleto.»
+
+  Jen tion en ŝuldata obeado
+  Al mi filino mia montris. Ankaŭ
+  Pri ĉio, kion li al ŝi parolis,
+  Precize laŭ la tempo kaj la loko
+  Kaj maniero ŝi al mi raportis.
+
+REĜO
+
+  Sed kiel ŝi akceptis lian amon?
+
+POLONIO
+
+  Kiele pensas vi pri mi?
+
+REĜO
+
+                          Mi pensas,
+  Vi estas hom' fidela kaj honesta.
+
+POLONIO
+
+  Mi tion pruvos. Kion do vi pensus,
+  Se mi, vidante, kiel tiu amo
+  Disvolvas sin (mi tion bone vidis
+  Ankoraŭ antaŭ ol filino mia
+  Al mi rakontis),--kion pensus vi,
+  Aŭ kion pensus ŝia reĝa moŝto,
+  Reĝino mia alte estimata,
+  Se mi en la afero ludus rolon
+  De leterujo aŭ de skribotablo,
+  Se mi silente, mute mian koron
+  Por tio fermus kaj sen ia faro
+  Rigardus tiun amon? Kion tiam
+  Vi povus pensi pri persono mia?
+  Ne, mi alpaŝis rekte al l' afero
+  Kaj tiel diris al filino mia:
+  «Reĝida moŝt' Hamleto estas princo,
+  Por vi tro alta; ne kuraĝu ludi!»
+  Kaj mi al ŝi ordonis, ke ŝi tenu
+  Sin malproksime de la princ' Hamleto,
+  Leterojn ne akceptu, nek donacojn.
+  Ordonon mian patran ŝi plenumis,
+  Kaj li, nun rifuzita (vi permesu
+  Ke mi raportu per mallongaj vortoj),
+  Fariĝis tre malĝoja kaj li perdis
+  La apetiton, poste eĉ la dormon,
+  Li baldaŭ perdis ankaŭ sian forton
+  Kaj poste perdis ankaŭ la konscion,
+  Kaj tiel ŝtup' post ŝtupo li enfalis
+  En la frenezon, kiu nun lin premas
+  Kaj ĉiujn nin sincere malĝojigas.
+
+REĜO (al la reĝino).
+
+  Vi pensas, ke ĝi povus esti ebla?
+
+REĜINO
+
+  Tre povas esti.
+
+POLONIO (al la reĝo).
+
+                  Ĉu eĉ unu fojon
+  Vi iam vidis, ke mi kun certeco
+  Raportis: «tiel estas», kaj en vero
+  Ne estis tiel?
+
+REĜO
+
+                 Ne, mi ne memoras.
+
+POLONIO (montrante sian kapon kaj ŝultrojn).
+
+  Deprenu al mi tion nun de tio,
+  Se ne senduban veron mi raportas.
+  Se postesigno gvidas min, mi trovos
+  La kernon de la vero, se ĝi sidus
+  Eĉ en la plej profunda kaŝiteco.
+
+REĜO
+
+  Sed kiel ni esplorus pli precize?
+
+POLONIO
+
+  Vi scias, ke tre ofte tutajn horojn
+  Li promenadas en la galerio.
+
+REĜINO
+
+  Jes, efektive.
+
+POLONIO
+
+                 Nun filinon mian
+  Mi tien lasos; vi kun mi vin kaŝos
+  Ekzemple post tapiŝo, por observi.
+  Se li ne amas ŝin kaj ne per tio
+  Li freneziĝis, tiam mi ne estu
+  Pli via kortegano-konsilanto.
+  Mi tiam plugu kampon, paŝtu bruton.
+
+REĜO
+
+  Ni vidu. (Eniras Hamleto, legante.)
+
+REĜINO
+
+           Jen li venas, ion legas,--
+  Kun kia malgajeco en vizaĝo!
+
+POLONIO
+
+  Mi petas vin, vi ambaŭ tuj foriru!
+  Mi tuj al li alpaŝos, vi permesu!
+
+(La reĝo, reĝino kaj korteganoj foriras).
+
+POLONIO (al Hamleto).
+
+Kiele fartas mia bona princo?
+
+HAMLETO
+
+Dank' al ĉielo, bone!
+
+POLONIO
+
+Ĉu vi min konas, via princa moŝto?
+
+HAMLETO
+
+Tre bone. Vi ja estas fiŝisto?
+
+POLONIO
+
+Ne, mia princo.
+
+HAMLETO
+
+Tiam mi dezirus al vi, ke vi estu tia honesta homo.
+
+POLONIO
+
+Honesta, mia princo?
+
+HAMLETO
+
+Jes, sinjoro, esti honesta en tiu ĉi mondo signifas esti elektita
+inter dek mil.
+
+POLONIO
+
+Tute vere, mia princo.
+
+HAMLETO
+
+Ĉar se la suno naskas vermojn en malviva hundo... diaĵo, kiu kisas
+mortintaĵon... Ĉu vi havas filinon?
+
+POLONIO
+
+Jes, mia princo.
+
+HAMLETO
+
+Ne permesu al ŝi iri en la suno. Fruktoportado estas beno: sed
+ĉar via filino povus porti fruktojn,--gardu vin amiko.
+
+POLONIO
+
+Kion vi komprenas sub tio ĉi? (Flanken) Ĉiam pri mia filino.
+Kaj tamen li antaŭ momento ne konis min; li diris, ke mi estas
+fiŝisto. Li venis malproksimen, tre malproksimen! Estas vero,
+en mia juneco la amo ankaŭ kondukis min en tre danĝeran
+situacion, preskaŭ tiel same danĝere kiel lin. Mi denove
+ekparolos al li. (Laŭte) Kion vi legas, mia princo?
+
+HAMLETO
+
+Vortojn, vortojn, vortojn.
+
+POLONIO
+
+Sed kia estas la enhavo?
+
+HAMLETO
+
+Vi volas ion havi?
+
+POLONIO
+
+Ne, mi demandas, pri kio estas parolate en tiu ĉi libro,
+mia princo.
+
+HAMLETO
+
+Kalumnioj, mia sinjoro! La malnobla satira verkisto de tiu ĉi libro
+diras, ke maljunaj homoj havas grizajn barbojn, ke iliaj vizaĝoj
+estas su

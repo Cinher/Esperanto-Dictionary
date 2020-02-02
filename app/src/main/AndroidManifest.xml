@@ -15,7 +15,6 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".CorpusActivity"></activity>
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
@@ -43,6 +42,9 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.cinher.github.esperantodict.MainActivity" />
         </activity>
+        <activity android:name=".CorpusActivity"
+            android:label="Corpus"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".WidgetPopupActivity"
             android:label="@string/app_name"

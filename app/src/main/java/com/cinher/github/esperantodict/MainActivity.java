@@ -192,7 +192,8 @@ public class MainActivity extends AppCompatActivity
             public void onClick(View view) {
                 String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
                 if (!word.trim().equals("")) {
-                    searchInDictionary(word);
+                    addWordToHistoryDatabase(word);
+                    startActivity(new Intent().setClass(MainActivity.this, CorpusActivity.class).putExtra("word", word));
                 } else {
                     Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
                             .setAction("Action", null).show();
@@ -205,6 +206,14 @@ public class MainActivity extends AppCompatActivity
     //这个方法用来搜索词典，直接开启一个新的 Activity
     private void searchInDictionary(String word){
         //将搜索记录添加到数据库
+        addWordToHistoryDatabase(word);
+        //进入 ResultActivity
+        startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", word));
+        //MainActivity.this.finish();
+    }
+
+    //将一个单词添加到搜索记录数据库
+    private void addWordToHistoryDatabase(String word){
         Db db = new Db(getApplicationContext());
         SQLiteDatabase dbWrite = db.getWritableDatabase();
         ContentValues cv = new ContentValues();
@@ -219,10 +228,6 @@ public class MainActivity extends AppCompatActivity
         }
         dbWrite.insert("history", null, cv);
         dbWrite.close();
-
-        //进入 ResultActivity
-        startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", word));
-        MainActivity.this.finish();
     }
 
     @Override
