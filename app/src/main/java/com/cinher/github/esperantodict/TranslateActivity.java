@@ -177,7 +177,7 @@ public class TranslateActivity extends android.support.v7.app.AppCompatActivity 
     static String VERB_S_ENDING = "s*¯*I";
     static String VOWELS = "aeiou";
     // Ĉ ĉ Ĝ ĝ Ĥ ĥ Ĵ ĵ Ŝ ŝ Ŭ ŭ
-    static String donate = "If you like this program and want to "
+    public static String donate = "If you like this program and want to "
           + "donate money, please send a check or money order in U.S. dollars to:\n"
           + "David K. Crandall\n4667 Cimarron Way\nGranite Bay, CA 95746\nU.S.A.";
     static String donate2 = "Se vi ŝatas ĉi tiun programon kaj vi volas donacii monon, "
@@ -206,17 +206,22 @@ of proper nouns. */
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
-    setContentView(R.layout.activity_translate);
+    //setContentView(R.layout.activity_translate);
     loadDictionary(); // Decompress dictionary entries
     System.gc();
+  }
+
+  public static void init(){
+      loadDictionary();
+      System.gc();
   }
 
   /** Called when the user clicks the Send button */
   public void sendMessageTranslateEsperanto(View view) {
   // Do something in response to button
     //Intent intent = new Intent(this, Eoen.class); //DisplayMessageActivity.class);
-    EditText editText = (EditText) findViewById(R.id.edit_message);
-    EditText editText2 = (EditText) findViewById(R.id.edit_message2);
+    EditText editText = (EditText) findViewById(R.id.translate_edit_message);
+    EditText editText2 = (EditText) findViewById(R.id.translate_edit_message2);
     String message = editText.getText().toString();
     if (message.compareTo(donate) == 0) {
       editText.setText("");
@@ -240,20 +245,20 @@ of proper nouns. */
   public void sendMessagePaste(View view) {
 	ClipboardManager clipboard = (ClipboardManager) 
 	getSystemService(Context.CLIPBOARD_SERVICE);
-	EditText editText = (EditText) findViewById(R.id.edit_message);
+	EditText editText = (EditText) findViewById(R.id.translate_edit_message);
 	editText.append(clipboard.getText().toString());
   }
     
   public void sendMessageErase(View view) {
-    EditText editText = (EditText) findViewById(R.id.edit_message);
-    EditText editText2 = (EditText) findViewById(R.id.edit_message2);
+    EditText editText = (EditText) findViewById(R.id.translate_edit_message);
+    EditText editText2 = (EditText) findViewById(R.id.translate_edit_message2);
     editText.setText("");
     editText2.setText("");
   }
     
   public void onToggleClicked4(View view) { // Donate text
-	    EditText editText = (EditText) findViewById(R.id.edit_message);
-	    EditText editText2 = (EditText) findViewById(R.id.edit_message2);
+	    EditText editText = (EditText) findViewById(R.id.translate_edit_message);
+	    EditText editText2 = (EditText) findViewById(R.id.translate_edit_message2);
 	    if (((ToggleButton) view).isChecked()) {
 	      EOsave = editText.getText();
 	      ENsave = editText2.getText();
@@ -287,7 +292,7 @@ of proper nouns. */
   
   public void sendEsperantoKey(String key) { // Ĉ ĉ Ĝ ĝ Ĥ ĥ Ĵ ĵ Ŝ ŝ Ŭ ŭ
   // Send Esperanto letter with circumflex or breve
-	  EditText editText = (EditText) findViewById(R.id.edit_message);
+	  EditText editText = (EditText) findViewById(R.id.translate_edit_message);
 	  editText.setSelection(editText.getText().length());
 	  editText.append(key);
 	  editText.setSelection(editText.getText().length());
@@ -9000,6 +9005,7 @@ of proper nouns. */
   }
 
   public static String translateEsperanto(String txxt) {
+      init();
       // Process input text word by word:
       if (txxt.length() < 2) return txxt;
       if (txxt.replaceAll("\\s+", "").equals("")) return txxt;

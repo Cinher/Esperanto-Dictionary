@@ -132,66 +132,16 @@ public class DemonstrateActivity extends AppCompatActivity {
 				break;
 			case 1:
 				//Translate
-				/*ImageView view1 = new ImageView(getApplicationContext());
-				ImageView view2 = new ImageView(getApplicationContext());
-				view1.setMaxWidth(h);
-				view2.setMaxWidth(h);
-				view1.setMaxHeight(h);
-				view2.setMaxHeight(h);
-				view1.setAdjustViewBounds(true);
-				view2.setAdjustViewBounds(true);
-				view1.setImageDrawable(getDrawable(R.drawable.ic_launcher_small));
-				view2.setImageDrawable(getDrawable(R.drawable.ic_google_translate));
-				
-				Button btn1 = new Button(getApplicationContext());
-				btn1.setGravity(Gravity.CENTER);
-				btn1.setText(getResources().getString(R.string.translate_esperanto));
-				btn1.setOnClickListener(new View.OnClickListener(){
-					@Override
-					public void onClick(View p){
-						startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
-					}
-				});
-				Button btn2 = new Button(getApplicationContext());
-				btn2.setGravity(Gravity.CENTER);
-				btn2.setText(getResources().getString(R.string.translate_via_google));
-				
-				LinearLayout layoutMain = new LinearLayout(this);
-				layoutMain.setOrientation(LinearLayout.HORIZONTAL);
-				LinearLayout layoutPic = new LinearLayout(this);
-				layoutPic.setOrientation(LinearLayout.VERTICAL);
-				LinearLayout layoutBtn = new LinearLayout(this);
-				layoutBtn.setOrientation(LinearLayout.VERTICAL);
-				LinearLayout layout1 = new LinearLayout(this);
-				layout1.setGravity(Gravity.CENTER);
-				LinearLayout layout2 = new LinearLayout(this);
-				layout2.setGravity(Gravity.CENTER);
-				layout2.setPadding(0, e, 0, 0);
-				
-				layout1.addView(btn1);
-				layout2.addView(btn2);
-				
-				paramsFull.setMargins(e,2 * e, 0, 0);
-				paramsPic.setMargins(e,2 * e, 0, 0);
-				layoutBtn.addView(layout1, paramsFull);
-				layoutBtn.addView(layout2, paramsFull);
-				layoutPic.addView(view1, paramsPic);
-				layoutPic.addView(view2, paramsPic);
-				layoutMain.addView(layoutPic);
-				layoutMain.addView(layoutBtn, paramsLayout);
-				
-				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(layoutMain,paramsLayout);
-				*/
-				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-				card1.setTitle(getResources().getString(R.string.translate_esperanto));
-				card1.setOnClickListener(new View.OnClickListener(){
-						@Override
-						public void onClick(View p){
-							startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
-						}
-					});
-				card1.setImage(R.drawable.ic_launcher_small);
-				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
+//				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+//				card1.setTitle(getResources().getString(R.string.translate_esperanto));
+//				card1.setOnClickListener(new View.OnClickListener(){
+//						@Override
+//						public void onClick(View p){
+//							startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
+//						}
+//					});
+//				card1.setImage(R.drawable.ic_launcher_small);
+//				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
 				
 				AppCard card2 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
 				card2.setTitle(getResources().getString(R.string.translate_via_google));

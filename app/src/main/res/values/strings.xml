@@ -190,4 +190,14 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="input_is_empty">Empty</string>
+    <string name="corpus_statement">
+        "Text in the corpus comes from the e-books of Project Gutenberg. \n"
+        "To see the full license, visit page \n"
+        "http://www.gutenberg.org/wiki/Gutenberg:Permission_How-To \n"
+        "or Navigation Menu->Open Source->Project Gutenberg in this application. \n"
+        "To obtain copies of the original works, visit \n"
+        "http://www.gutenberg.org/browse/languages/eo \n"
+        "The statement is as follows: \n"
+        "This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org. If you are not located in the United States, you'll have to check the laws of the country where you are located before using this ebook. \n"
+    </string>
 </resources>

@@ -11,6 +11,8 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.design.widget.TabLayout;
+import android.support.v4.view.ViewPager;
 import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,6 +36,7 @@ import android.database.*;
 //import com.google.android.gms.appindexing.AppIndex;
 //import com.google.android.gms.appindexing.Thing;
 //import com.google.android.gms.common.api.GoogleApiClient;
+import com.cinher.github.esperantodict.ui.main.SectionsPagerAdapter;
 import com.nex3z.flowlayout.*;
 import android.widget.FrameLayout.*;
 
@@ -63,63 +66,11 @@ public class MainActivity extends AppCompatActivity
                                            }
         );
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //搜索历史
-                final Db db = new Db(getApplicationContext());
-                final SQLiteDatabase dbRead = db.getReadableDatabase();
-                Cursor c = dbRead.query("history", null, null, null, null, null, null);
-
-                FlowLayout layout = new FlowLayout(getApplicationContext());
-                LayoutParams params = new LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-                int sp = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_SP, 7, getResources().getDisplayMetrics());
-                int margin = (int) getResources().getDimension(R.dimen.widget_margin);
-
-                View.OnClickListener ocl = new View.OnClickListener() {
-                    @Override
-                    public void onClick(View v) {
-                        TextView tv = (TextView) v;
-                        startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", tv.getText().toString()));
-                        MainActivity.this.finish();
-                    }
-                };
-
-                while (c.moveToNext()) {//添加TextView到Flow Layout
-                    String word = c.getString(c.getColumnIndex("word"));
-                    System.out.println("Database history: " + word);
-                    TextView textView = new TextView(getApplicationContext());
-                    textView.setTextSize(sp);
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        textView.setBackgroundDrawable(getDrawable(R.drawable.label_bg));
-                    }//Fix it!
-                    textView.setText(word);
-                    textView.setOnClickListener(ocl);
-                    textView.setPadding(2 * margin, margin, 2 * margin, margin);
-                    layout.addView(textView, params);
-                }
-
-                layout.setChildSpacing(FlowLayout.SPACING_AUTO);
-                layout.setChildSpacingForLastRow(FlowLayout.SPACING_ALIGN);
-                layout.setRowSpacing((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 8, getResources().getDisplayMetrics()));
-                layout.setPadding(3 * margin, margin, 3 * margin, margin);
-
-                //按钮按下时弹出，显示历史记录
-                new AlertDialog.Builder(MainActivity.this)
-                        .setTitle("SEARCH HISTORY")
-                        .setView(layout)
-                        .setPositiveButton("CLEAR ALL", new DialogInterface.OnClickListener(){
-                            //点击时，删除所有记录
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                db.getWritableDatabase().execSQL("DELETE FROM history");
-                            }
-                        })
-                        .setNeutralButton("CANCEL", null)
-                        .show();
-            }
-        });
+        SectionsPagerAdapter sectionsPagerAdapter = new SectionsPagerAdapter(this, getSupportFragmentManager());
+        ViewPager viewPager = (ViewPager) findViewById(R.id.main_view_pager);
+        viewPager.setAdapter(sectionsPagerAdapter);
+        TabLayout tabs = (TabLayout) findViewById(R.id.main_tabs);
+        tabs.setupWithViewPager(viewPager);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -148,86 +99,6 @@ public class MainActivity extends AppCompatActivity
         //Intent serviceIntent = new Intent(this, DictService.class);
         //startService(serviceIntent);
 
-        /*
-         * 在主界面上有三个前往不同搜索结果的方式
-         * 1. 直接在搜索框输入时点击输入法中的搜索按钮
-         * 2. 点击按钮搜索词典
-         * 3. 点击按钮搜索语料库
-         */
-
-        //1. 直接在输入法回车 默认搜索词典
-        ((EditText) findViewById(R.id.searchEditText))
-                .setOnEditorActionListener(new TextView.OnEditorActionListener() {
-                    public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
-                        if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                            String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
-                            if (!word.trim().equals("")) {
-                                searchInDictionary(word);
-                            } else {
-                                Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
-                                        .setAction("Action", null).show();
-                            }
-                            return true;
-                        }
-                        return false;
-
-                    }
-                });
-
-        //2&3. 点击按钮搜索词典或语料库
-        ((Button) findViewById(R.id.main_dictionary_button)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
-                if (!word.trim().equals("")) {
-                    searchInDictionary(word);
-                } else {
-                    Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                }
-            }
-        });
-        ((Button) findViewById(R.id.main_corpus_button)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String word = ((EditText) findViewById(R.id.searchEditText)).getText().toString();
-                if (!word.trim().equals("")) {
-                    addWordToHistoryDatabase(word);
-                    startActivity(new Intent().setClass(MainActivity.this, CorpusActivity.class).putExtra("word", word));
-                } else {
-                    Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
-                            .setAction("Action", null).show();
-                }
-            }
-        });
-
-    }
-
-    //这个方法用来搜索词典，直接开启一个新的 Activity
-    private void searchInDictionary(String word){
-        //将搜索记录添加到数据库
-        addWordToHistoryDatabase(word);
-        //进入 ResultActivity
-        startActivity(new Intent().setClass(MainActivity.this, ResultActivity.class).putExtra("word", word));
-        //MainActivity.this.finish();
-    }
-
-    //将一个单词添加到搜索记录数据库
-    private void addWordToHistoryDatabase(String word){
-        Db db = new Db(getApplicationContext());
-        SQLiteDatabase dbWrite = db.getWritableDatabase();
-        ContentValues cv = new ContentValues();
-        cv.put("word", word);
-        SQLiteDatabase dbRead = db.getReadableDatabase();
-        Cursor c = dbRead.query("history", null, null, null, null, null, null);
-        while (c.moveToNext()) {
-            if (word.equals(c.getString(c.getColumnIndex("word")))) {
-                dbWrite.delete("history", "word = \'" + word + "\'", null);
-                break;
-            }
-        }
-        dbWrite.insert("history", null, cv);
-        dbWrite.close();
     }
 
     @Override
