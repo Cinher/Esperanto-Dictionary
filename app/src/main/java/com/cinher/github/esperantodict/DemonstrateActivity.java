@@ -127,21 +127,45 @@ public class DemonstrateActivity extends AppCompatActivity {
 							layout.addView(card);
 						}
 					}
+				}else{//显示：没有导入的词典文件
+					LinearLayout messageLayout = new LinearLayout(this);
+					messageLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+					messageLayout.setOrientation(LinearLayout.VERTICAL);
+					messageLayout.setGravity(Gravity.CENTER);
+
+					ImageView imageView = new ImageView(this);
+					LayoutParams imageViewParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+							(int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics())));
+					int marginHorizontal = (int) getResources().getDimension(R.dimen.activity_horizontal_margin);
+					int marginVertical = (int) getResources().getDimension(R.dimen.activity_vertical_margin);
+					imageViewParams.setMargins(marginHorizontal, marginVertical * 5, marginHorizontal, marginVertical);
+					imageView.setLayoutParams(imageViewParams);
+					imageView.setImageDrawable(getResources().getDrawable(R.drawable.img_not_found_1));
+
+					TextView textView = new TextView(this);
+					textView.setGravity(Gravity.CENTER);
+					textView.setText("No dictionary files\nYou can import by click \"+\" button\nor move *.ld2 files to EsperantoDict/");
+					textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+
+					messageLayout.addView(imageView);
+					messageLayout.addView(textView);
+					layout.addView(messageLayout);
 				}
 
 				break;
 			case 1:
-				//Translate
-//				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-//				card1.setTitle(getResources().getString(R.string.translate_esperanto));
-//				card1.setOnClickListener(new View.OnClickListener(){
-//						@Override
-//						public void onClick(View p){
-//							startActivity(new Intent().setClass(DemonstrateActivity.this, TranslateActivity.class));
-//						}
-//					});
-//				card1.setImage(R.drawable.ic_launcher_small);
-//				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
+				System.gc();
+
+				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+				card1.setTitle("PREFIXES AND SUFFIXES");
+				card1.setOnClickListener(new View.OnClickListener(){
+						@Override
+						public void onClick(View p){
+							startActivity(new Intent().setClass(DemonstrateActivity.this, TablesTabbedActivity.class));
+						}
+					});
+				//card1.setImage(R.drawable.ic_table_pre);
+				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
 				
 				AppCard card2 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
 				card2.setTitle(getResources().getString(R.string.translate_via_google));
@@ -197,8 +221,32 @@ public class DemonstrateActivity extends AppCompatActivity {
 							DemonstrateActivity.this.finish();
 						}
 				});
-				
-				layout.addView(listView);
+				if (dataArray.size() != 0) {
+					layout.addView(listView);
+				} else {//显示没有收藏
+					LinearLayout messageLayout = new LinearLayout(this);
+					messageLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+					messageLayout.setOrientation(LinearLayout.VERTICAL);
+					messageLayout.setGravity(Gravity.CENTER);
+
+					ImageView imageView = new ImageView(this);
+					LayoutParams imageViewParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+							(int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics())));
+					int marginHorizontal = (int) getResources().getDimension(R.dimen.activity_horizontal_margin);
+					int marginVertical = (int) getResources().getDimension(R.dimen.activity_vertical_margin);
+					imageViewParams.setMargins(marginHorizontal, marginVertical * 5, marginHorizontal, marginVertical);
+					imageView.setLayoutParams(imageViewParams);
+					imageView.setImageDrawable(getResources().getDrawable(R.drawable.img_not_found_2));
+
+					TextView textView = new TextView(this);
+					textView.setGravity(Gravity.CENTER);
+					textView.setText("No favorites");
+					textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+
+					messageLayout.addView(imageView);
+					messageLayout.addView(textView);
+					layout.addView(messageLayout);
+				}
 				break;
 			default:
 				break;
