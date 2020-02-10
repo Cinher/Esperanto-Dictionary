@@ -10,7 +10,7 @@ import android.util.*;
 import android.view.*;
 import android.widget.*;
 
-public class AppCard extends CardView
+public class AppCard extends FrameLayout
 {
 	public static final int TYPE_DICTIONARY = 0;
 	public static final int TYPE_DEMONSTRATE = 1;

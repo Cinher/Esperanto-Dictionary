@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -38,10 +39,14 @@ public class ResultActivity extends AppCompatActivity {
     LinearLayout resultView;
     private Handler messageHandler;
 
+    Context context;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+
+        context = this;
 
         word = getIntent().getStringExtra("word");
         Toolbar toolbar = (Toolbar) findViewById(R.id.resultToolbar);
@@ -105,27 +110,56 @@ public class ResultActivity extends AppCompatActivity {
         });
 
         //本地结果
-        AppCard localCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
-        localCard.setTitle(getResources().getString(R.string.local_interpretation));
-        localCard.setText(
-                getResources().getString(R.string.chinese)+"\n"
-                +(GetLocalResultModule.GetLocalTranslationResult(this,word)[0])+"\n\n"
-                + getResources().getString(R.string.english)+"\n"
-                +(GetLocalResultModule.GetLocalTranslationResult(this,word)[1])+"\n"
-        );
-        if(!((GetLocalResultModule.GetLocalTranslationResult(this,word)[0]).isEmpty()
-        && (GetLocalResultModule.GetLocalTranslationResult(this,word)[1]).isEmpty() ))
-        {
-            resultView.addView(localCard);
-        }else{
-
+        if (PreferenceManager.getDefaultSharedPreferences(this)
+                .getBoolean("settings_local_interpretation", true)) {//设置中是否开启了本地结果
+            AppCard localCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
+            localCard.setTitle(getResources().getString(R.string.local_interpretation));
+            String[] arr = GetLocalResultModule.GetLocalTranslationResult(this, addHat(word));
+            //数组第一个元素为中文释义，第二个为英文释义
+            //addHat() 将 x 形式转换为戴帽子的字母形式
+            switch (PreferenceManager.getDefaultSharedPreferences(this).getString("settings_language_local", "-1")) {
+                //查看设置中的本地词典显示释义的语言
+                case "0":
+                    localCard.setText(
+                            getResources().getString(R.string.english) + "\n"
+                                    + (arr[1]) + "\n"
+                    );
+                    if (!((arr[1]).isEmpty())) {
+                        resultView.addView(localCard);
+                    }
+                    break;
+                case "1":
+                    localCard.setText(
+                            getResources().getString(R.string.chinese) + "\n"
+                                    + (arr[0]) + "\n\n"
+                    );
+                    if (!((arr[0]).isEmpty())) {
+                        resultView.addView(localCard);
+                    }
+                    break;
+                default:
+                    localCard.setText(
+                            getResources().getString(R.string.chinese) + "\n"
+                                    + (arr[0]) + "\n\n"
+                                    + getResources().getString(R.string.english) + "\n"
+                                    + (arr[1]) + "\n"
+                    );
+                    if (!((arr[0]).isEmpty()
+                            && (arr[1]).isEmpty())) {
+                        resultView.addView(localCard);
+                    }
+                    break;
+            }
         }
 
         //La Simpla Vortaro 结果
-        new Thread(runnable).start();
-        Looper looper = Looper.myLooper();
-        messageHandler = new MessageHandler(looper);
-		
+        if (PreferenceManager.getDefaultSharedPreferences(this)
+                .getBoolean("settings_simpla_vortaro", true)) {//设置中是否开启
+            new Thread(runnable).start();
+            Looper looper = Looper.myLooper();
+            messageHandler = new MessageHandler(looper);
+        }
+
 		//本地词典结果
 		DictionaryOpenHelper helper = new DictionaryOpenHelper();
 		String [] dictList = helper.listExistDictionaries(this);
@@ -166,7 +200,7 @@ public class ResultActivity extends AppCompatActivity {
         @Override
         public void run()
         {
-            String url="http://www.simplavortaro.org/api/v1/vorto/" + word;
+            String url="http://www.simplavortaro.org/api/v1/vorto/" + addHat(word);
             boolean isWordExists = true;
             String SimplaVortaroResult = "";
             BufferedReader in = null;
@@ -265,7 +299,7 @@ public class ResultActivity extends AppCompatActivity {
                 //添加
                 String total = "—" + word + "\n\n" + getResources().getString(R.string.english) + "\n" + english + "\n" + getResources().getString(R.string.definition) + "\n" + definition + "\n" + getResources().getString(R.string.examples) + "\n" + example + "\n";
                 total = EsperantoUnicodeToCharacter(total);
-                AppCard card = new AppCard(getApplicationContext(), AppCard.TYPE_DICTIONARY);
+                AppCard card = new AppCard(context, AppCard.TYPE_DICTIONARY);//如第一个参数传 getApplicationContext() 会导致低版本下 AppCard 上覆一层灰色
                 card.setTitle("La Simpla Vortaro");
                 card.setText(total);
                 Message message = Message.obtain();
@@ -313,7 +347,7 @@ public class ResultActivity extends AppCompatActivity {
 					}while(pointer != -1);
 					//contentWords 已取得 malpreciza 后 [] 内的内容
 					//将模糊搜索结果显示出来
-					AppCard card = new AppCard(getApplicationContext(), AppCard.TYPE_DICTIONARY);
+					AppCard card = new AppCard(context, AppCard.TYPE_DICTIONARY);
 					card.setTitle("La Simpla Vortaro");
 					card.setText("Do you mean: \n\n" + contentWords);
 					Message message = Message.obtain();
@@ -384,6 +418,22 @@ public class ResultActivity extends AppCompatActivity {
         s = s.replace("Ŝ","ŝ");
         s = s.replace("Ŭ","ŭ");
         return  s;
+    }
+
+    public String addHat(String s){
+        s = s.replace("Cx","Ĉ");
+        s = s.replace("cx","ĉ");
+        s = s.replace("Gx","Ĝ");
+        s = s.replace("gx","ĝ");
+        s = s.replace("Hx","Ĥ");
+        s = s.replace("hx","ĥ");
+        s = s.replace("Jx","Ĵ");
+        s = s.replace("jx","ĵ");
+        s = s.replace("Sx","Ŝ");
+        s = s.replace("sx","ŝ");
+        s = s.replace("Ux","Ŭ");
+        s = s.replace("ux","ŭ");
+        return s;
     }
 
 }

@@ -44,6 +44,7 @@ public class CorpusView extends LinearLayout {
     private void init(@NonNull Context c) {
         context = c;
         word = CorpusActivity.word;
+        word = addHat(word);//将 x 形式字母转换为帽子字母
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         view = inflater.inflate(R.layout.app_corpus_view, this, true);
         linearLayout = (LinearLayout) view.findViewById(R.id.app_corpus_view_linear_layout);
@@ -58,8 +59,6 @@ public class CorpusView extends LinearLayout {
     Runnable runnable = new Runnable() {
         @Override
         public void run() {
-            //System.out.println((getBookFromAssets("Dua Libro de l' Lingvo Internacia.txt")).substring(0,300));
-            //searchWordInBook(getBookFromAssets("Dua Libro de l' Lingvo Internacia.txt"),word);
             searchWordInCorpus(word);
         }
     };
@@ -75,7 +74,11 @@ public class CorpusView extends LinearLayout {
         String [] bookNames = {"Dua Libro de l' Lingvo Internacia.txt", "Fundamenta Krestomatio.txt", "Hamleto, Reĝido de Danujo.txt"};
         for (int i = 0; i < bookNames.length; i ++) {
             addRow(((bookNames [i]).replace(".txt","")));//显示该书的书名
-            searchWordInBook(getBookFromAssets(bookNames [i]), word);
+            if (bookNames[i].equals("Fundamenta Krestomatio.txt")) {
+                searchWordInBook(getBookFromAssets(bookNames[i]), removeHat(word));
+            } else {
+                searchWordInBook(getBookFromAssets(bookNames[i]), word);
+            }
         }
 
     }
@@ -180,6 +183,36 @@ public class CorpusView extends LinearLayout {
         }
     }
 
+    public String addHat(String s){
+        s = s.replace("Cx","Ĉ");
+        s = s.replace("cx","ĉ");
+        s = s.replace("Gx","Ĝ");
+        s = s.replace("gx","ĝ");
+        s = s.replace("Hx","Ĥ");
+        s = s.replace("hx","ĥ");
+        s = s.replace("Jx","Ĵ");
+        s = s.replace("jx","ĵ");
+        s = s.replace("Sx","Ŝ");
+        s = s.replace("sx","ŝ");
+        s = s.replace("Ux","Ŭ");
+        s = s.replace("ux","ŭ");
+        return s;
+    }
 
+    public String removeHat(String s){
+        s = s.replace("Ĉ","Cx");
+        s = s.replace("ĉ","cx");
+        s = s.replace("Ĝ","Gx");
+        s = s.replace("ĝ","gx");
+        s = s.replace("Ĥ","Hx");
+        s = s.replace("ĥ","hx");
+        s = s.replace("Ĵ","Jx");
+        s = s.replace("ĵ","jx");
+        s = s.replace("Ŝ","Sx");
+        s = s.replace("ŝ","sx");
+        s = s.replace("Ŭ","Ux");
+        s = s.replace("ŭ","ux");
+        return s;
+    }
 
 }

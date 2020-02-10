@@ -7,7 +7,7 @@
     android:layout_gravity="center"
     android:elevation="5dp"
     android:layout_margin="@dimen/activity_vertical_margin"
-	android:foreground="?android:attr/selectableItemBackground"
+	android:background="?android:attr/selectableItemBackground"
     card_view:cardCornerRadius="8dp">
     <LinearLayout
         android:layout_width="fill_parent"
@@ -36,6 +36,7 @@
         </LinearLayout>
 
         <LinearLayout android:id="@+id/card_bigLinearLayout"
+            android:orientation="horizontal"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="20dp"
@@ -57,7 +58,7 @@
                 android:layout_height="wrap_content"
                 android:textColor="#333333"
                 android:singleLine="false"
-                android:textSize="40px"
+                android:textSize="15sp"
                 />
 
         </LinearLayout>

@@ -1,9 +1,11 @@
 package com.cinher.github.esperantodict;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
+import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
 import android.support.v7.app.*;
 import android.os.*;
+import android.support.v7.widget.Toolbar;
 import android.util.*;
 import android.content.res.*;
 import android.graphics.*;
@@ -82,9 +84,11 @@ public class DemonstrateActivity extends AppCompatActivity {
         }
 		
 		//设置标题
-		android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.demonstrate_toolbar);
-		toolbar.setTitle(title);
-		
+		android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.demonstrate_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(title);
+		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
 		//添加内容
 		int h = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
 		int e = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int)getResources().getDimension(R.dimen.widget_margin), getResources().getDisplayMetrics());
@@ -98,19 +102,43 @@ public class DemonstrateActivity extends AppCompatActivity {
 				//Import
 				
                 //导入词典 Button
-                FloatingActionButton fab = new FloatingActionButton(this);
-                AppBarLayout.LayoutParams fabParams = new AppBarLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
-                fabParams.gravity = Gravity.END;
-                fabParams.setMargins(768, 72, 72, 72);
-                fab.setLayoutParams(fabParams);
-                fab.setImageResource(R.drawable.ic_add_white_48dp);
-                fab.setOnClickListener(new View.OnClickListener(){
-                    @Override
-                    public void onClick(View v) {
-                        chooseFile();//系统展开文件选择页面
-                    }
-                });
-				((android.support.design.widget.CoordinatorLayout) findViewById(R.id.activity_demonstrate_main)).addView(fab);
+				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//21, Android 5.0
+					FloatingActionButton fab = new FloatingActionButton(this);
+					AppBarLayout.LayoutParams fabParams = new AppBarLayout.LayoutParams(LayoutParams.WRAP_CONTENT, LayoutParams.WRAP_CONTENT);
+					fabParams.gravity = Gravity.END;
+					fabParams.setMargins(768, 72, 72, 72);
+					fab.setLayoutParams(fabParams);
+					fab.setImageResource(R.drawable.ic_add_white_48dp);
+					fab.setOnClickListener(new View.OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							chooseFile();//系统展开文件选择页面
+						}
+					});
+					((android.support.design.widget.CoordinatorLayout) findViewById(R.id.activity_demonstrate_main)).addView(fab);
+				} else {
+					Button btn = new Button(this);
+					btn.setOnClickListener(new View.OnClickListener() {
+						@Override
+						public void onClick(View v) {
+							chooseFile();//系统展开文件选择页面
+						}
+					});
+					LayoutParams btnParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+					btnParams.setMargins(5, 5, 5, 5);
+					btnParams.gravity = Gravity.CENTER_HORIZONTAL;
+					btn.setLayoutParams(btnParams);
+					btn.setPadding((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics()), 0,
+							(int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics()), 0);
+					btn.setText("+");
+					btn.setTextColor(Color.WHITE);
+					GradientDrawable gradientDrawable = new GradientDrawable();
+					gradientDrawable.setColor(getResources().getColor(R.color.colorAccent));
+					gradientDrawable.setCornerRadius(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 5, getResources().getDisplayMetrics()));
+					btn.setBackground(gradientDrawable);
+					((LinearLayout) findViewById(R.id.content_demonstrate)).addView(btn);
+				}
+
 				
 				//列出所有词典
 				DictionaryOpenHelper helper = new DictionaryOpenHelper();
@@ -323,5 +351,15 @@ public class DemonstrateActivity extends AppCompatActivity {
 			int heightSpec = MeasureSpec.makeMeasureSpec(Integer.MAX_VALUE >> 2, MeasureSpec.AT_MOST);
 			super.onMeasure(widthMeasureSpec, heightSpec);
 		}
+	}
+
+	@Override
+	public boolean onOptionsItemSelected(MenuItem item) {
+		int id = item.getItemId();
+		if (id == android.R.id.home) {
+			finish();
+			return true;
+		}
+		return super.onOptionsItemSelected(item);
 	}
 }

@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">世界语词典</string>
     <string name="hello">Saluton!</string>
 	<string name="search">输入要搜索的单词</string>
 	<string name="no_result_found">没有本地释义</string>
@@ -14,5 +13,6 @@
     <string name="chinese">中文释义</string>
     <string name="definition">释义（世界语）</string>
     <string name="english">英文释义</string>
+    <string name="app_name">世界语词典</string>
 
 </resources>

@@ -136,9 +136,9 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_TRANSLATE));
         } else if (id == R.id.nav_import) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_IMPORT));
-        /*} else if (id == R.id.nav_settings) {
+        } else if (id == R.id.nav_settings) {
             startActivity(new Intent().setClass(MainActivity.this, SettingsActivity.class));
-        */} else if (id == R.id.nav_opensource) {
+        } else if (id == R.id.nav_opensource) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_OPENSOURCE));
         /*} else if (id == R.id.nav_donate) {
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_DONATE));
