@@ -4,9 +4,7 @@ package com.cinher.github.esperantodict;
  * Created by Junchen on 2017/8/17.
  */
 
-import android.support.v7.widget.CardView;
 import android.content.*;
-import android.util.*;
 import android.view.*;
 import android.widget.*;
 
@@ -23,14 +21,16 @@ public class AppCard extends FrameLayout
         super(context);
 		LayoutInflater inflater;
 		if(type ==  TYPE_DICTIONARY){
-			Log.d("Debug", "AppCard type: dict");
             inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			inflater.inflate(R.layout.app_card, this);
-		}else{
-			Log.d("Debug", "AppCard type: demo");
+            if (inflater != null) {
+                inflater.inflate(R.layout.app_card, this);
+            }
+        }else{
 			inflater=(LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-			inflater.inflate(R.layout.app_card_demonstrate, this);
-		}
+            if (inflater != null) {
+                inflater.inflate(R.layout.app_card_demonstrate, this);
+            }
+        }
 
         typeImageView = (ImageView) findViewById(R.id.card_imageView);
         typeTextView = (TextView) findViewById(R.id.card_typeTextView);

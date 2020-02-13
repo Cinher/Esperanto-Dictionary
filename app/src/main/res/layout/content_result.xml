@@ -9,15 +9,8 @@
     tools:showIn="@layout/activity_result"
     android:background="@color/windowBackground"
     >
-
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />-->
-
     <LinearLayout
-        android:id="@+id/resultCentralView"
+        android:id="@+id/result_central_linear_layout"
         android:orientation="vertical"
         android:background="@color/windowBackground"
         android:layout_width="match_parent"

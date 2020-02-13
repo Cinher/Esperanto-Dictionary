@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.1"
+    compileSdkVersion 28
+    buildToolsVersion "25.0.3"
     defaultConfig {
         applicationId "com.cinher.github.esperantodict"
         minSdkVersion 18
-        targetSdkVersion 25
+        targetSdkVersion 28
         versionCode 2
         versionName '0.9.1'
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"

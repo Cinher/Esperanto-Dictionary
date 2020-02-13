@@ -3,7 +3,6 @@ package com.cinher.github.esperantodict;
 import java.io.*;
 import android.widget.*;
 import android.content.*;
-import java.util.*;
 import android.util.*;
 
 public class DictionaryOpenHelper
@@ -43,31 +42,15 @@ public class DictionaryOpenHelper
 	public String [] listExistDictionaries(Context context) {
 		File defaultDir = new File(DEFAULT_DIRECTORY);
 		if(!defaultDir.exists()){
-			Log.d("listExistDictionary","Dir not exists");
 			return null;
 		}
 		if(!defaultDir.isDirectory()){
 			Toast.makeText(context, "Error: Not a directory", Toast.LENGTH_LONG).show();
 			return null;
 		}
-		String [] dictionaryNameList = defaultDir.list();
-		return dictionaryNameList;
+		return defaultDir.list();
 	}
-	
-	/*public boolean isDictionaryExistsInDefaultDirectory(Context context, String name){
-		try
-		{
-			if((Arrays.binarySearch(listExistDictionaries(context), name)) >= 0){
-				return true;
-			}
-		}
-		catch (IOException e)
-		{
-			
-		}
-		return false;
-	}*/
-	
+
 	private static void copyFile(Context context, File fromFile, File toFile) 
 	{
 		if ((!fromFile.exists()) || (!fromFile.isFile()) || (!fromFile.canRead()))
@@ -98,7 +81,6 @@ public class DictionaryOpenHelper
 		catch (Exception e)
 		{
 			Toast.makeText(context, "Error: File not found. e.Message =  " + e.toString(), Toast.LENGTH_LONG).show();
-			Log.d("DictionaryOpenHelper", e.toString());
 		}
 		
 	}

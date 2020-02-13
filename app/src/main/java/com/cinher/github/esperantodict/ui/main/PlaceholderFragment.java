@@ -57,7 +57,7 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
         if (getArguments().getInt(ARG_SECTION_NUMBER) == 1) {
             root = inflater.inflate(R.layout.content_main, container, false);
 
-            FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.fab);
+            FloatingActionButton fab = (FloatingActionButton) root.findViewById(R.id.main_fab);
             fab.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
@@ -86,7 +86,7 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
                         textView.setTextSize(sp);
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                             textView.setBackgroundDrawable(getContext().getDrawable(R.drawable.label_bg));
-                        }//Fix it!
+                        }
                         textView.setText(word);
                         textView.setOnClickListener(ocl);
                         textView.setPadding(2 * margin, margin, 2 * margin, margin);
@@ -100,16 +100,16 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
 
                     //按钮按下时弹出，显示历史记录
                     new AlertDialog.Builder(getActivity())
-                            .setTitle("SEARCH HISTORY")
+                            .setTitle(getResources().getString(R.string.main_history_search_history))
                             .setView(layout)
-                            .setPositiveButton("CLEAR ALL", new DialogInterface.OnClickListener(){
+                            .setPositiveButton(getResources().getString(R.string.main_history_clear_all), new DialogInterface.OnClickListener(){
                                 //点击时，删除所有记录
                                 @Override
                                 public void onClick(DialogInterface dialog, int which) {
                                     db.getWritableDatabase().execSQL("DELETE FROM history");
                                 }
                             })
-                            .setNeutralButton("CANCEL", null)
+                            .setNeutralButton(getResources().getString(android.R.string.cancel), null)
                             .show();
                 }
             });
@@ -122,15 +122,15 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
              */
 
             //1. 直接在输入法回车 默认搜索词典
-            ((EditText) root.findViewById(R.id.searchEditText))
+            ((EditText) root.findViewById(R.id.main_search_edit_text))
                     .setOnEditorActionListener(new TextView.OnEditorActionListener() {
                         public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                             if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                                String word = ((EditText) root.findViewById(R.id.searchEditText)).getText().toString();
+                                String word = ((EditText) root.findViewById(R.id.main_search_edit_text)).getText().toString();
                                 if (!word.trim().equals("")) {
                                     searchInDictionary(word);
                                 } else {
-                                    Snackbar.make(root.findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+                                    Snackbar.make(root.findViewById(R.id.main_search_edit_text), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
                                             .setAction("Action", null).show();
                                 }
                                 return true;
@@ -144,11 +144,11 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
             ((Button) root.findViewById(R.id.main_dictionary_button)).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String word = ((EditText) root.findViewById(R.id.searchEditText)).getText().toString();
+                    String word = ((EditText) root.findViewById(R.id.main_search_edit_text)).getText().toString();
                     if (!word.trim().equals("")) {
                         searchInDictionary(word);
                     } else {
-                        Snackbar.make(root.findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+                        Snackbar.make(root.findViewById(R.id.main_search_edit_text), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
                     }
                 }
@@ -156,12 +156,12 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
             ((Button) root.findViewById(R.id.main_corpus_button)).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    String word = ((EditText) root.findViewById(R.id.searchEditText)).getText().toString();
+                    String word = ((EditText) root.findViewById(R.id.main_search_edit_text)).getText().toString();
                     if (!word.trim().equals("")) {
                         addWordToHistoryDatabase(word);
                         startActivity(new Intent().setClass(getActivity(), CorpusActivity.class).putExtra("word", word));
                     } else {
-                        Snackbar.make(root.findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+                        Snackbar.make(root.findViewById(R.id.main_search_edit_text), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
                                 .setAction("Action", null).show();
                     }
                 }

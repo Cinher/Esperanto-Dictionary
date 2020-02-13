@@ -5,7 +5,7 @@
     <SwitchPreference
         android:defaultValue="true"
         android:key="settings_local_interpretation"
-        android:title="Local interpretation" />
+        android:title="@string/settings_search_local_interpretation" />
 
     <!-- NOTE: Hide buttons to simplify the UI. Users can touch outside the dialog to
          dismiss it. -->
@@ -18,12 +18,12 @@
         android:key="settings_language_local"
         android:negativeButtonText="@null"
         android:positiveButtonText="@null"
-        android:title="Language of local definitions" />
+        android:title="@string/settings_search_language_of_local_definitions" />
 
     <SwitchPreference
         android:defaultValue="true"
         android:key="settings_simpla_vortaro"
-        android:summary="Use Simpla Vortaro as online dictionary"
-        android:title="Simpla Vortaro" />
+        android:summary="@string/settings_search_use_simpla_vortaro_as_online_dictionary"
+        android:title="@string/settings_search_simpla_vortaro" />
 
 </PreferenceScreen>

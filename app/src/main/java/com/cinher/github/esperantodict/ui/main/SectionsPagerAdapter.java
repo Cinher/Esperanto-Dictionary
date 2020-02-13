@@ -6,6 +6,8 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.cinher.github.esperantodict.R;
+
 
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
@@ -29,10 +31,10 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         String title = "";
         switch (position){
             case 0:
-                title = "SEARCH";
+                title = mContext.getResources().getString(R.string.main_tab_search);
                 break;
             case 1:
-                title = "TRANSLATE";
+                title = mContext.getResources().getString(R.string.main_tab_translate);
                 break;
         }
         return title;

@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 
 public class TablesTabbedActivity extends AppCompatActivity {
@@ -17,7 +18,7 @@ public class TablesTabbedActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tables_tabbed);
-        com.cinher.github.esperantodict.ui.tables_tabbed.SectionsPagerAdapter sectionsPagerAdapter = new com.cinher.github.esperantodict.ui.tables_tabbed.SectionsPagerAdapter(getSupportFragmentManager());
+        com.cinher.github.esperantodict.ui.tables_tabbed.SectionsPagerAdapter sectionsPagerAdapter = new com.cinher.github.esperantodict.ui.tables_tabbed.SectionsPagerAdapter(this, getSupportFragmentManager());
         ViewPager viewPager = (ViewPager) findViewById(R.id.tables_tabbed_view_pager);
         viewPager.setAdapter(sectionsPagerAdapter);
         TabLayout tabs = (TabLayout) findViewById(R.id.tables_tabbed_tabs);
@@ -36,5 +37,15 @@ public class TablesTabbedActivity extends AppCompatActivity {
             setTaskDescription(taskDescription);
             bm.recycle();
         }
+
+        //设置导航栏颜色
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.navigationBarColor));
+        }
+
+        //设置标题
+        android.support.v7.widget.Toolbar toolbar = (Toolbar) findViewById(R.id.tables_tabbed_toolbar);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle(getResources().getString(R.string.app_name));
     }
 }

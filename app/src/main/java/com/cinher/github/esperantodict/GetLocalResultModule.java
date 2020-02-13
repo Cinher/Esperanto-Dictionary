@@ -75,52 +75,52 @@ public class GetLocalResultModule
 	}
 
 	//输入中文或英文，返回世界文及其释义
-	public static String GetLocalEsperantoResult(Context context, String word, int searchType){
-        XmlResourceParser parserLocal;
-		String result = "";
-        String tagType = "";
-
-        //判断源语言
-        if (searchType == SEARCH_IN_CHINESE){
-            parserLocal = context.getResources().getXml(R.xml.eo_zh);
-            // TODO create a xml file "zh_eo"
-            // TODO replace "eo_zh" with "zh_eo"
-            tagType = "zh";
-        }else{
-            parserLocal = context.getResources().getXml(R.xml.eo_en);
-            tagType = "en";
-        }
-
-        try
-        {
-            while (parserLocal.getEventType() != XmlResourceParser.END_DOCUMENT)
-            {
-                if (parserLocal.getEventType() == XmlResourceParser.START_TAG)
-                {
-                    if (parserLocal.getName().equals("word"))
-                    {
-                        String targetText = parserLocal.getAttributeValue(null, tagType);
-                        if (targetText.indexOf(word) != -1)//包含要找的字段
-                        {
-                            result = result
-                                    + parserLocal.getAttributeValue(null, "eo")
-                                    + "\n\n"
-                                    + targetText;
-                        }
-                    }
-                }
-                parserLocal.next();
-            }
-        }
-        catch (XmlPullParserException e)
-        {
-            e.printStackTrace();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-
-		return result;
-	}
+//	public static String GetLocalEsperantoResult(Context context, String word, int searchType){
+//        XmlResourceParser parserLocal;
+//		String result = "";
+//        String tagType = "";
+//
+//        //判断源语言
+//        if (searchType == SEARCH_IN_CHINESE){
+//            parserLocal = context.getResources().getXml(R.xml.eo_zh);
+//            //create a xml file "zh_eo"
+//            //replace "eo_zh" with "zh_eo"
+//            tagType = "zh";
+//        }else{
+//            parserLocal = context.getResources().getXml(R.xml.eo_en);
+//            tagType = "en";
+//        }
+//
+//        try
+//        {
+//            while (parserLocal.getEventType() != XmlResourceParser.END_DOCUMENT)
+//            {
+//                if (parserLocal.getEventType() == XmlResourceParser.START_TAG)
+//                {
+//                    if (parserLocal.getName().equals("word"))
+//                    {
+//                        String targetText = parserLocal.getAttributeValue(null, tagType);
+//                        if (targetText.contains(word))//包含要找的字段
+//                        {
+//                            result = result
+//                                    + parserLocal.getAttributeValue(null, "eo")
+//                                    + "\n\n"
+//                                    + targetText;
+//                        }
+//                    }
+//                }
+//                parserLocal.next();
+//            }
+//        }
+//        catch (XmlPullParserException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//
+//		return result;
+//	}
 }

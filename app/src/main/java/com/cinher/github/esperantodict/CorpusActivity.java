@@ -28,10 +28,12 @@ public class CorpusActivity extends AppCompatActivity {
             int color = getResources().getColor(R.color.colorPrimary);
 
             Bitmap bm = BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher_small);
-            ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription("Corpus", bm, color);
+            ActivityManager.TaskDescription taskDescription = new ActivityManager.TaskDescription(getResources().getString(R.string.title_activity_corpus), bm, color);
 
             setTaskDescription(taskDescription);
             bm.recycle();
+
+            getWindow().setNavigationBarColor(getResources().getColor(R.color.navigationBarColor));
 
             android.support.v7.widget.Toolbar toolbar = (android.support.v7.widget.Toolbar) findViewById(R.id.corpus_toolbar);
             toolbar.setTitle(word);

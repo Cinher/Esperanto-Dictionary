@@ -5,6 +5,6 @@
     <header
         android:fragment="com.cinher.github.esperantodict.SettingsActivity$SearchPreferenceFragment"
         android:icon="@drawable/ic_search_black_24dp"
-        android:title="Search" />
+        android:title="@string/settings_title_search" />
 
 </preference-headers>

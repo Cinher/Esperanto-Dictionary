@@ -8,11 +8,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="horizontal">
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:elevation="5dp"
@@ -23,13 +23,14 @@
                 android:id="@+id/translate_edit_message"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/translate_enter_text"
-                android:inputType="textCapSentences|textMultiLine|textNoSuggestions" />
+                android:hint="Enter text (Esperanto)"
+                android:inputType="textCapSentences|textMultiLine|textNoSuggestions"
+                android:textIsSelectable="true" />
         </android.support.v7.widget.CardView>
 
         <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             android:gravity="center"
             android:elevation="5dp"
@@ -40,7 +41,7 @@
                 android:id="@+id/translate_edit_message2"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="@string/translate_translation"
+                android:hint="Translation (English)"
                 android:editable="false"
                 android:textIsSelectable="true"
                 android:windowSoftInputMode="stateVisible" />

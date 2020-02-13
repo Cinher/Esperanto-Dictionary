@@ -1,14 +1,20 @@
 package com.cinher.github.esperantodict.ui.tables_tabbed;
 
+import android.content.Context;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
+import com.cinher.github.esperantodict.R;
+
 public class SectionsPagerAdapter extends FragmentPagerAdapter {
 
-    public SectionsPagerAdapter(FragmentManager fm) {
+    private final Context mContext;
+
+    public SectionsPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
+        mContext = context;
     }
 
     @Override
@@ -24,13 +30,13 @@ public class SectionsPagerAdapter extends FragmentPagerAdapter {
         String title = "";
         switch (position){
             case 0:
-                title = "PREFIX";
+                title = mContext.getResources().getString(R.string.tools_psc_title_prefix);
                 break;
             case 1:
-                title = "SUFFIX";
+                title = mContext.getResources().getString(R.string.tools_psc_title_suffix);
                 break;
             case 2:
-                title = "CORRELATIVES";
+                title = mContext.getResources().getString(R.string.tools_psc_title_correlatives);
                 break;
         }
         return title;

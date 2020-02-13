@@ -1,8 +1,10 @@
 package com.cinher.github.esperantodict;
+import android.app.AlertDialog;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.graphics.drawable.GradientDrawable;
 import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.v7.app.*;
 import android.os.*;
 import android.support.v7.widget.Toolbar;
@@ -18,8 +20,10 @@ import android.content.*;
 import android.support.v4.app.*;
 import android.*;
 import android.content.pm.*;
-import java.util.*;
 import android.webkit.*;
+
+import java.lang.reflect.Array;
+import java.util.*;
 
 public class DemonstrateActivity extends AppCompatActivity {
 	
@@ -34,14 +38,7 @@ public class DemonstrateActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_demonstrate);
 		
-		//添加运行时权限，用于词典导入
-		//无以下代码时在 AIDE 编译运行时 DictionaryOpenHelper.copyFile() 报 IOException: Permission denied
-		if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
-			ActivityCompat.requestPermissions((DemonstrateActivity) this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},1);
-		}
-		
 		final int TYPE = getIntent().getIntExtra("type",5);
-		Log.d("debug", TYPE + " ");
 		String title = "";
 		
         //设置Overview界面图标
@@ -55,19 +52,19 @@ public class DemonstrateActivity extends AppCompatActivity {
 			
 			switch(TYPE){
 				case 0:
-					title = getResources().getString(R.string.drawer_import);
+					title = getResources().getString(R.string.nav_import);
 					break;
 				case 1:
-					title = getResources().getString(R.string.drawer_tools);
+					title = getResources().getString(R.string.nav_tools);
 					break;
 				case 2:
 					title = getResources().getString(R.string.drawer_donate);
 					break;
 				case 3:
-					title = getResources().getString(R.string.drawer_open_source);
+					title = getResources().getString(R.string.nav_opensource);
 					break;
 				case 4:
-					title = "Favorites";
+					title = getResources().getString(R.string.nav_favorites);
 					break;
 				default:
 					break;
@@ -90,16 +87,27 @@ public class DemonstrateActivity extends AppCompatActivity {
 		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
 		//添加内容
-		int h = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 80, getResources().getDisplayMetrics());
-		int e = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, (int)getResources().getDimension(R.dimen.widget_margin), getResources().getDisplayMetrics());
-		LayoutParams paramsPic = new LayoutParams(h, h);
-		LayoutParams paramsLayout = new LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.WRAP_CONTENT);
-		LayoutParams paramsFull = new LayoutParams(LayoutParams.MATCH_PARENT, h);
-		
 		LinearLayout layout = (LinearLayout) findViewById(R.id.content_demonstrate);
 		switch(TYPE){
 			case 0:
 				//Import
+
+				//添加运行时权限，用于词典导入
+				//无以下代码时在 AIDE 编译运行时 DictionaryOpenHelper.copyFile() 报 IOException: Permission denied
+				if (ActivityCompat.checkSelfPermission(this
+						, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
+					new AlertDialog.Builder(this)
+							.setTitle(getResources().getString(R.string.import_alert_dialog_request_for_permissions))
+							.setMessage(getResources().getString(R.string.import_alert_dialog_message))
+							.setPositiveButton(getResources().getString(android.R.string.ok), new DialogInterface.OnClickListener() {
+								@Override
+								public void onClick(DialogInterface dialogInterface, int i) {
+									ActivityCompat.requestPermissions(DemonstrateActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}
+											,1);
+								}
+							})
+							.show();
+				}
 				
                 //导入词典 Button
 				if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {//21, Android 5.0
@@ -125,11 +133,11 @@ public class DemonstrateActivity extends AppCompatActivity {
 						}
 					});
 					LayoutParams btnParams = new LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT);
-					btnParams.setMargins(5, 5, 5, 5);
+					btnParams.setMargins(10, 10, 10, 10);
 					btnParams.gravity = Gravity.CENTER_HORIZONTAL;
 					btn.setLayoutParams(btnParams);
-					btn.setPadding((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics()), 0,
-							(int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 40, getResources().getDisplayMetrics()), 0);
+					btn.setPadding((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20, getResources().getDisplayMetrics()), 0,
+							(int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20, getResources().getDisplayMetrics()), 0);
 					btn.setText("+");
 					btn.setTextColor(Color.WHITE);
 					GradientDrawable gradientDrawable = new GradientDrawable();
@@ -145,15 +153,38 @@ public class DemonstrateActivity extends AppCompatActivity {
 				String [] list = helper.listExistDictionaries(this);
 				if (list != null)
 				{
-					for (int i = 0; i < list.length; i++)
-					{
-						if ((list[i]).endsWith(".ld2") || (list[i]).endsWith(".ldx"))
-						{
-							AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-							card.setTitle(list[i]);
-							card.setImage(R.drawable.ic_insert_drive_file_black_48dp);
-							layout.addView(card);
+					if (list.length != 0) {
+						for (String s : list) {
+							if ((s).endsWith(".ld2") || (s).endsWith(".ldx")) {
+								AppCard card = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+								card.setTitle(s);
+								card.setImage(R.drawable.ic_insert_drive_file_black_48dp);
+								layout.addView(card);
+							}
 						}
+					}else {//显示：没有导入的词典文件
+						LinearLayout messageLayout = new LinearLayout(this);
+						messageLayout.setLayoutParams(new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+						messageLayout.setOrientation(LinearLayout.VERTICAL);
+						messageLayout.setGravity(Gravity.CENTER);
+
+						ImageView imageView = new ImageView(this);
+						LayoutParams imageViewParams = new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,
+								(int) (TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 180, getResources().getDisplayMetrics())));
+						int marginHorizontal = (int) getResources().getDimension(R.dimen.activity_horizontal_margin);
+						int marginVertical = (int) getResources().getDimension(R.dimen.activity_vertical_margin);
+						imageViewParams.setMargins(marginHorizontal, marginVertical * 5, marginHorizontal, marginVertical);
+						imageView.setLayoutParams(imageViewParams);
+						imageView.setImageDrawable(getResources().getDrawable(R.drawable.img_not_found_1));
+
+						TextView textView = new TextView(this);
+						textView.setGravity(Gravity.CENTER);
+						textView.setText(getResources().getString(R.string.import_no_dictionary));
+						textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
+
+						messageLayout.addView(imageView);
+						messageLayout.addView(textView);
+						layout.addView(messageLayout);
 					}
 				}else{//显示：没有导入的词典文件
 					LinearLayout messageLayout = new LinearLayout(this);
@@ -172,8 +203,8 @@ public class DemonstrateActivity extends AppCompatActivity {
 
 					TextView textView = new TextView(this);
 					textView.setGravity(Gravity.CENTER);
-					textView.setText("No dictionary files\nYou can import by click \"+\" button\nor move *.ld2 files to EsperantoDict/");
-					textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
+					textView.setText(getResources().getString(R.string.import_no_dictionary));
+					textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 16);
 
 					messageLayout.addView(imageView);
 					messageLayout.addView(textView);
@@ -182,31 +213,44 @@ public class DemonstrateActivity extends AppCompatActivity {
 
 				break;
 			case 1:
+				//Tools
 				System.gc();
 
 				AppCard card1 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-				card1.setTitle("PREFIXES AND SUFFIXES");
+				card1.setTitle(getResources().getString(R.string.tools_prefixes_suffixes));
 				card1.setOnClickListener(new View.OnClickListener(){
 						@Override
 						public void onClick(View p){
 							startActivity(new Intent().setClass(DemonstrateActivity.this, TablesTabbedActivity.class));
 						}
 					});
-				//card1.setImage(R.drawable.ic_table_pre);
+				card1.setImage(R.drawable.ic_presuf);
 				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card1);
 				
+//				AppCard card2 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
+//				card2.setTitle(getResources().getString(R.string.translate_via_google));
+//				card2.setOnClickListener(new View.OnClickListener(){
+//						@Override
+//						public void onClick(View p){
+//							Uri url = Uri.parse("http://translate.google.cn/?hl=en#eo|en|");
+//							Intent intent = new Intent(Intent.ACTION_VIEW,url);
+//							startActivity(intent);
+//						}
+//					});
+//				card2.setImage(R.drawable.ic_google_translate);
+//				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card2);
+
 				AppCard card2 = new AppCard(this, AppCard.TYPE_DEMONSTRATE);
-				card2.setTitle(getResources().getString(R.string.translate_via_google));
+				card2.setTitle(getResources().getString(R.string.tools_text_converter));
 				card2.setOnClickListener(new View.OnClickListener(){
-						@Override
-						public void onClick(View p){
-							Uri url = Uri.parse("http://translate.google.cn/?hl=en#eo|en|");
-							Intent intent = new Intent(Intent.ACTION_VIEW,url);
-							startActivity(intent);
-						}
-					});
-				card2.setImage(R.drawable.ic_google_translate);
+					@Override
+					public void onClick(View p){
+						startActivity(new Intent().setClass(DemonstrateActivity.this, ConverterActivity.class));
+					}
+				});
+				card2.setImage(R.drawable.ic_converter);
 				((LinearLayout) findViewById(R.id.content_demonstrate)).addView(card2);
+
 				break;
 			case 2:
 				//Donate
@@ -268,13 +312,14 @@ public class DemonstrateActivity extends AppCompatActivity {
 
 					TextView textView = new TextView(this);
 					textView.setGravity(Gravity.CENTER);
-					textView.setText("No favorites");
+					textView.setText(getResources().getString(R.string.favorites_no_favorites));
 					textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 18);
 
 					messageLayout.addView(imageView);
 					messageLayout.addView(textView);
 					layout.addView(messageLayout);
 				}
+				c.close();//关闭 Cursor 释放资源
 				break;
 			default:
 				break;
@@ -289,7 +334,7 @@ public class DemonstrateActivity extends AppCompatActivity {
 		intent.addCategory(Intent.CATEGORY_OPENABLE);
 		try{
             //请求系统选择文件
-			startActivityForResult(Intent.createChooser(intent, "Select a File (*.ld2)"), 0);
+			startActivityForResult(Intent.createChooser(intent, getResources().getString(R.string.import_select_a_file)), 0);
 		}catch (ActivityNotFoundException e){
 			e.printStackTrace();
 		}
@@ -305,20 +350,19 @@ public class DemonstrateActivity extends AppCompatActivity {
 			String path = null;
             //判断格式
             if ((uri.getScheme()).equalsIgnoreCase("content")) {//(忽略大小写)判断开头为 content
-                String[] projection = {"_data"};
+                String [] projection = {MediaStore.MediaColumns.DATA};
                 Cursor cursor = getApplicationContext().getContentResolver()
                         .query(uri, projection, null, null, null);
                 int column = 0;
                 if (cursor != null) {
-                    column = cursor.getColumnIndexOrThrow("_data");
+                    column = cursor.getColumnIndexOrThrow(projection [0]);
                     if (cursor.moveToFirst()) {
-                        Log.d("onActivityResult", cursor.getString(column));
                         path = cursor.getString(column);
                         cursor.close();
                     }
                 }else{
-                    Toast.makeText(this, "Error: cursor == null", Toast.LENGTH_SHORT).show();
-                }
+					Toast.makeText(this, getResources().getString(R.string.import_error_1), Toast.LENGTH_LONG).show();
+				}
 
             } else if ((uri.getScheme()).equalsIgnoreCase("file")) {//开头为 file
                 Log.d("onActivityResult", uri.getPath());
@@ -326,13 +370,12 @@ public class DemonstrateActivity extends AppCompatActivity {
             }
 
             if(path != null && !(path.equals(""))){
-                final Db db = new Db(getApplicationContext());
-                final SQLiteDatabase dbWrite = db.getWritableDatabase();
-                Log.d("onActivityResult", "path != null: " + path);
-                // TODO
 				DictionaryOpenHelper helper = new DictionaryOpenHelper();
 				helper.importDictionary(this, path, 0);//将词典复制到指定位置
-            }
+				DemonstrateActivity.this.finish();
+            }else{
+            	Toast.makeText(this, getResources().getString(R.string.import_error_2), Toast.LENGTH_LONG).show();
+			}
         }
     }
 	

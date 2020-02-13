@@ -7,17 +7,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Build;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Looper;
-import android.os.Message;
-import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
 import android.view.KeyEvent;
-import android.view.View;
-import android.widget.LinearLayout;
 import android.app.*;
 import android.widget.*;
 import android.view.inputmethod.*;
@@ -74,9 +66,10 @@ public class WidgetPopupActivity extends Activity {
 							dbWrite.close();
 
 							startActivity(new Intent().setClass(WidgetPopupActivity.this, ResultActivity.class).putExtra("word", word));
+							cursor.close();
 							WidgetPopupActivity.this.finish();
 						} else {
-							Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.input_is_empty), Snackbar.LENGTH_LONG)
+							Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
 								.setAction("Action", null).show();
 						}
 						return true;

@@ -19,19 +19,17 @@ import android.util.TypedValue;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.util.*;
+import android.database.sqlite.*;
+import android.content.*;
+import android.database.*;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
-import java.util.List;
-import java.util.Map;
-import android.widget.*;
-import android.util.*;
 import java.io.*;
-import android.database.sqlite.*;
-import android.content.*;
-import android.database.*;
+
 
 public class ResultActivity extends AppCompatActivity {
 
@@ -49,11 +47,11 @@ public class ResultActivity extends AppCompatActivity {
         context = this;
 
         word = getIntent().getStringExtra("word");
-        Toolbar toolbar = (Toolbar) findViewById(R.id.resultToolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.result_toolbar);
         toolbar.setTitle(word);
         setSupportActionBar(toolbar);
 
-        resultView = (LinearLayout) findViewById(R.id.resultCentralView);
+        resultView = (LinearLayout) findViewById(R.id.result_central_linear_layout);
 
         //设置Overview界面图标
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP){
@@ -75,7 +73,7 @@ public class ResultActivity extends AppCompatActivity {
         }
 		
         //fab
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.result_fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -98,14 +96,15 @@ public class ResultActivity extends AppCompatActivity {
 				//如收藏夹中有该词汇则删除，否则添加
 				if (isWordExistInFavorites){
 					dbWrite.delete("favorites", "word = \'" + word + "\'", null);
-					Snackbar.make(view, "Removed from favorites", Snackbar.LENGTH_LONG)
+					Snackbar.make(view, getResources().getString(R.string.result_removed_from_favorites), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 				}else {
 					dbWrite.insert("favorites", null, cv);
-					Snackbar.make(view, "Added to favorites", Snackbar.LENGTH_LONG)
+					Snackbar.make(view, getResources().getString(R.string.result_added_to_favorites), Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
 				}
 				dbWrite.close();
+				c.close();
             }
         });
 
@@ -113,7 +112,7 @@ public class ResultActivity extends AppCompatActivity {
         if (PreferenceManager.getDefaultSharedPreferences(this)
                 .getBoolean("settings_local_interpretation", true)) {//设置中是否开启了本地结果
             AppCard localCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
-            localCard.setTitle(getResources().getString(R.string.local_interpretation));
+            localCard.setTitle(getResources().getString(R.string.result_local_interpretation));
             String[] arr = GetLocalResultModule.GetLocalTranslationResult(this, addHat(word));
             //数组第一个元素为中文释义，第二个为英文释义
             //addHat() 将 x 形式转换为戴帽子的字母形式
@@ -121,7 +120,7 @@ public class ResultActivity extends AppCompatActivity {
                 //查看设置中的本地词典显示释义的语言
                 case "0":
                     localCard.setText(
-                            getResources().getString(R.string.english) + "\n"
+                            getResources().getString(R.string.result_definition_en) + "\n"
                                     + (arr[1]) + "\n"
                     );
                     if (!((arr[1]).isEmpty())) {
@@ -130,7 +129,7 @@ public class ResultActivity extends AppCompatActivity {
                     break;
                 case "1":
                     localCard.setText(
-                            getResources().getString(R.string.chinese) + "\n"
+                            getResources().getString(R.string.result_definition_zh) + "\n"
                                     + (arr[0]) + "\n\n"
                     );
                     if (!((arr[0]).isEmpty())) {
@@ -139,9 +138,9 @@ public class ResultActivity extends AppCompatActivity {
                     break;
                 default:
                     localCard.setText(
-                            getResources().getString(R.string.chinese) + "\n"
+                            getResources().getString(R.string.result_definition_zh) + "\n"
                                     + (arr[0]) + "\n\n"
-                                    + getResources().getString(R.string.english) + "\n"
+                                    + getResources().getString(R.string.result_definition_en) + "\n"
                                     + (arr[1]) + "\n"
                     );
                     if (!((arr[0]).isEmpty()
@@ -165,34 +164,28 @@ public class ResultActivity extends AppCompatActivity {
 		String [] dictList = helper.listExistDictionaries(this);
 		if (dictList != null)
 		{
-			for (int i = 0; i < dictList.length; i++)
-			{ //遍历词典
-				Log.d("ResultActivity", "" + dictList[i]);
-				//第 i 个词典的搜索结果
-				String result = helper.search(this, DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList[i], word);
-				if (result != null)
-				{
-					Log.d("ResultActivity", result);
-					//创建卡片用于显示结果
-					AppCard localDictCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
-					localDictCard.setTitle(dictList[i]);
-					localDictCard.setText(result);
-					resultView.addView(localDictCard);
-				}
-			}
-			for (int i = 0; i < dictList.length; i++) //删除临时文件
-			{
-				if ((dictList[i]).endsWith(".output")
-					|| (dictList[i]).endsWith(".inflated")
-					|| (dictList[i]).endsWith(".idx")
-					|| (dictList[i]).endsWith(".words")
-					|| (dictList[i]).endsWith(".ld2.xml")
-					)
-				{
-					File file = new File(DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + dictList[i]);
-					file.delete();
-				}
-			}
+            for (String s : dictList) { //遍历词典
+                //第 i 个词典的搜索结果
+                String result = helper.search(this, DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + s, word);
+                if (result != null) {
+                    //创建卡片用于显示结果
+                    AppCard localDictCard = new AppCard(this, AppCard.TYPE_DICTIONARY);
+                    localDictCard.setTitle(s);
+                    localDictCard.setText(result);
+                    resultView.addView(localDictCard);
+                }
+            }
+            for (String s : dictList) {
+                if ((s).endsWith(".output")
+                        || (s).endsWith(".inflated")
+                        || (s).endsWith(".idx")
+                        || (s).endsWith(".words")
+                        || (s).endsWith(".ld2.xml")
+                ) {
+                    File file = new File(DictionaryOpenHelper.DEFAULT_DIRECTORY + "/" + s);
+                    file.delete();
+                }
+            }
 		}
     }
 
@@ -203,6 +196,7 @@ public class ResultActivity extends AppCompatActivity {
             String url="http://www.simplavortaro.org/api/v1/vorto/" + addHat(word);
             boolean isWordExists = true;
             String SimplaVortaroResult = "";
+            StringBuffer SimplaVortaroResultBuffer = new StringBuffer();
             BufferedReader in = null;
 
             String definition = "";
@@ -210,24 +204,21 @@ public class ResultActivity extends AppCompatActivity {
             String english = "";
             try
             {
-                String urlNameString = url;
-                URL realUrl = new URL(urlNameString);
+                URL realUrl = new URL(url);
                 URLConnection connection = realUrl.openConnection();
                 connection.connect();
-                // 获取响应头字段
-                Map<String, List<String>> map = connection.getHeaderFields();
                 //BufferedReader读取URL响应
                 in = new BufferedReader(new InputStreamReader(
                         connection.getInputStream()));
                 String line;
                 while ((line = in.readLine()) != null)
                 {
-                    SimplaVortaroResult += line;
+                    SimplaVortaroResultBuffer.append(line);
                 }
+                SimplaVortaroResult = SimplaVortaroResultBuffer.toString();
             }
             catch (Exception e)
             {
-                //Log.d("Debug", "Exception Caught: " + e);
                 e.printStackTrace();
                 isWordExists = false;
             }
@@ -297,10 +288,13 @@ public class ResultActivity extends AppCompatActivity {
                 }while(pointer != -1);
 
                 //添加
-                String total = "—" + word + "\n\n" + getResources().getString(R.string.english) + "\n" + english + "\n" + getResources().getString(R.string.definition) + "\n" + definition + "\n" + getResources().getString(R.string.examples) + "\n" + example + "\n";
+                String total = "—" + word + "\n\n" + getResources().getString(R.string.result_definition_en) + "\n"
+                        + english + "\n"
+                        + getResources().getString(R.string.result_definition_eo) + "\n" + definition + "\n"
+                        + getResources().getString(R.string.result_examples) + "\n" + example + "\n";
                 total = EsperantoUnicodeToCharacter(total);
                 AppCard card = new AppCard(context, AppCard.TYPE_DICTIONARY);//如第一个参数传 getApplicationContext() 会导致低版本下 AppCard 上覆一层灰色
-                card.setTitle("La Simpla Vortaro");
+                card.setTitle(getResources().getString(R.string.result_la_simpla_vortaro));
                 card.setText(total);
                 Message message = Message.obtain();
                 message.obj = card;
@@ -328,8 +322,8 @@ public class ResultActivity extends AppCompatActivity {
 					e.printStackTrace();
 				}
 				
-				if((SimplaVortaroResult.indexOf("\"malpreciza\"") != -1) 
-				   && (SimplaVortaroResult.indexOf("\"malpreciza\": []") == -1)){
+				if((SimplaVortaroResult.contains("\"malpreciza\""))
+				   && (!SimplaVortaroResult.contains("\"malpreciza\": []"))){
 					   //trovi 的结果中有模糊搜索的词汇
 					int pointer = SimplaVortaroResult.indexOf("{\"malpreciza\":");
 					do
@@ -348,8 +342,8 @@ public class ResultActivity extends AppCompatActivity {
 					//contentWords 已取得 malpreciza 后 [] 内的内容
 					//将模糊搜索结果显示出来
 					AppCard card = new AppCard(context, AppCard.TYPE_DICTIONARY);
-					card.setTitle("La Simpla Vortaro");
-					card.setText("Do you mean: \n\n" + contentWords);
+					card.setTitle(getResources().getString(R.string.result_la_simpla_vortaro));
+					card.setText(getResources().getString(R.string.result_do_you_mean) + " \n\n" + contentWords);
 					Message message = Message.obtain();
 					message.obj = card;
 					messageHandler.sendMessage(message);
@@ -358,15 +352,15 @@ public class ResultActivity extends AppCompatActivity {
         }
     };
 
-    @Override
-    public boolean onKeyDown(int keyCode, KeyEvent event)
-    {
-        if (keyCode == KeyEvent.KEYCODE_BACK)
-        {
-            this.startActivity(new Intent().setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION).setClass(ResultActivity.this, MainActivity.class));
-        }
-        return super.onKeyDown(keyCode, event);
-    }
+//    @Override
+//    public boolean onKeyDown(int keyCode, KeyEvent event)
+//    {
+//        if (keyCode == KeyEvent.KEYCODE_BACK)
+//        {
+//            this.startActivity(new Intent().setFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION).setClass(ResultActivity.this, MainActivity.class));
+//        }
+//        return super.onKeyDown(keyCode, event);
+//    }
 
     class MessageHandler extends Handler
     {

@@ -2,7 +2,6 @@ package com.cinher.github.esperantodict;
 
 import android.content.Context;
 import android.graphics.Typeface;
-import android.graphics.drawable.GradientDrawable;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
@@ -11,7 +10,6 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -46,7 +44,9 @@ public class CorpusView extends LinearLayout {
         word = CorpusActivity.word;
         word = addHat(word);//将 x 形式字母转换为帽子字母
         LayoutInflater inflater = (LayoutInflater) c.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        view = inflater.inflate(R.layout.app_corpus_view, this, true);
+        if (inflater != null) {
+            view = inflater.inflate(R.layout.app_corpus_view, this, true);
+        }
         linearLayout = (LinearLayout) view.findViewById(R.id.app_corpus_view_linear_layout);
 
         //启动新线程。新线程会在语料库中搜索要找的词汇，并把结果显示出来
@@ -72,12 +72,12 @@ public class CorpusView extends LinearLayout {
         * 在下面的 bookNames 中添加书名 + ".txt"，即可正常搜索
         */
         String [] bookNames = {"Dua Libro de l' Lingvo Internacia.txt", "Fundamenta Krestomatio.txt", "Hamleto, Reĝido de Danujo.txt"};
-        for (int i = 0; i < bookNames.length; i ++) {
-            addRow(((bookNames [i]).replace(".txt","")));//显示该书的书名
-            if (bookNames[i].equals("Fundamenta Krestomatio.txt")) {
-                searchWordInBook(getBookFromAssets(bookNames[i]), removeHat(word));
+        for (String bookName : bookNames) {
+            addRow(((bookName).replace(".txt", "")));//显示该书的书名
+            if (bookName.equals("Fundamenta Krestomatio.txt")) {
+                searchWordInBook(getBookFromAssets(bookName), removeHat(word));
             } else {
-                searchWordInBook(getBookFromAssets(bookNames[i]), word);
+                searchWordInBook(getBookFromAssets(bookName), word);
             }
         }
 
@@ -109,7 +109,7 @@ public class CorpusView extends LinearLayout {
     @NonNull
     private String getBookFromAssets(String name){
         name = "e_books/" + name;//修改为 assets 下的完整路径
-        String line = "";
+        String line;
         StringBuilder stringBuilder = new StringBuilder();//临时存储电子书的内容
         try {
             InputStreamReader reader = new InputStreamReader(getResources().getAssets().open(name));
@@ -171,7 +171,7 @@ public class CorpusView extends LinearLayout {
 
     class MessageHandler extends Handler
     {
-        public MessageHandler(Looper looper)
+        MessageHandler(Looper looper)
         {
             super(looper);
         }

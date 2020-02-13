@@ -1,194 +1,117 @@
 <resources>
+
+    <!-- Application -->
+
     <string name="app_name">Esperanto Dictionary</string>
+    <string name="v">Test Version 0.9.1</string>
+    <string name="title_activity_result">Result</string>
+    <string name="title_activity_tables_tabbed">TablesTabbedActivity</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="title_activity_corpus">Corpus</string>
+    <string name="title_activity_converter">Text Converter</string>
+
+    <!-- Main activity -->
+
+    <string name="main_tab_search">SEARCH</string>
+    <string name="main_tab_translate">TRANSLATE</string>
+    <string name="main_hello">Saluton!</string>
+    <string name="main_search">Search</string>
+    <string name="main_button_dictionary">dictionary</string>
+    <string name="main_button_corpus">corpus</string>
+    <string name="main_history_search_history">SEARCH HISTORY</string>
+    <string name="main_history_clear_all">Clear All</string>
+    <string name="main_empty">Empty</string>
+
+    <string name="translate_enter_text">Enter text (Esperanto)</string>
+    <string name="translate_translation">Translation (English)</string>
+
+    <!-- Navigation drawer -->
+
+    <string name="nav_functions">Functions</string>
+    <string name="nav_tools">Tools</string>
+    <string name="nav_import">Import</string>
+    <string name="nav_favorites">Favorites</string>
+    <string name="nav_app">App</string>
+    <string name="nav_settings">Settings</string>
+    <string name="nav_opensource">Open Source</string>
+    <string name="drawer_translate">Translate</string>
+    <string name="drawer_donate">Donate</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="action_settings">Settings</string>
+    <!-- Tools -->
 
-    <string name="hello">Saluton!</string>
-    <string name="search">Search</string>
-    <string name="no_result_found">No local interpretation</string>
+    <string name="tools_prefixes_suffixes">PREFIXES AND SUFFIXES</string>
+    <string name="tools_text_converter">TEXT CONVERTER</string>
+    <string name="tools_psc_title_prefix">PREFIX</string>
+    <string name="tools_psc_title_suffix">SUFFIX</string>
+    <string name="tools_psc_title_correlatives">CORRELATIVES</string>
+    <string name="tools_converter_to_x_system">To x-system</string>
+    <string name="tools_converter_to_normal_form">To normal form</string>
+    <string name="tools_converter_input_here">Input here:</string>
 
-    <string name="definition">Definition (Esperanto) :</string>
-    <string name="examples">Examples :</string>
-    <string name="english">Definition (English) :</string>
+    <!-- Import -->
 
-    <string name="drawer_import">Import</string>
-    <string name="drawer_translate">Translate</string>
-    <string name="drawer_tools">Tools</string>
-    <string name="drawer_donate">Donate</string>
-    <string name="drawer_open_source">Open Source</string>
-    <string name="translate_esperanto">TRANSLATE ESPERANTO</string>
-    <string name="translate_via_google">TRANSLATE VIA GOOGLE</string>
-
-    <string name="list">Esperanto Lists</string>
-    <string name="title_activity_result">Result</string>
-    <string name="large_text">
-        "Material is the metaphor.\n\n"
-
-        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
-        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
-        "technologically advanced and open to imagination and magic.\n"
-        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
-        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
-        "flexibility of the material creates new affordances that supercede those in the physical "
-        "world, without breaking the rules of physics.\n"
-        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
-        "interact, and exist in space and in relation to each other. Realistic lighting shows "
-        "seams, divides space, and indicates moving parts.\n\n"
-
-        "Bold, graphic, intentional.\n\n"
-
-        "The foundational elements of print based design typography, grids, space, scale, color, "
-        "and use of imagery guide visual treatments. These elements do far more than please the "
-        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
-        "imagery, large scale typography, and intentional white space create a bold and graphic "
-        "interface that immerse the user in the experience.\n"
-        "An emphasis on user actions makes core functionality immediately apparent and provides "
-        "waypoints for the user.\n\n"
-
-        "Motion provides meaning.\n\n"
-
-        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
-        "inflection points that initiate motion, transforming the whole design.\n"
-        "All action takes place in a single environment. Objects are presented to the user without "
-        "breaking the continuity of experience even as they transform and reorganize.\n"
-        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
-        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
-
-        "3D world.\n\n"
-
-        "The material environment is a 3D space, which means all objects have x, y, and z "
-        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
-        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
-        "position along the z-axis and has a standard 1dp thickness.\n"
-        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
-        "emulated by manipulating the y-axis.\n\n"
-
-        "Light and shadow.\n\n"
-
-        "Within the material environment, virtual lights illuminate the scene. Key lights create "
-        "directional shadows, while ambient light creates soft shadows from all angles.\n"
-        "Shadows in the material environment are cast by these two light sources. In Android "
-        "development, shadows occur when light sources are blocked by sheets of material at "
-        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
-        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
-
-        "Resting elevation.\n\n"
-
-        "All material objects, regardless of size, have a resting elevation, or default elevation "
-        "that does not change. If an object changes elevation, it should return to its resting "
-        "elevation as soon as possible.\n\n"
-
-        "Component elevations.\n\n"
-
-        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
-        "does not vary from 6dp in one app to 16dp in another app).\n"
-        "Components may have different resting elevations across platforms, depending on the depth "
-        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
-
-        "Responsive elevation and dynamic elevation offsets.\n\n"
-
-        "Some component types have responsive elevation, meaning they change elevation in response "
-        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
-        "changes are consistently implemented using dynamic elevation offsets.\n"
-        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
-        "to the component’s resting state. They ensure that elevation changes are consistent "
-        "across actions and component types. For example, all components that lift on press have "
-        "the same elevation change relative to their resting elevation.\n"
-        "Once the input event is completed or cancelled, the component will return to its resting "
-        "elevation.\n\n"
-
-        "Avoiding elevation interference.\n\n"
-
-        "Components with responsive elevations may encounter other components as they move between "
-        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
-        "through other material, components avoid interfering with one another any number of ways, "
-        "whether on a per component basis or using the entire app layout.\n"
-        "On a component level, components can move or be removed before they cause interference. "
-        "For example, a floating action button (FAB) can disappear or move off screen before a "
-        "user picks up a card, or it can move if a snackbar appears.\n"
-        "On the layout level, design your app layout to minimize opportunities for interference. "
-        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
-        "when a user tries to pick up one of cards.\n\n"
+    <string name="import_alert_dialog_request_for_permissions">Request for Permissions</string>
+    <string name="import_alert_dialog_message">
+        "In order to import a dictionary, we need the following permissions: \n\n"
+        " • READ EXTERNAL STORAGE\n"
+        " • WRITE EXTERNAL STORAGE\n\n"
+        "We need to read external storage when we import a dictionary. "
+        "And in order to ensure that your dictionary files are stored properly and not deleted when you delete the original files or the application is uninstalled, "
+        "we need to write external storage and store them in the specified path. "
+        "If you do not allow us to obtain these permissions, the import function of this application may not work properly. "
     </string>
-    <string name="v">Test Version 0.9.1</string>
-    <string name="local_interpretation">Local Interpretation</string>
-    <string name="chinese">Definition (Chinese) :</string>
-    <string name="title_activity_settings">Settings</string>
+    <string name="import_no_dictionary">
+        "No dictionary files\n"
+        "You can import by click \"+\" button\n"
+        "or move *.ld2 files to EsperantoDict/\n"
+        "Esperanto Dictionary supports Lingoes dictionary files (*.ld2)\n"
+        "You can download on the Internet"
+    </string>
+    <string name="import_select_a_file">Select a File (*.ld2)</string>
+    <string name="import_error_1">Failed to import the file (Cursor == null). You can try to move the dictionary file to /EsperantoDict or switch to another file explorer </string>
+    <string name="import_error_2">Failed to import the file. You can try to move the dictionary file to /EsperantoDict or switch to another file explorer </string>
 
-    <!-- Strings related to Settings -->
+    <!-- Favorites -->
 
-    <!-- Example General settings -->
-    <string name="pref_header_general">General</string>
+    <string name="favorites_no_favorites">No favorites</string>
 
-    <string name="pref_title_social_recommendations">Enable social recommendations</string>
-    <string name="pref_description_social_recommendations">Recommendations for people to contact
-        based on your message history
+    <!-- Settings -->
+
+    <string name="settings_title_search">Search</string>
+    <string name="settings_search_local_interpretation">Local interpretation</string>
+    <string name="settings_search_language_of_local_definitions">Language of local definitions</string>
+    <string name="settings_search_simpla_vortaro">Simpla Vortaro</string>
+    <string name="settings_search_use_simpla_vortaro_as_online_dictionary">Use Simpla Vortaro as online dictionary</string>
+
+    <!-- Result -->
+
+    <string name="result_definition_eo">Definition (Esperanto) :</string>
+    <string name="result_definition_en">Definition (English):</string>
+    <string name="result_definition_zh">Definition (Chinese):</string>
+    <string name="result_examples">Examples:</string>
+    <string name="result_local_interpretation">Local Interpretation</string>
+    <string name="result_la_simpla_vortaro">La Simpla Vortaro</string>
+    <string name="result_do_you_mean">Do you mean:</string>
+    <string name="result_removed_from_favorites">Removed from favorites</string>
+    <string name="result_added_to_favorites">Added to favorites</string>
+
+    <!-- Corpus -->
+
+    <string name="corpus_statement">
+        "Text in the corpus comes from the e-books of Project Gutenberg. \n"
+        "To see the full license, visit page \n"
+        "http://www.gutenberg.org/wiki/Gutenberg:Permission_How-To \n"
+        "or Navigation Menu->Open Source->Project Gutenberg in this application. \n"
+        "To obtain copies of the original works, visit \n"
+        "http://www.gutenberg.org/browse/languages/eo \n"
+        "The statement is as follows: \n"
+        "This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org. If you are not located in the United States, you'll have to check the laws of the country where you are located before using this ebook. \n"
     </string>
 
-    <string name="pref_title_display_name">Display name</string>
-    <string name="pref_default_display_name">John Smith</string>
-
-    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
-    <string-array name="pref_example_list_titles">
-        <item>Always</item>
-        <item>When possible</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_example_list_values">
-        <item>1</item>
-        <item>0</item>
-        <item>-1</item>
-    </string-array>
-
-    <!-- Example settings for Data & Sync -->
-    <string name="pref_header_data_sync">Data &amp; sync</string>
-
-    <string name="pref_title_sync_frequency">Sync frequency</string>
-    <string-array name="pref_sync_frequency_titles">
-        <item>15 minutes</item>
-        <item>30 minutes</item>
-        <item>1 hour</item>
-        <item>3 hours</item>
-        <item>6 hours</item>
-        <item>Never</item>
-    </string-array>
-    <string-array name="pref_sync_frequency_values">
-        <item>15</item>
-        <item>30</item>
-        <item>60</item>
-        <item>180</item>
-        <item>360</item>
-        <item>-1</item>
-    </string-array>
-
-    <string-array name="list_preference_entries">
-        <item>Entry 1</item>
-        <item>Entry 2</item>
-        <item>Entry 3</item>
-    </string-array>
-
-    <string-array name="list_preference_entry_values">
-        <item>1</item>
-        <item>2</item>
-        <item>3</item>
-    </string-array>
-
-    <string-array name="multi_select_list_preference_default_value" />
-
-    <string name="pref_title_system_sync_settings">System sync settings</string>
-
-    <!-- Example settings for Notifications -->
-    <string name="pref_header_notifications">Notifications</string>
-
-    <string name="pref_title_new_message_notifications">New message notifications</string>
-
-    <string name="pref_title_ringtone">Ringtone</string>
-    <string name="pref_ringtone_silent">Silent</string>
-
-    <string name="pref_title_vibrate">Vibrate</string>
+    <!-- String arrays related to Settings -->
 
     <string-array name="pref_settings_language_local_titles">
         <item>English</item>
@@ -201,18 +124,4 @@
         <item>-1</item>
     </string-array>
 
-    <string name="input_is_empty">Empty</string>
-    <string name="corpus_statement">
-        "Text in the corpus comes from the e-books of Project Gutenberg. \n"
-        "To see the full license, visit page \n"
-        "http://www.gutenberg.org/wiki/Gutenberg:Permission_How-To \n"
-        "or Navigation Menu->Open Source->Project Gutenberg in this application. \n"
-        "To obtain copies of the original works, visit \n"
-        "http://www.gutenberg.org/browse/languages/eo \n"
-        "The statement is as follows: \n"
-        "This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org. If you are not located in the United States, you'll have to check the laws of the country where you are located before using this ebook. \n"
-    </string>
-    <string name="title_activity_tables_tabbed">TablesTabbedActivity</string>
-    <string name="tab_text_1">Tab 1</string>
-    <string name="tab_text_2">Tab 2</string>
 </resources>

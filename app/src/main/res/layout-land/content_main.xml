@@ -16,21 +16,6 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="130dp"
-            android:background="?attr/colorPrimary"
-            android:gravity="center">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/main_hello"
-                android:textColor="#FFFFFF"
-                android:textSize="40sp" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/blue_white_bg">
 
@@ -47,7 +32,7 @@
                 android:radius="5dp">
 
                 <EditText
-                    android:id="@+id/main_search_edit_text"
+                    android:id="@+id/searchEditText"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -78,7 +63,7 @@
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
-                android:text="@string/main_button_dictionary" />
+                android:text="dictionary" />
 
             <Button
                 android:id="@+id/main_corpus_button"
@@ -88,12 +73,12 @@
                 android:layout_marginLeft="4dp"
                 android:layout_marginRight="4dp"
                 android:layout_weight="1"
-                android:text="@string/main_button_corpus" />
+                android:text="corpus" />
 
         </LinearLayout>
     </LinearLayout>
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/main_fab"
+        android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
