@@ -152,7 +152,9 @@ public class MainActivity extends AppCompatActivity
             startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_DONATE));
         */} else if (id == R.id.nav_favorits) { 
 			startActivity(new Intent().setClass(MainActivity.this, DemonstrateActivity.class).putExtra("type", DemonstrateActivity.TYPE_FAVORITES));
-		}
+		} else if (id == R.id.nav_about){
+            startActivity(new Intent().setClass(MainActivity.this, AboutActivity.class));
+        }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.main_drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

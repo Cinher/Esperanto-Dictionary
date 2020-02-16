@@ -126,12 +126,14 @@ public class PlaceholderFragment extends Fragment implements View.OnClickListene
                     .setOnEditorActionListener(new TextView.OnEditorActionListener() {
                         public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
                             if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-                                String word = ((EditText) root.findViewById(R.id.main_search_edit_text)).getText().toString();
-                                if (!word.trim().equals("")) {
-                                    searchInDictionary(word);
-                                } else {
-                                    Snackbar.make(root.findViewById(R.id.main_search_edit_text), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
-                                            .setAction("Action", null).show();
+                                if (event.getAction() == KeyEvent.ACTION_UP) {//防止 onEditorAction 被执行两次，即回车的 ACTION_DOWN 和 ACTION_UP
+                                    String word = ((EditText) root.findViewById(R.id.main_search_edit_text)).getText().toString();
+                                    if (!word.trim().equals("")) {
+                                        searchInDictionary(word);
+                                    } else {
+                                        Snackbar.make(root.findViewById(R.id.main_search_edit_text), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
+                                                .setAction("Action", null).show();
+                                    }
                                 }
                                 return true;
                             }

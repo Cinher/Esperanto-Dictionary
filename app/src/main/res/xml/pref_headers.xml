@@ -7,4 +7,9 @@
         android:icon="@drawable/ic_search_black_24dp"
         android:title="@string/settings_title_search" />
 
+    <header
+        android:fragment="com.cinher.github.esperantodict.SettingsActivity$CorpusPreferenceFragment"
+        android:icon="@drawable/ic_book_black_24dp"
+        android:title="@string/settings_title_corpus" />
+
 </preference-headers>

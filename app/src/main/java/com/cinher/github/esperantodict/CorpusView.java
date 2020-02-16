@@ -5,6 +5,7 @@ import android.graphics.Typeface;
 import android.os.Handler;
 import android.os.Looper;
 import android.os.Message;
+import android.preference.PreferenceManager;
 import android.support.annotation.NonNull;
 import android.text.TextPaint;
 import android.util.AttributeSet;
@@ -24,6 +25,9 @@ public class CorpusView extends LinearLayout {
     View view;
     LinearLayout linearLayout;//显示语料库中条目的界面，在其中添加书名或语料库单项
     private Handler messageHandler;
+
+    int loopTimes;
+    int characterNumber;
 
     public CorpusView(Context c) {
         this(c, null);
@@ -49,6 +53,30 @@ public class CorpusView extends LinearLayout {
         }
         linearLayout = (LinearLayout) view.findViewById(R.id.app_corpus_view_linear_layout);
 
+        //读取设置
+        switch (PreferenceManager.getDefaultSharedPreferences(getContext()).getString("settings_search_maximum", "10")) {
+            case "5":
+                loopTimes = 5;
+                break;
+            case "10":
+                loopTimes = 10;
+                break;
+            default:
+                loopTimes = 20;
+                break;
+        }
+        switch (PreferenceManager.getDefaultSharedPreferences(getContext()).getString("settings_number_of_characters", "100")) {
+            case "50":
+                characterNumber = 50;
+                break;
+            case "100":
+                characterNumber = 100;
+                break;
+            default:
+                characterNumber = 200;
+                break;
+        }
+
         //启动新线程。新线程会在语料库中搜索要找的词汇，并把结果显示出来
         new Thread(runnable).start();
         Looper looper = Looper.myLooper();
@@ -68,10 +96,15 @@ public class CorpusView extends LinearLayout {
     private void searchWordInCorpus(String word){
         /*
         * 添加新书方法：
-        * 将新书以 txt 格式保存，编码为 UTF-8，添加到 assets/e_books/ 下
+        * 将新书以 txt 格式保存，编码为 UTF-8（Windows 记事本），添加到 assets/e_books/ 下
         * 在下面的 bookNames 中添加书名 + ".txt"，即可正常搜索
         */
-        String [] bookNames = {"Dua Libro de l' Lingvo Internacia.txt", "Fundamenta Krestomatio.txt", "Hamleto, Reĝido de Danujo.txt"};
+        String [] bookNames = {"Dua Libro de l' Lingvo Internacia.txt",
+                "Fundamenta Krestomatio.txt",
+                "Hamleto, Reĝido de Danujo.txt",
+                "Ifigenio en Taŭrido.txt",
+                "La Batalo de l' Vivo.txt",
+                "El la Biblio.txt"};
         for (String bookName : bookNames) {
             addRow(((bookName).replace(".txt", "")));//显示该书的书名
             if (bookName.equals("Fundamenta Krestomatio.txt")) {
@@ -90,17 +123,17 @@ public class CorpusView extends LinearLayout {
         int bookLength = book.length();
         int wordLength = word.length();
         //遍历全书搜索单词
-        for(loopCount = 0; loopCount < 10/*一本书中最多搜索出结果的个数*/; loopCount ++){
+        for(loopCount = 0; loopCount < loopTimes/*一本书中最多搜索出结果的个数*/; loopCount ++){
             index = book.indexOf(word, (index + 1));
             if(index == -1) {
                 break;
             }
-            if(index < 100){//找到的单词位置过于靠前
-                addRow(book.substring(0,index),word,book.substring((index + wordLength),(index + wordLength + 100)));
-            }else if ((bookLength - index) <= 100){//单词位置过于靠后
-                addRow(book.substring((index - 100),index),word,book.substring((index + wordLength),bookLength));
+            if(index < characterNumber){//找到的单词位置过于靠前
+                addRow(book.substring(0,index),word,book.substring((index + wordLength),(index + wordLength + characterNumber)));
+            }else if ((bookLength - index) <= characterNumber){//单词位置过于靠后
+                addRow(book.substring((index - characterNumber),index),word,book.substring((index + wordLength),bookLength));
             }else{
-                addRow(book.substring((index - 100),index),word,book.substring((index + wordLength),(index + wordLength + 100)));
+                addRow(book.substring((index - characterNumber),index),word,book.substring((index + wordLength),(index + wordLength + characterNumber)));
             }
         }
     }

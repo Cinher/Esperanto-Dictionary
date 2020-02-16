@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ListPreference
+        android:defaultValue="10"
+        android:entries="@array/pref_settings_search_maximum_titles"
+        android:entryValues="@array/pref_settings_search_maximum_values"
+        android:key="settings_search_maximum"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/settings_corpus_search_maximum" />
+
+    <ListPreference
+        android:defaultValue="100"
+        android:entries="@array/pref_settings_number_of_characters_titles"
+        android:entryValues="@array/pref_settings_number_of_characters_values"
+        android:key="settings_number_of_characters"
+        android:negativeButtonText="@null"
+        android:positiveButtonText="@null"
+        android:title="@string/settings_corpus_number_of_characters" />
+
+</PreferenceScreen>

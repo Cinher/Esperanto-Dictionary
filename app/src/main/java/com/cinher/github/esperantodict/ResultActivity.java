@@ -1,7 +1,6 @@
 package com.cinher.github.esperantodict;
 
 import android.app.ActivityManager;
-import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -16,10 +15,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.TypedValue;
-import android.view.KeyEvent;
 import android.view.View;
 import android.widget.LinearLayout;
-import android.util.*;
 import android.database.sqlite.*;
 import android.content.*;
 import android.database.*;

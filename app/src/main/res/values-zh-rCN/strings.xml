@@ -10,11 +10,12 @@
     <string name="title_activity_settings">设置</string>
     <string name="title_activity_corpus">语料库</string>
     <string name="title_activity_converter">文本转换器</string>
+    <string name="title_activity_about">关于</string>
 
     <!-- Main activity -->
 
     <string name="main_tab_search">搜索</string>
-    <string name="main_tab_translate">翻译</string>
+    <string name="main_tab_translate">离线翻译</string>
     <string name="main_hello">Saluton!</string>
     <string name="main_search">输入要搜索的单词</string>
     <string name="main_button_dictionary">词典</string>
@@ -37,6 +38,7 @@
     <string name="nav_opensource">开放源代码</string>
     <string name="drawer_translate">翻译</string>
     <string name="drawer_donate">捐助</string>
+    <string name="nav_about">关于</string>
 
     <string name="navigation_drawer_open">打开 navigation drawer</string>
     <string name="navigation_drawer_close">关闭 navigation drawer</string>
@@ -82,10 +84,13 @@
     <!-- Settings -->
 
     <string name="settings_title_search">搜索</string>
+    <string name="settings_title_corpus">语料库</string>
     <string name="settings_search_local_interpretation">本地释义</string>
     <string name="settings_search_language_of_local_definitions">本地释义的显示语言</string>
     <string name="settings_search_simpla_vortaro">Simpla Vortaro</string>
     <string name="settings_search_use_simpla_vortaro_as_online_dictionary">将 Simpla Vortaro 作为在线词典</string>
+    <string name="settings_corpus_search_maximum">最大搜索结果数</string>
+    <string name="settings_corpus_number_of_characters">字符数</string>
 
     <!-- Result -->
 
@@ -112,6 +117,9 @@
         "This eBook is for the use of anyone anywhere in the United States and most other parts of the world at no cost and with almost no restrictions whatsoever. You may copy it, give it away or re-use it under the terms of the Project Gutenberg License included with this eBook or online at www.gutenberg.org. If you are not located in the United States, you'll have to check the laws of the country where you are located before using this ebook. \n"
     </string>
 
+    <!-- About -->
+    <string name="about_github">Github</string>
+
     <!-- String arrays related to Settings -->
 
     <string-array name="pref_settings_language_local_titles">
@@ -123,6 +131,28 @@
         <item>0</item>
         <item>1</item>
         <item>-1</item>
+    </string-array>
+
+    <string-array name="pref_settings_search_maximum_titles">
+        <item>5条</item>
+        <item>10条</item>
+        <item>20条</item>
+    </string-array>
+    <string-array name="pref_settings_search_maximum_values">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+
+    <string-array name="pref_settings_number_of_characters_titles">
+        <item>50个</item>
+        <item>100个</item>
+        <item>200个</item>
+    </string-array>
+    <string-array name="pref_settings_number_of_characters_values">
+        <item>50</item>
+        <item>100</item>
+        <item>200</item>
     </string-array>
 
 </resources>
