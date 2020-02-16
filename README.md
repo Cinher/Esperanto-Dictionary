@@ -37,21 +37,21 @@ People who like diacritical marks or x-system don't have to worry anymore. Esper
 
 ## Screenshots
 
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_1) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_1.png) 
 
 Main interface. 
 
 
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_2) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_2.png) 
 
 Translate. 
 
 
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_3) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_3.png) 
 
 Search results. 
 
 
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_4) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_4.png) 
 
 The corpus. 
