@@ -285,7 +285,7 @@ public class ResultActivity extends AppCompatActivity {
                 }while(pointer != -1);
 
                 //添加
-                String total = "—" + word + "\n\n" + getResources().getString(R.string.result_definition_en) + "\n"
+                String total = "—" + addHat(word) + "\n\n" + getResources().getString(R.string.result_definition_en) + "\n"
                         + english + "\n"
                         + getResources().getString(R.string.result_definition_eo) + "\n" + definition + "\n"
                         + getResources().getString(R.string.result_examples) + "\n" + example + "\n";
@@ -304,7 +304,7 @@ public class ResultActivity extends AppCompatActivity {
 				
 				try
 				{
-					URL urlSearch = new URL("http://www.simplavortaro.org/api/v1/trovi/" + word);
+					URL urlSearch = new URL("http://www.simplavortaro.org/api/v1/trovi/" + addHat(word));
 					URLConnection connection = urlSearch.openConnection();
 					connection.connect();
 					in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
@@ -340,7 +340,7 @@ public class ResultActivity extends AppCompatActivity {
 					//将模糊搜索结果显示出来
 					AppCard card = new AppCard(context, AppCard.TYPE_DICTIONARY);
 					card.setTitle(getResources().getString(R.string.result_la_simpla_vortaro));
-					card.setText(getResources().getString(R.string.result_do_you_mean) + " \n\n" + contentWords);
+					card.setText(getResources().getString(R.string.result_do_you_mean) + " \n\n" + EsperantoUnicodeToCharacter(contentWords));
 					Message message = Message.obtain();
 					message.obj = card;
 					messageHandler.sendMessage(message);
