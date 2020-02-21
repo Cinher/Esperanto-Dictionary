@@ -3,7 +3,7 @@
     <!-- Application -->
 
     <string name="app_name">Esperanto Dictionary</string>
-    <string name="v">Test Version 0.9.1</string>
+    <string name="v">1.0</string>
     <string name="title_activity_result">Result</string>
     <string name="title_activity_tables_tabbed">TablesTabbedActivity</string>
     <string name="title_activity_settings">Settings</string>

@@ -47,30 +47,29 @@ public class WidgetPopupActivity extends Activity {
 			.setOnEditorActionListener(new TextView.OnEditorActionListener() {
 				public boolean onEditorAction(TextView view, int actionId, KeyEvent event) {
 					if (actionId == EditorInfo.IME_ACTION_SEND || (event != null && event.getKeyCode() == KeyEvent.KEYCODE_ENTER)) {
-						String word = ((EditText) findViewById(R.id.widget_popup_search_edittext)).getText().toString();
-						if (!word.trim().equals("")) {
+						if (event.getAction() == KeyEvent.ACTION_UP) {
+							String word = ((EditText) findViewById(R.id.widget_popup_search_edittext)).getText().toString();
+							if (!word.trim().equals("")) {
 
-							Db db = new Db(getApplicationContext());
-							SQLiteDatabase dbWrite = db.getWritableDatabase();
-							ContentValues values = new ContentValues();
-							values.put("word", word);
-							SQLiteDatabase dbRead = db.getReadableDatabase();
-							Cursor cursor = dbRead.query("history", null, null, null, null, null, null);
-							while (cursor.moveToNext()) {
-								if (word.equals(cursor.getString(cursor.getColumnIndex("word")))) {
-									dbWrite.delete("history", "word = \'" + word + "\'", null);
-									break;
+								Db db = new Db(getApplicationContext());
+								SQLiteDatabase dbWrite = db.getWritableDatabase();
+								ContentValues values = new ContentValues();
+								values.put("word", word);
+								SQLiteDatabase dbRead = db.getReadableDatabase();
+								Cursor cursor = dbRead.query("history", null, null, null, null, null, null);
+								while (cursor.moveToNext()) {
+									if (word.equals(cursor.getString(cursor.getColumnIndex("word")))) {
+										dbWrite.delete("history", "word = \'" + word + "\'", null);
+										break;
+									}
 								}
-							}
-							dbWrite.insert("history", null, values);
-							dbWrite.close();
+								dbWrite.insert("history", null, values);
+								dbWrite.close();
 
-							startActivity(new Intent().setClass(WidgetPopupActivity.this, ResultActivity.class).putExtra("word", word));
-							cursor.close();
-							WidgetPopupActivity.this.finish();
-						} else {
-							Snackbar.make(findViewById(R.id.searchEditText), getResources().getString(R.string.main_empty), Snackbar.LENGTH_LONG)
-								.setAction("Action", null).show();
+								startActivity(new Intent().setClass(WidgetPopupActivity.this, ResultActivity.class).putExtra("word", word));
+								cursor.close();
+								WidgetPopupActivity.this.finish();
+							}
 						}
 						return true;
 					}

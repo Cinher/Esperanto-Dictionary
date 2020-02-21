@@ -4,7 +4,7 @@
     <!-- Application -->
 
     <string name="app_name">世界语词典</string>
-    <string name="v">Test Version 0.9.1</string>
+    <string name="v">1.0</string>
     <string name="title_activity_result">结果</string>
     <string name="title_activity_tables_tabbed">表格界面</string>
     <string name="title_activity_settings">设置</string>
@@ -17,7 +17,7 @@
     <string name="main_tab_search">搜索</string>
     <string name="main_tab_translate">离线翻译</string>
     <string name="main_hello">Saluton!</string>
-    <string name="main_search">输入要搜索的单词</string>
+    <string name="main_search">搜索</string>
     <string name="main_button_dictionary">词典</string>
     <string name="main_button_corpus">语料库</string>
     <string name="main_history_search_history">搜索历史</string>

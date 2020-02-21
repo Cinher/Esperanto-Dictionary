@@ -5,8 +5,7 @@
 
 A Material-designed multifunctional Esperanto dictionary. You can import your own dictionaries or get definitions of words online. 
 
-[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-APK-green.svg?style=for-the-badge)](https://github.com/Cinher/Esperanto-Dictionary/releases/download/v0.9/esperanto_dictionary_0.9.apk) 
-(v0.9)
+[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-APK-green.svg?style=for-the-badge)](https://github.com/Cinher/Esperanto-Dictionary/releases/download/v1.0/esperanto_dictionary_1.0.apk) 
 
 ## Features (v1.0)
 
@@ -37,21 +36,18 @@ People who like diacritical marks or x-system don't have to worry anymore. Esper
 
 ## Screenshots
 
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_1.png) 
-
 Main interface. 
 
-
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_2.png) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_1.png) 
 
 Translate. 
 
-
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_3.png) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_2.png) 
 
 Search results. 
 
-
-![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_4.png) 
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_3.png) 
 
 The corpus. 
+
+![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/Screenshot_1920x1080_4.png) 

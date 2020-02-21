@@ -26,6 +26,7 @@ import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.io.*;
+import java.net.URLEncoder;
 
 
 public class ResultActivity extends AppCompatActivity {
@@ -191,6 +192,11 @@ public class ResultActivity extends AppCompatActivity {
         public void run()
         {
             String url="http://www.simplavortaro.org/api/v1/vorto/" + addHat(word);
+            try {
+                url = "http://www.simplavortaro.org/api/v1/vorto/" + URLEncoder.encode(addHat(word), "utf-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
             boolean isWordExists = true;
             String SimplaVortaroResult = "";
             StringBuffer SimplaVortaroResultBuffer = new StringBuffer();

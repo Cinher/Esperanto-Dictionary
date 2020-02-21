@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Esperanto-Dictionary.iml" filepath="$PROJECT_DIR$/Esperanto-Dictionary.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/Esperanto-Dictionary-app.iml" filepath="$PROJECT_DIR$/app/Esperanto-Dictionary-app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/GitHub-Esperanto-Dictionary.iml" filepath="$PROJECT_DIR$/GitHub-Esperanto-Dictionary.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

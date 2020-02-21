@@ -32,7 +32,7 @@
                 android:radius="5dp">
 
                 <EditText
-                    android:id="@+id/searchEditText"
+                    android:id="@+id/main_search_edit_text"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="5dp"
@@ -78,7 +78,7 @@
         </LinearLayout>
     </LinearLayout>
     <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/main_fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
