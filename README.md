@@ -1,13 +1,17 @@
-﻿# Esperanto-Dictionary 世界语词典
+﻿# Esperanto Dictionary
 [![API](https://img.shields.io/badge/API-18%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=18)
+
+README: [English](https://github.com/Cinher/Esperanto-Dictionary/blob/master/README.md) | [中文](https://github.com/Cinher/Esperanto-Dictionary/blob/master/README-zh.md)
+
+---
 
 ![Image](https://github.com/Cinher/Esperanto-Dictionary/raw/master/docs/promotional_graphics.jpg)
 
 A Material-designed multifunctional Esperanto dictionary. You can import your own dictionaries or get definitions of words online. 
 
-[![DOWNLOAD](https://img.shields.io/badge/DOWNLOAD-APK-green.svg?style=for-the-badge)](https://github.com/Cinher/Esperanto-Dictionary/releases/download/v1.0/esperanto_dictionary_1.0.apk) 
+[![DOWNLOAD](https://img.shields.io/badge/%E9%85%B7%E5%AE%89%E4%B8%8B%E8%BD%BD-Get%20it%20on%20CoolApk-green.svg?style=for-the-badge)](https://www.coolapk.com/apk/com.cinher.github.esperantodict) 
 
-## Features (v1.0)
+## Features
 
 * Online and offline search.
 
